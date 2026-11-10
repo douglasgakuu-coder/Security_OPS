@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Client Portal — Apex Holdings Ltd — NOVAGUARD</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="../assets/css/dashboard.css">
+<link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+<body>
+<div class="app">
+  <input type="checkbox" id="navtoggle" class="nav-checkbox">
+  <aside class="sidebar">
+    <div class="side-brand"><span class="brand-mark"><i class="fa-solid fa-shield-halved"></i></span>NOVAGUARD</div>
+    <nav class="side-nav">
+      <div class="side-group">My Company</div>
+      <a class="side-link active" href="client.html"><i class="fa-solid fa-table-columns"></i>Overview</a>
+      <a class="side-link" href="../modules/sites.html"><i class="fa-solid fa-map-location-dot"></i>My Sites</a>
+      <a class="side-link" href="../modules/reports.html"><i class="fa-solid fa-user-shield"></i>Guard Deployment</a>
+      <a class="side-link" href="../modules/attendance.html"><i class="fa-solid fa-clock"></i>Attendance Reports</a>
+      <div class="side-group">Reports</div>
+      <a class="side-link" href="../modules/incidents.html"><i class="fa-solid fa-bullhorn"></i>Incident Reports</a>
+      <a class="side-link" href="../modules/reports.html"><i class="fa-solid fa-download"></i>Downloadable Reports</a>
+      <div class="side-group">Requests</div>
+      <a class="side-link" href="../modules/reports.html"><i class="fa-solid fa-screwdriver-wrench"></i>Service Requests</a>
+      <a class="side-link" href="../modules/reports.html"><i class="fa-solid fa-comment-dots"></i>Complaints &amp; Feedback</a>
+      <div class="side-group">Billing</div>
+      <a class="side-link" href="../modules/contracts.html"><i class="fa-solid fa-file-contract"></i>My Contract</a>
+      <a class="side-link" href="../modules/finance.html"><i class="fa-solid fa-file-invoice"></i>Invoices</a>
+      <a class="side-link" href="../modules/finance.html"><i class="fa-solid fa-credit-card"></i>Payment History</a>
+    </nav>
+    <div class="side-foot"><a href="../../webpages/login.html"><i class="fa-solid fa-right-from-bracket"></i> Sign out</a></div>
+  </aside>
+  <div class="main-area">
+    <header class="topbar">
+      <label for="navtoggle" class="icon-btn" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></label>
+      <div class="crumb">Client Portal / <b>Apex Holdings</b></div>
+      <div class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Global search — guards, sites, records…"></div>
+      <div class="top-actions">
+        <div class="icon-btn"><i class="fa-solid fa-bell"></i><span class="dot">1</span></div>
+        <div class="avatar">BK</div>
+      </div>
+    </header>
+    <main class="content">
+      <div class="page-title-row">
+        <div>
+          <h1>Client Portal — Apex Holdings Ltd</h1>
+          <div class="crumbs">Client Portal — Apex Holdings Ltd</div>
+        </div>
+        <div class="page-actions">
+          <button class="btn-xs"><i class="fa-solid fa-download"></i>Export</button>
+          <button class="btn-xs primary"><i class="fa-solid fa-plus"></i>New Record</button>
+        </div>
+      </div>
+      <div class="kpi-grid">
+        <div class="kpi "><div class="kpi-label"><i class="fa-solid fa-map-location-dot"></i>Active Sites</div><div class="kpi-value">2</div><div class="kpi-delta ">Apex HQ · Westlands Depot</div></div>
+        <div class="kpi k-green"><div class="kpi-label"><i class="fa-solid fa-user-shield"></i>Deployed Guards</div><div class="kpi-value">6</div><div class="kpi-delta up">Required: 6</div></div>
+        <div class="kpi k-green"><div class="kpi-label"><i class="fa-solid fa-clock"></i>Attendance Summary</div><div class="kpi-value">98%</div><div class="kpi-delta up">This month</div></div>
+        <div class="kpi k-orange"><div class="kpi-label"><i class="fa-solid fa-bullhorn"></i>Open Incidents</div><div class="kpi-value">1</div><div class="kpi-delta warn">Minor — in progress</div></div>
+        <div class="kpi k-gold"><div class="kpi-label"><i class="fa-solid fa-file-invoice"></i>Outstanding Invoice</div><div class="kpi-value">KES 450,000</div><div class="kpi-delta warn">Due 15/11/2026</div></div>
+        <div class="kpi "><div class="kpi-label"><i class="fa-solid fa-screwdriver-wrench"></i>Pending Requests</div><div class="kpi-value">1</div><div class="kpi-delta ">Extra event cover</div></div>
+      </div>
+      <div class="panel mb-24">
+        <div class="panel-head"><h3><i class="fa-solid fa-map-location-dot"></i>Active Sites Deployed Summary</h3><a class="panel-link" href="../modules/reports.html"><i class="fa-solid fa-download"></i> Download PDF / Excel</a></div>
+        <div class="table-wrap"><table class="tbl">
+          <thead><tr><th>Site Premises</th><th>Required</th><th>Deployed</th><th>Current Status</th><th>Last Patrol Scan</th></tr></thead>
+          <tbody>
+            <tr><td>Apex Tower HQ</td><td>4</td><td>4</td><td><span class="badge bg-green">Fully Staffed</span></td><td>5 mins ago (OK)</td></tr>
+            <tr><td>Westlands Depot</td><td>2</td><td>2</td><td><span class="badge bg-green">Fully Staffed</span></td><td>12 mins ago (OK)</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+<div class="panel-grid">
+        <div class="panel">
+          <div class="panel-head"><h3><i class="fa-solid fa-file-invoice"></i>Financial Statements &amp; Invoices</h3><a class="panel-link" href="../modules/finance.html">Payment history <i class="fa-solid fa-arrow-right"></i></a></div>
+          <div class="table-wrap"><table class="tbl">
+            <thead><tr><th>Invoice</th><th>Period</th><th>Amount</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>INV-2026-0987</td><td>October 2026</td><td>KES 450,000</td><td><span class="badge bg-green">PAID</span></td></tr>
+              <tr><td>INV-2026-1102</td><td>November 2026</td><td>KES 450,000</td><td><span class="badge bg-orange">PENDING — Due 15/11</span></td></tr>
+            </tbody>
+          </table></div>
+        </div>
+        <div class="panel">
+          <div class="panel-head"><h3><i class="fa-solid fa-bullhorn"></i>Recent Incident Reports (My Sites)</h3></div>
+          <div class="panel-body"><ul class="feed">
+            <li><span class="fdot fd-orange"></span><div>Minor access-control breach — visitor badge misuse, Tower HQ lobby.<time>Today, 09:12</time></div></li>
+            <li><span class="fdot fd-green"></span><div>Fire drill completed successfully — Westlands Depot.<time>05 Nov</time></div></li>
+            <li><span class="fdot fd-green"></span><div>Monthly patrol compliance report generated.<time>01 Nov</time></div></li>
+          </ul></div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+</body>
+</html>

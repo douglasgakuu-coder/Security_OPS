@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Field Supervisor Dashboard — NOVAGUARD</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="../assets/css/dashboard.css">
+<link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+<body>
+<div class="app">
+  <input type="checkbox" id="navtoggle" class="nav-checkbox">
+  <aside class="sidebar">
+    <div class="side-brand"><span class="brand-mark"><i class="fa-solid fa-shield-halved"></i></span>NOVAGUARD</div>
+    <nav class="side-nav">
+      <div class="side-group">Field Supervision</div>
+      <a class="side-link active" href="supervisor.html"><i class="fa-solid fa-table-columns"></i>Dashboard</a>
+      <a class="side-link" href="../modules/sites.html"><i class="fa-solid fa-map-location-dot"></i>My Sites</a>
+      <a class="side-link" href="../modules/reports.html"><i class="fa-solid fa-clipboard-check"></i>Inspections</a>
+      <a class="side-link" href="../modules/patrols.html"><i class="fa-solid fa-shoe-prints"></i>Patrol Monitoring</a>
+      <div class="side-group">Team</div>
+      <a class="side-link" href="../modules/reports.html"><i class="fa-solid fa-users"></i>Guards Supervised</a>
+      <a class="side-link" href="../modules/attendance.html"><i class="fa-solid fa-clock"></i>Attendance Exceptions</a>
+      <a class="side-link" href="../modules/handovers.html"><i class="fa-solid fa-right-left"></i>Handover Verification</a>
+      <a class="side-link" href="../modules/incidents.html"><i class="fa-solid fa-bullhorn"></i>Incident Reporting</a>
+      <a class="side-link" href="../modules/relief.html"><i class="fa-solid fa-rotate"></i>Request Relief</a>
+      <a class="side-link" href="../modules/assets.html"><i class="fa-solid fa-toolbox"></i>Equipment Checks</a>
+    </nav>
+    <div class="side-foot"><a href="../../webpages/login.html"><i class="fa-solid fa-right-from-bracket"></i> Sign out</a></div>
+  </aside>
+  <div class="main-area">
+    <header class="topbar">
+      <label for="navtoggle" class="icon-btn" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></label>
+      <div class="crumb">Field Supervisor / <b>Dashboard</b></div>
+      <div class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Global search — guards, sites, records…"></div>
+      <div class="top-actions">
+        <div class="icon-btn"><i class="fa-solid fa-bell"></i><span class="dot">2</span></div>
+        <div class="avatar">JO</div>
+      </div>
+    </header>
+    <main class="content">
+      <div class="page-title-row">
+        <div>
+          <h1>Field Supervisor Dashboard</h1>
+          <div class="crumbs">Field Supervisor Dashboard</div>
+        </div>
+        <div class="page-actions">
+          <button class="btn-xs"><i class="fa-solid fa-download"></i>Export</button>
+          <button class="btn-xs primary"><i class="fa-solid fa-plus"></i>New Record</button>
+        </div>
+      </div>
+      <div class="kpi-grid">
+        <div class="kpi "><div class="kpi-label"><i class="fa-solid fa-map-location-dot"></i>Assigned Sites</div><div class="kpi-value">7</div><div class="kpi-delta ">Across 3 clients</div></div>
+        <div class="kpi k-green"><div class="kpi-label"><i class="fa-solid fa-users"></i>Guards Supervised</div><div class="kpi-value">23</div><div class="kpi-delta up">21 on duty</div></div>
+        <div class="kpi k-orange"><div class="kpi-label"><i class="fa-solid fa-clock"></i>Attendance Exceptions</div><div class="kpi-value">3</div><div class="kpi-delta warn">Late / no-show</div></div>
+        <div class="kpi k-gold"><div class="kpi-label"><i class="fa-solid fa-clipboard-check"></i>Pending Inspections</div><div class="kpi-value">4</div><div class="kpi-delta ">Due this week</div></div>
+        <div class="kpi k-red"><div class="kpi-label"><i class="fa-solid fa-shoe-prints"></i>Missed Patrols</div><div class="kpi-value">2</div><div class="kpi-delta down">Routes B &amp; C</div></div>
+        <div class="kpi k-orange"><div class="kpi-label"><i class="fa-solid fa-right-left"></i>Incomplete Handovers</div><div class="kpi-value">1</div><div class="kpi-delta warn">Apex Towers</div></div>
+        <div class="kpi k-red"><div class="kpi-label"><i class="fa-solid fa-bullhorn"></i>Open Incidents</div><div class="kpi-value">3</div><div class="kpi-delta down">1 critical</div></div>
+      </div>
+      <div class="panel mb-24">
+        <div class="panel-head"><h3><i class="fa-solid fa-bolt"></i>Quick Actions</h3></div>
+        <div class="panel-body qa-grid">
+          <div class="qa"><i class="fa-solid fa-clipboard-check"></i><span>Start Inspection</span></div>
+          <div class="qa"><i class="fa-solid fa-camera"></i><span>Capture Finding</span></div>
+          <div class="qa"><i class="fa-solid fa-bullhorn"></i><span>Report Incident</span></div>
+          <div class="qa"><i class="fa-solid fa-rotate"></i><span>Request Relief</span></div>
+          <div class="qa"><i class="fa-solid fa-right-left"></i><span>Verify Handover</span></div>
+          <div class="qa"><i class="fa-solid fa-phone"></i><span>Call Control Room</span></div>
+        </div>
+      </div>
+<div class="split-grid">
+        <div class="panel">
+          <div class="panel-head"><h3><i class="fa-solid fa-map-location-dot"></i>Assigned Sites — Live Status</h3></div>
+          <div class="panel-body">
+            <div class="site-status"><span><i class="st-dot dot-g"></i><b>Apex Towers</b></span><span>4/4 staffed · Patrol 100%</span></div>
+            <div class="site-status"><span><i class="st-dot dot-o"></i><b>Valley School</b></span><span>2/3 staffed · Relief requested</span></div>
+            <div class="site-status"><span><i class="st-dot dot-r"></i><b>Site Beta Retail</b></span><span>0/2 staffed · Intrusion open</span></div>
+            <div class="site-status"><span><i class="st-dot dot-g"></i><b>Riverside Gardens</b></span><span>3/3 staffed · Patrol 100%</span></div>
+            <div class="site-status"><span><i class="st-dot dot-o"></i><b>Lavington Mall</b></span><span>3/4 staffed · Late clock-in</span></div>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel-head"><h3><i class="fa-solid fa-clock"></i>Attendance Exceptions</h3></div>
+          <div class="panel-body">
+            <div class="prog-row"><div class="prog-meta"><b>Guard #88 — Westlands Depot</b><span>No show</span></div><div class="prog-track"><div class="prog-fill pf-red w-100"></div></div></div>
+            <div class="prog-row"><div class="prog-meta"><b>Guard #152 — Lavington Mall</b><span>42 min late</span></div><div class="prog-track"><div class="prog-fill pf-orange w-70"></div></div></div>
+            <div class="prog-row"><div class="prog-meta"><b>Guard #201 — Valley School</b><span>Early departure</span></div><div class="prog-track"><div class="prog-fill pf-orange w-55"></div></div></div>
+            <div class="filters">
+              <button class="btn-xs primary"><i class="fa-solid fa-check"></i>Approve Correction</button>
+              <button class="btn-xs"><i class="fa-solid fa-envelope"></i>Notify HR</button>
+              <button class="btn-xs danger"><i class="fa-solid fa-arrow-up"></i>Escalate</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-head"><h3><i class="fa-solid fa-clock-rotate-left"></i>Recent Activity</h3><a class="panel-link" href="../modules/reports.html">View all <i class="fa-solid fa-arrow-right"></i></a></div>
+        <div class="panel-body">
+          <ul class="feed">
+            <li><span class="fdot fd-red"></span><div>Intrusion reported at Site Beta Retail — police notified, awaiting resolution.<time>Today, 13:58</time></div></li>
+            <li><span class="fdot fd-orange"></span><div>Inspection finding recorded: broken perimeter floodlight, Riverside Gardens.<time>Today, 11:32</time></div></li>
+            <li><span class="fdot fd-green"></span><div>Handover verified — Apex Towers day → night, no discrepancies.<time>Today, 07:04</time></div></li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+</body>
+</html>

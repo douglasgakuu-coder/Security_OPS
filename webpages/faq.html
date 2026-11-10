@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ — NOVAGUARD</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../csswebpages/style.css" />
+    <link rel="stylesheet" href="../csswebpages/responsive.css" />
+  </head>
+  <body>
+    <input type="checkbox" id="navtoggle" class="nav-checkbox" />
+
+    <header class="navbar">
+      <div class="container nav-inner">
+        <a class="brand" href="index.html"
+          ><span class="brand-mark"
+            ><i class="fa-solid fa-shield-halved"></i></span
+          >NOVA<span class="gold">GUARD</span></a
+        >
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="careers.html">Careers</a>
+          <a href="faq.html" class="active">FAQ</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <a href="login.html" class="btn btn-outline"
+            ><i class="fa-solid fa-right-to-bracket"></i>Login</a
+          >
+          <a href="signup.html" class="btn btn-gold"
+            ><i class="fa-solid fa-file-invoice"></i>Request a Quote</a
+          >
+          <label for="navtoggle" class="nav-toggle-btn" aria-label="Menu"
+            ><i class="fa-solid fa-bars"></i
+          ></label>
+        </div>
+      </div>
+    </header>
+
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="index.html">Home</a> / FAQ</div>
+        <h1>Frequently asked questions</h1>
+        <p>
+          Everything you need to know about our guards, our platform, compliance
+          and billing — in plain language.
+        </p>
+      </div>
+    </section>
+
+    <section class="section faq">
+      <div class="container container-narrow">
+        <div class="section-head">
+          <span class="eyebrow">General</span>
+          <h2>Our services &amp; guards</h2>
+        </div>
+        <details class="faq-item" open>
+          <summary>Are your guards licensed and registered?</summary>
+          <p>
+            Yes. Every guard's PSRA registration and Guard Force Number is
+            tracked in our compliance system, and guards without valid
+            documentation cannot be deployed. Vetting and background
+            verification records are kept current for all personnel.
+          </p>
+        </details>
+        <details class="faq-item">
+          <summary>Which environments do you cover?</summary>
+          <p>
+            Schools and universities, residential estates, commercial buildings,
+            construction sites, hotels, farms and agricultural properties, and
+            industrial facilities. Each site gets its own deployment rules,
+            guard counts and standing orders.
+          </p>
+        </details>
+        <details class="faq-item">
+          <summary>How quickly can deployment begin?</summary>
+          <p>
+            After a structured site assessment and quotation approval,
+            deployment typically begins within 5–10 working days, subject to
+            guard availability and client-specific approval requirements.
+          </p>
+        </details>
+
+        <div class="section-head faq-gap">
+          <span class="eyebrow">Operations</span>
+          <h2>Monitoring &amp; accountability</h2>
+        </div>
+        <details class="faq-item" open>
+          <summary>How do you verify attendance and patrols?</summary>
+          <p>
+            Guards clock in from a mobile app capturing GPS coordinates; patrols
+            are verified with QR/NFC checkpoint scans. Missed check-ins trigger
+            automatic supervisor alerts.
+          </p>
+        </details>
+        <details class="faq-item">
+          <summary>What happens if a guard doesn't report for duty?</summary>
+          <p>
+            The system detects the absence, flags the vacant post, and the
+            relief workflow recommends and dispatches an eligible relief guard —
+            quickly and verifiably, with dispatch and arrival times recorded.
+          </p>
+        </details>
+        <details class="faq-item">
+          <summary>Can clients see their own reports?</summary>
+          <p>
+            Yes. Each client gets an isolated, secure portal showing their own
+            headcounts, patrols, incidents and invoices, with downloadable PDF
+            and Excel reports. Client data is strictly separated.
+          </p>
+        </details>
+        <details class="faq-item">
+          <summary>What happens during a security incident?</summary>
+          <p>
+            The control room acknowledges the alert, verifies it, dispatches a
+            supervisor or emergency service, and records every action with
+            response times. Critical incidents remain open until formally
+            resolved.
+          </p>
+        </details>
+
+        <div class="section-head faq-gap">
+          <span class="eyebrow">Billing &amp; Compliance</span>
+          <h2>Money &amp; regulation</h2>
+        </div>
+        <details class="faq-item" open>
+          <summary>How is payroll calculated?</summary>
+          <p>
+            Salaries, overtime and Kenyan statutory deductions (NSSF/NHIF) are
+            computed automatically from approved attendance records, generating
+            payslips and full payroll registers.
+          </p>
+        </details>
+        <details class="faq-item">
+          <summary>How does client invoicing work?</summary>
+          <p>
+            Invoices are generated monthly per contract, with due dates, payment
+            status tracking and statements available in the client portal.
+            Partial payments are recorded and reconciled.
+          </p>
+        </details>
+        <details class="faq-item">
+          <summary>Is my data secure?</summary>
+          <p>
+            The platform runs over HTTPS/TLS, encrypts data at rest, uses
+            role-based access control and MFA for privileged accounts, and
+            aligns with Kenya's Data Protection Act (2019).
+          </p>
+        </details>
+
+        <div class="center-cta">
+          <a href="contact.html" class="btn btn-navy btn-lg"
+            ><i class="fa-solid fa-envelope"></i>Ask Us Anything Else</a
+          >
+          <a href="signup.html" class="btn btn-gold btn-lg"
+            ><i class="fa-solid fa-file-invoice"></i>Request a Quote</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="f-col f-brand">
+          <a class="brand" href="index.html"
+            ><span class="brand-mark"
+              ><i class="fa-solid fa-shield-halved"></i></span
+            ><span class="brand-text u-white"
+              >NOVA<span class="gold">GUARD</span></span
+            ></a
+          >
+          <p>Every Guard. Every Site. Every Operation. Under Control.</p>
+          <div class="social-row">
+            <a href="#" aria-label="LinkedIn"
+              ><i class="fa-brands fa-linkedin-in"></i></a
+            ><a href="#" aria-label="X"
+              ><i class="fa-brands fa-x-twitter"></i></a
+            ><a href="#" aria-label="Facebook"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+          </div>
+        </div>
+        <div class="f-col">
+          <h4>Company</h4>
+          <a href="about.html"
+            ><i class="fa-solid fa-angle-right"></i> About Us</a
+          >
+          <a href="services.html"
+            ><i class="fa-solid fa-angle-right"></i> Services</a
+          >
+          <a href="careers.html"
+            ><i class="fa-solid fa-angle-right"></i> Careers</a
+          >
+          <a href="faq.html"><i class="fa-solid fa-angle-right"></i> FAQ</a>
+        </div>
+        <div class="f-col">
+          <h4>Support</h4>
+          <a href="contact.html"
+            ><i class="fa-solid fa-angle-right"></i> Contact Us</a
+          >
+          <a href="login.html"
+            ><i class="fa-solid fa-angle-right"></i> Client Portal</a
+          >
+          <a href="login.html"
+            ><i class="fa-solid fa-angle-right"></i> Employee Login</a
+          >
+        </div>
+        <div class="f-col">
+        <h4>Billing</h4>
+        <a href="subscription.html"><i class="fa-solid fa-angle-right"></i> Pricing &amp; Plans</a>
+        <a href="payments.html"><i class="fa-solid fa-angle-right"></i> Make a Payment</a>
+      </div>
+      <div class="f-col">
+          <h4>Contact</h4>
+          <span><i class="fa-solid fa-phone"></i> +254 700 000 000</span>
+          <span><i class="fa-solid fa-envelope"></i> info@novaguard.co.ke</span>
+          <span
+            ><i class="fa-solid fa-location-dot"></i> Westlands, Nairobi</span
+          >
+          <span
+            ><i class="fa-solid fa-tower-broadcast"></i> 24/7 Control Room</span
+          >
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 NOVAGUARD — ABC LTD. All rights reserved.</span>
+        <span
+          ><a href="#">Privacy Policy</a> ·
+          <a href="#">Terms &amp; Conditions</a></span
+        >
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Finance &amp; Payroll Portal — NOVAGUARD</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="../assets/css/dashboard.css">
+<link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+<body>
+<div class="app">
+  <input type="checkbox" id="navtoggle" class="nav-checkbox">
+  <aside class="sidebar">
+    <div class="side-brand"><span class="brand-mark"><i class="fa-solid fa-shield-halved"></i></span>NOVAGUARD</div>
+    <nav class="side-nav">
+      <div class="side-group">Finance</div>
+      <a class="side-link active" href="finance.html"><i class="fa-solid fa-table-columns"></i>Dashboard</a>
+      <a class="side-link" href="../modules/finance.html"><i class="fa-solid fa-file-invoice"></i>Invoices</a>
+      <a class="side-link" href="../modules/finance.html"><i class="fa-solid fa-rotate"></i>Recurring Billing</a>
+      <a class="side-link" href="../modules/finance.html"><i class="fa-solid fa-credit-card"></i>Payments &amp; Statements</a>
+      <div class="side-group">Payroll</div>
+      <a class="side-link" href="../modules/payrolls.html"><i class="fa-solid fa-money-check-dollar"></i>Payroll Processing</a>
+      <a class="side-link" href="../modules/payrolls.html"><i class="fa-solid fa-scale-balanced"></i>Salary Structures</a>
+      <a class="side-link" href="../modules/payrolls.html"><i class="fa-solid fa-receipt"></i>Statutory Deductions</a>
+      <a class="side-link" href="../modules/payrolls.html"><i class="fa-solid fa-hand-holding-dollar"></i>Advances &amp; Loans</a>
+      <div class="side-group">Reports</div>
+      <a class="side-link" href="../modules/reports.html"><i class="fa-solid fa-chart-line"></i>Financial Reports</a>
+      <a class="side-link" href="../modules/finance.html"><i class="fa-solid fa-hourglass-end"></i>Aging &amp; Debt</a>
+    </nav>
+    <div class="side-foot"><a href="../../webpages/login.html"><i class="fa-solid fa-right-from-bracket"></i> Sign out</a></div>
+  </aside>
+  <div class="main-area">
+    <header class="topbar">
+      <label for="navtoggle" class="icon-btn" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></label>
+      <div class="crumb">Finance / <b>Dashboard</b></div>
+      <div class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Global search — guards, sites, records…"></div>
+      <div class="top-actions">
+        <div class="icon-btn"><i class="fa-solid fa-bell"></i><span class="dot">2</span></div>
+        <div class="avatar">PK</div>
+      </div>
+    </header>
+    <main class="content">
+      <div class="page-title-row">
+        <div>
+          <h1>Finance &amp; Payroll Portal</h1>
+          <div class="crumbs">Finance &amp; Payroll Portal</div>
+        </div>
+        <div class="page-actions">
+          <button class="btn-xs"><i class="fa-solid fa-download"></i>Export</button>
+          <button class="btn-xs primary"><i class="fa-solid fa-plus"></i>New Record</button>
+        </div>
+      </div>
+      <div class="kpi-grid">
+        <div class="kpi k-green"><div class="kpi-label"><i class="fa-solid fa-sack-dollar"></i>Revenue (MTD)</div><div class="kpi-value">KES 18.4M</div><div class="kpi-delta up">▲ 6.2% MoM</div></div>
+        <div class="kpi "><div class="kpi-label"><i class="fa-solid fa-file-invoice"></i>Monthly Invoicing</div><div class="kpi-value">KES 17.9M</div><div class="kpi-delta ">42 invoices</div></div>
+        <div class="kpi k-orange"><div class="kpi-label"><i class="fa-solid fa-hourglass-half"></i>Outstanding</div><div class="kpi-value">KES 3.8M</div><div class="kpi-delta warn">14 invoices open</div></div>
+        <div class="kpi k-red"><div class="kpi-label"><i class="fa-solid fa-triangle-exclamation"></i>Overdue</div><div class="kpi-value">KES 1.2M</div><div class="kpi-delta down">3 overdue &gt; 30 days</div></div>
+        <div class="kpi k-gold"><div class="kpi-label"><i class="fa-solid fa-money-check-dollar"></i>Payroll Outlay</div><div class="kpi-value">KES 14.2M</div><div class="kpi-delta ">November draft</div></div>
+        <div class="kpi k-orange"><div class="kpi-label"><i class="fa-solid fa-clipboard-check"></i>Payroll Approvals</div><div class="kpi-value">2</div><div class="kpi-delta warn">Awaiting sign-off</div></div>
+      </div>
+      <div class="panel-grid">
+        <div class="panel">
+          <div class="panel-head"><h3><i class="fa-solid fa-chart-column"></i>Revenue vs Collections (6 Months)</h3><a class="panel-link" href="../modules/reports.html">View report <i class="fa-solid fa-arrow-right"></i></a></div>
+          <div class="panel-body">
+            <div class="bars">
+              <div class="bar bh-55"><em>15.1M</em><i></i><span>Jun</span></div>
+              <div class="bar bh-60"><em>15.9M</em><i></i><span>Jul</span></div>
+              <div class="bar bh-66"><em>16.8M</em><i></i><span>Aug</span></div>
+              <div class="bar bh-70"><em>17.0M</em><i></i><span>Sep</span></div>
+              <div class="bar bh-74"><em>17.4M</em><i></i><span>Oct</span></div>
+              <div class="bar gold-bar bh-88"><em>18.4M</em><i></i><span>Nov</span></div>
+
+            </div>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel-head"><h3><i class="fa-solid fa-chart-pie"></i>Breakdown</h3></div>
+          <div class="panel-body donut-wrap">
+            <div class="donut"></div>
+            <div class="legend">
+<div><i class="sw lg-green"></i>Paid — 72%</div>
+              <div><i class="sw lg-orange"></i>Pending — 16%</div>
+              <div><i class="sw lg-red"></i>Overdue — 12%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel mb-24">
+        <div class="panel-head"><h3><i class="fa-solid fa-money-check-dollar"></i>Attendance-Based Payroll Register</h3><div class="filters"><input type="month" value="2026-11"></div><a class="panel-link" href="../modules/reports.html"><i class="fa-solid fa-download"></i> Export Excel</a></div>
+        <div class="table-wrap"><table class="tbl">
+          <thead><tr><th>Guard ID</th><th>Full Name</th><th>Days</th><th>Overtime (hrs)</th><th>Statutory</th><th>Net Salary</th></tr></thead>
+          <tbody>
+            <tr><td>G-8012</td><td>Peter Koech</td><td>26</td><td>8.5</td><td><span class="badge bg-green">Deducted</span></td><td><b>KES 24,500</b></td></tr>
+            <tr><td>G-8013</td><td>Alice Auma</td><td>24</td><td>2.0</td><td><span class="badge bg-green">Deducted</span></td><td><b>KES 21,800</b></td></tr>
+            <tr><td>G-8021</td><td>James Mwangi</td><td>26</td><td>12.0</td><td><span class="badge bg-green">Deducted</span></td><td><b>KES 26,100</b></td></tr>
+          </tbody>
+        </table></div>
+      </div>
+      <div class="panel mb-24">
+        <div class="panel-head"><h3><i class="fa-solid fa-file-invoice"></i>Client Invoicing &amp; Aging Debt</h3><a class="panel-link" href="../modules/reports.html"><i class="fa-solid fa-download"></i> Export</a></div>
+        <div class="table-wrap"><table class="tbl">
+          <thead><tr><th>Client</th><th>Invoice</th><th>Period</th><th>Amount</th><th>Due</th><th>Status</th><th>Action</th></tr></thead>
+          <tbody>
+            <tr><td>Apex Holdings Ltd</td><td>INV-2026-1102</td><td>Nov 2026</td><td>KES 450,000</td><td>15/11/2026</td><td><span class="badge bg-orange">Pending</span></td><td><button class="btn-xs"><i class="fa-solid fa-bell"></i>Remind</button></td></tr>
+            <tr><td>Apex Holdings Ltd</td><td>INV-2026-0987</td><td>Oct 2026</td><td>KES 450,000</td><td>15/10/2026</td><td><span class="badge bg-green">Paid</span></td><td><button class="btn-xs"><i class="fa-solid fa-receipt"></i>Statement</button></td></tr>
+            <tr><td>Riverside Gardens</td><td>INV-2026-1041</td><td>Sep 2026</td><td>KES 310,000</td><td>30/09/2026</td><td><span class="badge bg-red">Overdue 41d</span></td><td><button class="btn-xs danger"><i class="fa-solid fa-arrow-up"></i>Escalate</button></td></tr>
+          </tbody>
+        </table></div>
+      </div>
+    </main>
+  </div>
+</div>
+</body>
+</html>

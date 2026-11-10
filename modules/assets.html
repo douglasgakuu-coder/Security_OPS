@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assets Module — NOVAGUARD</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="../dashboards/assets/css/dashboard.css">
+<link rel="stylesheet" href="../dashboards/assets/css/responsive.css">
+</head>
+<body>
+<div class="app">
+  <input type="checkbox" id="navtoggle" class="nav-checkbox">
+  <aside class="sidebar">
+    <div class="side-brand"><span class="brand-mark"><i class="fa-solid fa-shield-halved"></i></span>NOVAGUARD</div>
+    <nav class="side-nav">
+      <div class="side-group">Modules</div>
+      <a class="side-link" href="../dashboards/admin/admin.html"><i class="fa-solid fa-table-columns"></i>Dashboards</a>
+      <a class="side-link" href="employees.html"><i class="fa-solid fa-users"></i>Employees</a>
+      <a class="side-link" href="clients.html"><i class="fa-solid fa-building"></i>Clients</a>
+      <a class="side-link" href="contracts.html"><i class="fa-solid fa-file-contract"></i>Contracts</a>
+      <a class="side-link" href="sites.html"><i class="fa-solid fa-map-location-dot"></i>Sites &amp; Posts</a>
+      <a class="side-link" href="deployment.html"><i class="fa-solid fa-calendar-days"></i>Deployment</a>
+      <a class="side-link" href="attendance.html"><i class="fa-solid fa-clock"></i>Attendance</a>
+      <a class="side-link" href="patrols.html"><i class="fa-solid fa-shoe-prints"></i>Patrols</a>
+      <a class="side-link" href="incidents.html"><i class="fa-solid fa-bullhorn"></i>Incidents</a>
+      <a class="side-link" href="handovers.html"><i class="fa-solid fa-right-left"></i>Handovers</a>
+      <a class="side-link" href="relief.html"><i class="fa-solid fa-rotate"></i>Relief</a>
+      <a class="side-link" href="payrolls.html"><i class="fa-solid fa-money-check-dollar"></i>Payroll</a>
+      <a class="side-link" href="finance.html"><i class="fa-solid fa-sack-dollar"></i>Finance</a>
+      <a class="side-link active" href="assets.html"><i class="fa-solid fa-boxes-stacked"></i>Assets</a>
+      <a class="side-link" href="compliance.html"><i class="fa-solid fa-certificate"></i>Compliance</a>
+      <a class="side-link" href="reports.html"><i class="fa-solid fa-chart-line"></i>Reports</a>
+      <a class="side-link" href="jobs.html"><i class="fa-solid fa-bullhorn"></i>Jobs &amp; Notices</a>
+    </nav>
+    <div class="side-foot"><a href="../webpages/login.html"><i class="fa-solid fa-right-from-bracket"></i> Sign out</a></div>
+  </aside>
+  <div class="main-area">
+    <header class="topbar">
+      <label for="navtoggle" class="icon-btn" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></label>
+      <div class="crumb">Modules / <b>Assets</b></div>
+      <div class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Search assets…"></div>
+      <div class="top-actions">
+        <div class="icon-btn"><i class="fa-solid fa-bell"></i><span class="dot">2</span></div>
+        <div class="avatar">NG</div>
+      </div>
+    </header>
+    <main class="content">
+      <div class="page-title-row">
+        <div>
+          <h1><i class="fa-solid fa-boxes-stacked pg-ico"></i> Equipment &amp; Asset Management</h1>
+          <div class="crumbs">Uniforms · Radios · Flashlights · Vehicles · Returns</div>
+        </div>
+        <div class="page-actions">
+          <button class="btn-xs"><i class="fa-solid fa-download"></i>Export</button>
+          <button class="btn-xs primary"><i class="fa-solid fa-plus"></i>New Record</button>
+        </div>
+      </div>
+      <div class="kpi-grid">
+        <div class="kpi "><div class="kpi-label"><i class="fa-solid fa-boxes-stacked"></i>Items Registered</div><div class="kpi-value">3,214</div><div class="kpi-delta ">All categories</div></div>
+        <div class="kpi k-green"><div class="kpi-label"><i class="fa-solid fa-arrow-right-arrow-left"></i>Issued</div><div class="kpi-value">2,786</div><div class="kpi-delta up">87% utilisation</div></div>
+        <div class="kpi k-orange"><div class="kpi-label"><i class="fa-solid fa-hourglass-half"></i>Outstanding Returns</div><div class="kpi-value">64</div><div class="kpi-delta warn">Follow-up</div></div>
+        <div class="kpi k-red"><div class="kpi-label"><i class="fa-solid fa-bandaged"></i>Lost / Damaged (MTD)</div><div class="kpi-value">9</div><div class="kpi-delta down">Replacements logged</div></div>
+      </div>
+      <div class="filters"><select><option>All Categories</option></select><input type="text" placeholder="Serial number…"><button class="btn-xs primary">Apply</button></div>
+      <div class="panel mb-24">
+        <div class="panel-head"><h3><i class="fa-solid fa-boxes-stacked"></i>Equipment &amp; Asset Management Register</h3><a class="panel-link" href="../modules/reports.html"><i class="fa-solid fa-download"></i> Export Excel</a></div>
+        <div class="table-wrap"><table class="tbl">
+          <thead><tr><th>Item</th><th>Serial</th><th>Assigned To</th><th>Issued</th><th>Condition</th><th>Return Due</th><th>Action</th></tr></thead>
+          <tbody>
+            <tr><td>Two-Way Radio</td><td>RD-0042</td><td>G-8012 — Apex Towers</td><td>02 Nov 2026</td><td><span class="badge bg-green">Good</span></td><td>On shift end</td><td>Return</td></tr>
+            <tr><td>Uniform Set (M)</td><td>UN-1188</td><td>G-8013 — Westlands Depot</td><td>28 Oct 2026</td><td><span class="badge bg-green">New</span></td><td>—</td><td>View</td></tr>
+            <tr><td>Flashlight LED</td><td>FL-0210</td><td>G-8031 — Valley School</td><td>20 Oct 2026</td><td><span class="badge bg-orange">Worn</span></td><td>30 Nov 2026</td><td>Replace</td></tr>
+            <tr><td>Patrol Vehicle</td><td>KBX 442J</td><td>Mobile Team 2</td><td>—</td><td><span class="badge bg-orange">Service Due</span></td><td>14 Nov 2026</td><td>Book Service</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+      <div class="panel">
+        <div class="panel-head"><h3><i class="fa-solid fa-clock-rotate-left"></i>Recent Activity</h3><a class="panel-link" href="../modules/reports.html">View all <i class="fa-solid fa-arrow-right"></i></a></div>
+        <div class="panel-body">
+          <ul class="feed">
+            <li><span class="fdot fd-green"></span><div>Latest assets records synchronised successfully.<time>Today, 09:00</time></div></li>
+            <li><span class="fdot fd-blue"></span><div>Report exported to PDF by operations.<time>Today, 08:15</time></div></li>
+            <li><span class="fdot fd-orange"></span><div>Reminder notifications queued for stakeholders.<time>Yesterday</time></div></li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+</body>
+</html>

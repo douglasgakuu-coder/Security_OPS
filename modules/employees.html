@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Employees Module — NOVAGUARD</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="../dashboards/assets/css/dashboard.css">
+<link rel="stylesheet" href="../dashboards/assets/css/responsive.css">
+</head>
+<body>
+<div class="app">
+  <input type="checkbox" id="navtoggle" class="nav-checkbox">
+  <aside class="sidebar">
+    <div class="side-brand"><span class="brand-mark"><i class="fa-solid fa-shield-halved"></i></span>NOVAGUARD</div>
+    <nav class="side-nav">
+      <div class="side-group">Modules</div>
+      <a class="side-link" href="../dashboards/admin/admin.html"><i class="fa-solid fa-table-columns"></i>Dashboards</a>
+      <a class="side-link active" href="employees.html"><i class="fa-solid fa-users"></i>Employees</a>
+      <a class="side-link" href="clients.html"><i class="fa-solid fa-building"></i>Clients</a>
+      <a class="side-link" href="contracts.html"><i class="fa-solid fa-file-contract"></i>Contracts</a>
+      <a class="side-link" href="sites.html"><i class="fa-solid fa-map-location-dot"></i>Sites &amp; Posts</a>
+      <a class="side-link" href="deployment.html"><i class="fa-solid fa-calendar-days"></i>Deployment</a>
+      <a class="side-link" href="attendance.html"><i class="fa-solid fa-clock"></i>Attendance</a>
+      <a class="side-link" href="patrols.html"><i class="fa-solid fa-shoe-prints"></i>Patrols</a>
+      <a class="side-link" href="incidents.html"><i class="fa-solid fa-bullhorn"></i>Incidents</a>
+      <a class="side-link" href="handovers.html"><i class="fa-solid fa-right-left"></i>Handovers</a>
+      <a class="side-link" href="relief.html"><i class="fa-solid fa-rotate"></i>Relief</a>
+      <a class="side-link" href="payrolls.html"><i class="fa-solid fa-money-check-dollar"></i>Payroll</a>
+      <a class="side-link" href="finance.html"><i class="fa-solid fa-sack-dollar"></i>Finance</a>
+      <a class="side-link" href="assets.html"><i class="fa-solid fa-boxes-stacked"></i>Assets</a>
+      <a class="side-link" href="compliance.html"><i class="fa-solid fa-certificate"></i>Compliance</a>
+      <a class="side-link" href="reports.html"><i class="fa-solid fa-chart-line"></i>Reports</a>
+      <a class="side-link" href="jobs.html"><i class="fa-solid fa-bullhorn"></i>Jobs &amp; Notices</a>
+    </nav>
+    <div class="side-foot"><a href="../webpages/login.html"><i class="fa-solid fa-right-from-bracket"></i> Sign out</a></div>
+  </aside>
+  <div class="main-area">
+    <header class="topbar">
+      <label for="navtoggle" class="icon-btn" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></label>
+      <div class="crumb">Modules / <b>Employees</b></div>
+      <div class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Search employees…"></div>
+      <div class="top-actions">
+        <div class="icon-btn"><i class="fa-solid fa-bell"></i><span class="dot">2</span></div>
+        <div class="avatar">NG</div>
+      </div>
+    </header>
+    <main class="content">
+      <div class="page-title-row">
+        <div>
+          <h1><i class="fa-solid fa-users pg-ico"></i> Employee &amp; Guard Management</h1>
+          <div class="crumbs">Profiles · Documents · Training · Status · History</div>
+        </div>
+        <div class="page-actions">
+          <button class="btn-xs"><i class="fa-solid fa-download"></i>Export</button>
+          <button class="btn-xs primary"><i class="fa-solid fa-plus"></i>New Record</button>
+        </div>
+      </div>
+      <div class="kpi-grid">
+        <div class="kpi "><div class="kpi-label"><i class="fa-solid fa-users"></i>Active Employees</div><div class="kpi-value">1,450</div><div class="kpi-delta up">▲ 12 new this month</div></div>
+        <div class="kpi k-blue"><div class="kpi-label"><i class="fa-solid fa-umbrella-beach"></i>On Leave</div><div class="kpi-value">38</div><div class="kpi-delta ">Approved</div></div>
+        <div class="kpi k-orange"><div class="kpi-label"><i class="fa-solid fa-user-clock"></i>Suspended</div><div class="kpi-value">6</div><div class="kpi-delta warn">Under review</div></div>
+        <div class="kpi k-red"><div class="kpi-label"><i class="fa-solid fa-file-contract"></i>Expiring Contracts</div><div class="kpi-value">17</div><div class="kpi-delta down">Within 60 days</div></div>
+      </div>
+      <div class="filters"><select><option>All Statuses</option></select><select><option>All Branches</option></select><input type="text" placeholder="Employee number or name…"><button class="btn-xs primary">Apply</button></div>
+      <div class="panel mb-24">
+        <div class="panel-head"><h3><i class="fa-solid fa-users"></i>Employee &amp; Guard Management Register</h3><a class="panel-link" href="../modules/reports.html"><i class="fa-solid fa-download"></i> Export Excel</a></div>
+        <div class="table-wrap"><table class="tbl">
+          <thead><tr><th>Emp No.</th><th>Full Name</th><th>Role</th><th>Branch</th><th>Status</th><th>Contract Ends</th><th>Actions</th></tr></thead>
+          <tbody>
+            <tr><td>G-8012</td><td>James Mwangi</td><td>Guard</td><td>Nairobi HQ</td><td><span class="badge bg-green">Active</span></td><td>18 Dec 2026</td><td>Profile · Edit</td></tr>
+            <tr><td>G-8013</td><td>Alice Auma</td><td>Guard</td><td>Nairobi HQ</td><td><span class="badge bg-green">Active</span></td><td>31 Mar 2027</td><td>Profile · Edit</td></tr>
+            <tr><td>G-8020</td><td>Peter Koech</td><td>Supervisor</td><td>Nakuru</td><td><span class="badge bg-green">Active</span></td><td>31 Jan 2027</td><td>Profile · Edit</td></tr>
+            <tr><td>G-8044</td><td>Faith Chebet</td><td>Guard</td><td>Kisumu</td><td><span class="badge bg-blue">On Leave</span></td><td>30 Apr 2027</td><td>Profile · Edit</td></tr>
+            <tr><td>G-8055</td><td>Mercy Kilonzo</td><td>Guard</td><td>Mombasa</td><td><span class="badge bg-orange">Suspended</span></td><td>28 Feb 2027</td><td>Profile · Edit</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+      <div class="panel">
+        <div class="panel-head"><h3><i class="fa-solid fa-clock-rotate-left"></i>Recent Activity</h3><a class="panel-link" href="../modules/reports.html">View all <i class="fa-solid fa-arrow-right"></i></a></div>
+        <div class="panel-body">
+          <ul class="feed">
+            <li><span class="fdot fd-green"></span><div>Latest employees records synchronised successfully.<time>Today, 09:00</time></div></li>
+            <li><span class="fdot fd-blue"></span><div>Report exported to PDF by operations.<time>Today, 08:15</time></div></li>
+            <li><span class="fdot fd-orange"></span><div>Reminder notifications queued for stakeholders.<time>Yesterday</time></div></li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+</body>
+</html>

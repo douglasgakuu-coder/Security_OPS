@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Operations Command Dashboard — NOVAGUARD</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="../assets/css/dashboard.css">
+<link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+<body>
+<div class="app">
+  <input type="checkbox" id="navtoggle" class="nav-checkbox">
+  <aside class="sidebar">
+    <div class="side-brand"><span class="brand-mark"><i class="fa-solid fa-shield-halved"></i></span>NOVAGUARD</div>
+    <nav class="side-nav">
+      <div class="side-group">Operations</div>
+      <a class="side-link active" href="operations.html"><i class="fa-solid fa-table-columns"></i>Dashboard</a>
+      <a class="side-link" href="../modules/deployment.html"><i class="fa-solid fa-calendar-days"></i>Rosters &amp; Deployment</a>
+      <a class="side-link" href="../modules/relief.html"><i class="fa-solid fa-rotate"></i>Relief Management</a>
+      <a class="side-link" href="../modules/sites.html"><i class="fa-solid fa-map-location-dot"></i>Sites &amp; Posts</a>
+      <a class="side-link" href="../modules/attendance.html"><i class="fa-solid fa-clock"></i>Attendance</a>
+      <div class="side-group">Field</div>
+      <a class="side-link" href="../modules/patrols.html"><i class="fa-solid fa-shoe-prints"></i>Patrols</a>
+      <a class="side-link" href="../modules/handovers.html"><i class="fa-solid fa-right-left"></i>Handovers</a>
+      <a class="side-link" href="../modules/incidents.html"><i class="fa-solid fa-bullhorn"></i>Incidents</a>
+      <div class="side-group">Compliance</div>
+      <a class="side-link" href="../modules/compliance.html"><i class="fa-solid fa-certificate"></i>PSRA Tracker</a>
+      <a class="side-link" href="../modules/reports.html"><i class="fa-solid fa-chart-line"></i>Reports</a>
+    </nav>
+    <div class="side-foot"><a href="../../webpages/login.html"><i class="fa-solid fa-right-from-bracket"></i> Sign out</a></div>
+  </aside>
+  <div class="main-area">
+    <header class="topbar">
+      <label for="navtoggle" class="icon-btn" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></label>
+      <div class="crumb">Operations / <b>Dashboard</b></div>
+      <div class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Global search — guards, sites, records…"></div>
+      <div class="top-actions">
+        <div class="icon-btn"><i class="fa-solid fa-bell"></i><span class="dot">5</span></div>
+        <div class="avatar">OM</div>
+      </div>
+    </header>
+    <main class="content">
+      <div class="page-title-row">
+        <div>
+          <h1>Operations Command Dashboard</h1>
+          <div class="crumbs">Operations Command Dashboard</div>
+        </div>
+        <div class="page-actions">
+          <button class="btn-xs"><i class="fa-solid fa-download"></i>Export</button>
+          <button class="btn-xs primary"><i class="fa-solid fa-plus"></i>New Record</button>
+        </div>
+      </div>
+      <div class="kpi-grid">
+        <div class="kpi k-green"><div class="kpi-label"><i class="fa-solid fa-user-check"></i>Guards Deployed</div><div class="kpi-value">1,268</div><div class="kpi-delta up">▲ Live now</div></div>
+        <div class="kpi "><div class="kpi-label"><i class="fa-solid fa-user-clock"></i>Available / Standby</div><div class="kpi-value">142</div><div class="kpi-delta ">Eligible relief pool</div></div>
+        <div class="kpi k-red"><div class="kpi-label"><i class="fa-solid fa-user-slash"></i>Absent Guards</div><div class="kpi-value">12</div><div class="kpi-delta down">Supervisor alerted</div></div>
+        <div class="kpi k-orange"><div class="kpi-label"><i class="fa-solid fa-map-location-dot"></i>Understaffed Sites</div><div class="kpi-value">6</div><div class="kpi-delta warn">Below contract</div></div>
+        <div class="kpi k-red"><div class="kpi-label"><i class="fa-solid fa-door-open"></i>Unmanned Posts</div><div class="kpi-value">3</div><div class="kpi-delta down">Relief requested</div></div>
+        <div class="kpi k-gold"><div class="kpi-label"><i class="fa-solid fa-rotate"></i>Pending Relief Requests</div><div class="kpi-value">9</div><div class="kpi-delta warn">2 escalated</div></div>
+        <div class="kpi k-orange"><div class="kpi-label"><i class="fa-solid fa-bullhorn"></i>Active Incidents</div><div class="kpi-value">7</div><div class="kpi-delta warn">2 critical</div></div>
+        <div class="kpi "><div class="kpi-label"><i class="fa-solid fa-right-left"></i>Incomplete Handovers</div><div class="kpi-value">4</div><div class="kpi-delta ">Supervisor review</div></div>
+      </div>
+      <div class="panel mb-24">
+        <div class="panel-head"><h3><i class="fa-solid fa-bolt"></i>Quick Actions</h3></div>
+        <div class="panel-body qa-grid">
+          <div class="qa"><i class="fa-solid fa-plus"></i><span>Create Deployment</span></div>
+          <div class="qa"><i class="fa-solid fa-user-plus"></i><span>Assign Guard</span></div>
+          <div class="qa"><i class="fa-solid fa-calendar-plus"></i><span>Create Shift</span></div>
+          <div class="qa"><i class="fa-solid fa-rotate"></i><span>Request Relief</span></div>
+          <div class="qa"><i class="fa-solid fa-triangle-exclamation"></i><span>View Shortages</span></div>
+        </div>
+      </div>
+      <div class="panel mb-24">
+        <div class="panel-head"><h3><i class="fa-solid fa-calendar-days"></i>Deployment Roster &amp; Conflict Check</h3><div class="filters"><select><option>All Sites</option></select><select><option>All Shifts</option></select><input type="date" value="2026-11-10"></div><a class="panel-link" href="../modules/reports.html"><i class="fa-solid fa-download"></i> Export</a></div>
+        <div class="table-wrap"><table class="tbl">
+          <thead><tr><th>Site</th><th>Shift</th><th>Assigned Guard</th><th>Status</th><th>Conflict / Rest-Hours</th></tr></thead>
+          <tbody>
+            <tr><td>Apex Towers</td><td>Night (12h)</td><td>James Mwangi</td><td><span class="badge bg-green">Confirmed</span></td><td><span class="badge bg-green">Rest OK</span></td></tr>
+            <tr><td>Valley School</td><td>Day (12h)</td><td><b>UNASSIGNED</b></td><td><span class="badge bg-red">Vacant Post</span></td><td><span class="badge bg-red">Needs relief</span></td></tr>
+            <tr><td>Westlands Depot</td><td>Day (12h)</td><td>Alice Auma</td><td><span class="badge bg-green">Confirmed</span></td><td><span class="badge bg-green">Rest OK</span></td></tr>
+            <tr><td>Riverside Gardens</td><td>Night (12h)</td><td>David Njoroge</td><td><span class="badge bg-orange">Pending</span></td><td><span class="badge bg-orange">Check rest hours</span></td></tr>
+          </tbody>
+        </table></div>
+      </div>
+<div class="split-grid">
+        <div class="panel">
+          <div class="panel-head"><h3><i class="fa-solid fa-rotate"></i>Relief Management Queue</h3><a class="panel-link" href="../modules/reports.html">Open queue <i class="fa-solid fa-arrow-right"></i></a></div>
+          <div class="table-wrap"><table class="tbl">
+            <thead><tr><th>Request</th><th>Vacant Post</th><th>Recommended Relief</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>RR-2411</td><td>Valley School — Gate</td><td>S. Kirui (8 km)</td><td><span class="badge bg-orange">Dispatched</span></td></tr>
+              <tr><td>RR-2412</td><td>Site Beta — North Post</td><td>— awaiting acceptance</td><td><span class="badge bg-red">Escalated</span></td></tr>
+              <tr><td>RR-2413</td><td>Westlands Depot — Night</td><td>M. Otieno (eligible)</td><td><span class="badge bg-blue">Requested</span></td></tr>
+            </tbody>
+          </table></div>
+        </div>
+        <div class="panel">
+          <div class="panel-head"><h3><i class="fa-solid fa-certificate"></i>PSRA Compliance Monitor</h3></div>
+          <div class="panel-body">
+            <div class="emergency-banner"><span><i class="fa-solid fa-triangle-exclamation"></i> Guard G-8012 Guard Force Number expires in 14 days</span><button class="btn-xs primary"><i class="fa-solid fa-arrows-rotate"></i>Renew Record</button></div>
+            <div class="prog-row"><div class="prog-meta"><b>Guards with valid GFN</b><span>1,394 / 1,450</span></div><div class="prog-track"><div class="prog-fill pf-green w-96"></div></div></div>
+            <div class="prog-row"><div class="prog-meta"><b>Training certificates current</b><span>88%</span></div><div class="prog-track"><div class="prog-fill pf-gold w-88"></div></div></div>
+            <div class="prog-row"><div class="prog-meta"><b>Vetting records complete</b><span>92%</span></div><div class="prog-track"><div class="prog-fill pf-blue w-92"></div></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-head"><h3><i class="fa-solid fa-clock-rotate-left"></i>Recent Activity</h3><a class="panel-link" href="../modules/reports.html">View all <i class="fa-solid fa-arrow-right"></i></a></div>
+        <div class="panel-body">
+          <ul class="feed">
+            <li><span class="fdot fd-red"></span><div>Vacancy detected at Valley School — supervisor alert sent.<time>Today, 13:58</time></div></li>
+            <li><span class="fdot fd-green"></span><div>Relief guard S. Kirui acknowledged dispatch to Valley School.<time>Today, 13:41</time></div></li>
+            <li><span class="fdot fd-orange"></span><div>Deployment change notification sent to 3 guards.<time>Today, 12:05</time></div></li>
+            <li><span class="fdot fd-blue"></span><div>Handover completed at Apex Towers — no discrepancies.<time>Today, 07:02</time></div></li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+</body>
+</html>

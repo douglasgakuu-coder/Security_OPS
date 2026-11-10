@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Regulatory Compliance Dashboard — NOVAGUARD</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="../assets/css/dashboard.css">
+<link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+<body>
+<div class="app">
+  <input type="checkbox" id="navtoggle" class="nav-checkbox">
+  <aside class="sidebar">
+    <div class="side-brand"><span class="brand-mark"><i class="fa-solid fa-shield-halved"></i></span>NOVAGUARD</div>
+    <nav class="side-nav">
+      <div class="side-group">Compliance</div>
+      <a class="side-link active" href="compliance.html"><i class="fa-solid fa-table-columns"></i>Dashboard</a>
+      <a class="side-link" href="../modules/compliance.html"><i class="fa-solid fa-building-columns"></i>Company Registration</a>
+      <a class="side-link" href="../modules/compliance.html"><i class="fa-solid fa-certificate"></i>PSRA Licence Records</a>
+      <a class="side-link" href="../modules/compliance.html"><i class="fa-solid fa-id-card"></i>Guard Force Numbers</a>
+      <div class="side-group">Verification</div>
+      <a class="side-link" href="../modules/compliance.html"><i class="fa-solid fa-graduation-cap"></i>Training Certificates</a>
+      <a class="side-link" href="../modules/compliance.html"><i class="fa-solid fa-hourglass-end"></i>Document Expiry</a>
+      <a class="side-link" href="../modules/compliance.html"><i class="fa-solid fa-clipboard-check"></i>Compliance Verification</a>
+      <a class="side-link" href="../modules/compliance.html"><i class="fa-solid fa-list-check"></i>Regulatory Checklists</a>
+      <a class="side-link" href="../modules/compliance.html"><i class="fa-solid fa-screwdriver-wrench"></i>Corrective Actions</a>
+      <a class="side-link" href="../modules/compliance.html"><i class="fa-solid fa-folder-open"></i>Inspection Evidence</a>
+    </nav>
+    <div class="side-foot"><a href="../../webpages/login.html"><i class="fa-solid fa-right-from-bracket"></i> Sign out</a></div>
+  </aside>
+  <div class="main-area">
+    <header class="topbar">
+      <label for="navtoggle" class="icon-btn" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></label>
+      <div class="crumb">Compliance / <b>Dashboard</b></div>
+      <div class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Global search — guards, sites, records…"></div>
+      <div class="top-actions">
+        <div class="icon-btn"><i class="fa-solid fa-bell"></i><span class="dot">3</span></div>
+        <div class="avatar">CL</div>
+      </div>
+    </header>
+    <main class="content">
+      <div class="page-title-row">
+        <div>
+          <h1>Regulatory Compliance Dashboard</h1>
+          <div class="crumbs">Regulatory Compliance Dashboard</div>
+        </div>
+        <div class="page-actions">
+          <button class="btn-xs"><i class="fa-solid fa-download"></i>Export</button>
+          <button class="btn-xs primary"><i class="fa-solid fa-plus"></i>New Record</button>
+        </div>
+      </div>
+      <div class="kpi-grid">
+        <div class="kpi k-green"><div class="kpi-label"><i class="fa-solid fa-certificate"></i>Company PSRA Licence</div><div class="kpi-value">Valid</div><div class="kpi-delta up">Renews 30 Jun 2027</div></div>
+        <div class="kpi k-green"><div class="kpi-label"><i class="fa-solid fa-id-card"></i>Guards with Valid GFN</div><div class="kpi-value">1,394</div><div class="kpi-delta up">96% of workforce</div></div>
+        <div class="kpi k-orange"><div class="kpi-label"><i class="fa-solid fa-file-circle-exclamation"></i>Missing Documents</div><div class="kpi-value">23</div><div class="kpi-delta warn">Pending verification</div></div>
+        <div class="kpi k-red"><div class="kpi-label"><i class="fa-solid fa-ban"></i>Verified Non-Compliant</div><div class="kpi-value">4</div><div class="kpi-delta down">Blocked from deployment</div></div>
+        <div class="kpi k-gold"><div class="kpi-label"><i class="fa-solid fa-graduation-cap"></i>Certificates Expiring (60d)</div><div class="kpi-value">31</div><div class="kpi-delta warn">Refresher due</div></div>
+        <div class="kpi "><div class="kpi-label"><i class="fa-solid fa-screwdriver-wrench"></i>Open Corrective Actions</div><div class="kpi-value">7</div><div class="kpi-delta ">2 overdue</div></div>
+      </div>
+      <div class="panel mb-24">
+        <div class="panel-head"><h3><i class="fa-solid fa-hourglass-end"></i>Expiry Watchlist</h3><div class="filters"><select><option>All Documents</option></select><select><option>All Status</option></select></div><a class="panel-link" href="../modules/reports.html"><i class="fa-solid fa-download"></i> Export</a></div>
+        <div class="table-wrap"><table class="tbl">
+          <thead><tr><th>Guard / Entity</th><th>Document</th><th>Verified By</th><th>Expiry</th><th>Deployable</th><th>Action</th></tr></thead>
+          <tbody>
+            <tr><td>P. Koech (G-8012)</td><td>Guard Force Number</td><td>PSRA portal · 02/03/2026</td><td>24 Nov 2026</td><td><span class="badge bg-orange">Yes — renew</span></td><td><button class="btn-xs primary"><i class="fa-solid fa-arrows-rotate"></i>Renew</button></td></tr>
+            <tr><td>M. Kilonzo (G-8055)</td><td>Vetting Record</td><td>HR · 10/09/2026</td><td>Missing</td><td><span class="badge bg-orange">Pending verification</span></td><td><button class="btn-xs"><i class="fa-solid fa-upload"></i>Upload</button></td></tr>
+            <tr><td>B. Otieno (G-8099)</td><td>PSRA Registration</td><td>—</td><td>Expired 30/09/2026</td><td><span class="badge bg-red">Blocked</span></td><td><button class="btn-xs danger"><i class="fa-solid fa-flag"></i>Flag</button></td></tr>
+            <tr><td>ABC LTD</td><td>PSRA Company Licence</td><td>Compliance Officer</td><td>30 Jun 2027</td><td><span class="badge bg-green">Valid</span></td><td><button class="btn-xs"><i class="fa-solid fa-eye"></i>View</button></td></tr>
+          </tbody>
+        </table></div>
+      </div>
+<div class="panel-grid">
+        <div class="panel">
+          <div class="panel-head"><h3><i class="fa-solid fa-list-check"></i>Compliance Checklist Score</h3></div>
+          <div class="panel-body">
+            <div class="prog-row"><div class="prog-meta"><b>Licensing &amp; registration</b><span>98%</span></div><div class="prog-track"><div class="prog-fill pf-green w-98"></div></div></div>
+            <div class="prog-row"><div class="prog-meta"><b>Training &amp; accreditation</b><span>88%</span></div><div class="prog-track"><div class="prog-fill pf-gold w-88"></div></div></div>
+            <div class="prog-row"><div class="prog-meta"><b>Statutory payroll contributions</b><span>100%</span></div><div class="prog-track"><div class="prog-fill pf-green w-100"></div></div></div>
+            <div class="prog-row"><div class="prog-meta"><b>Data Protection Act alignment</b><span>94%</span></div><div class="prog-track"><div class="prog-fill pf-blue w-94"></div></div></div>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel-head"><h3><i class="fa-solid fa-screwdriver-wrench"></i>Corrective Actions Register</h3></div>
+          <div class="table-wrap"><table class="tbl">
+            <thead><tr><th>Ref</th><th>Finding</th><th>Owner</th><th>Due</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>CA-014</td><td>Missing vetting records — 23 guards</td><td>HR</td><td>30 Nov</td><td><span class="badge bg-orange">In Progress</span></td></tr>
+              <tr><td>CA-016</td><td>Refresher training backlog — 31 guards</td><td>Training</td><td>15 Dec</td><td><span class="badge bg-blue">Scheduled</span></td></tr>
+              <tr><td>CA-011</td><td>Uniform spec gaps — Nakuru branch</td><td>Ops</td><td>05 Nov</td><td><span class="badge bg-red">Overdue</span></td></tr>
+            </tbody>
+          </table></div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+</body>
+</html>

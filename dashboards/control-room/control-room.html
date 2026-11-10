@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Control Room Desk — NOVAGUARD</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="../assets/css/dashboard.css">
+<link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+<body>
+<div class="app">
+  <input type="checkbox" id="navtoggle" class="nav-checkbox">
+  <aside class="sidebar">
+    <div class="side-brand"><span class="brand-mark"><i class="fa-solid fa-shield-halved"></i></span>NOVAGUARD</div>
+    <nav class="side-nav">
+      <div class="side-group">Control Room</div>
+      <a class="side-link active" href="control-room.html"><i class="fa-solid fa-table-columns"></i>Live Desk</a>
+      <a class="side-link" href="../modules/reports.html"><i class="fa-solid fa-book"></i>Occurrence Book</a>
+      <a class="side-link" href="../modules/incidents.html"><i class="fa-solid fa-bullhorn"></i>Incident Queue</a>
+      <a class="side-link" href="../modules/reports.html"><i class="fa-solid fa-tower-broadcast"></i>Dispatch Records</a>
+      <div class="side-group">Monitoring</div>
+      <a class="side-link" href="../modules/assets.html"><i class="fa-solid fa-tower-cell"></i>Welfare &amp; Radio Checks</a>
+      <a class="side-link" href="../modules/reports.html"><i class="fa-solid fa-video"></i>CCTV / Alarms</a>
+      <a class="side-link" href="../modules/reports.html"><i class="fa-solid fa-stopwatch"></i>Response Timelines</a>
+      <div class="side-group">Shift</div>
+      <a class="side-link" href="../modules/handovers.html"><i class="fa-solid fa-right-left"></i>Operator Handover</a>
+    </nav>
+    <div class="side-foot"><a href="../../webpages/login.html"><i class="fa-solid fa-right-from-bracket"></i> Sign out</a></div>
+  </aside>
+  <div class="main-area">
+    <header class="topbar">
+      <label for="navtoggle" class="icon-btn" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></label>
+      <div class="crumb">Control Room / <b>Live Desk</b></div>
+      <div class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Global search — guards, sites, records…"></div>
+      <div class="top-actions">
+        <div class="icon-btn"><i class="fa-solid fa-bell"></i><span class="dot">1</span></div>
+        <div class="avatar">CO</div>
+      </div>
+    </header>
+    <main class="content">
+      <div class="page-title-row">
+        <div>
+          <h1>Control Room Desk</h1>
+          <div class="crumbs">Control Room Desk</div>
+        </div>
+        <div class="page-actions">
+          <button class="btn-xs"><i class="fa-solid fa-download"></i>Export</button>
+          <button class="btn-xs primary"><i class="fa-solid fa-plus"></i>New Record</button>
+        </div>
+      </div>
+      <div class="kpi-grid">
+        <div class="kpi k-green"><div class="kpi-label"><i class="fa-solid fa-map-location-dot"></i>Active Sites</div><div class="kpi-value">85</div><div class="kpi-delta up">78 fully staffed</div></div>
+        <div class="kpi "><div class="kpi-label"><i class="fa-solid fa-user-shield"></i>Current Staffing</div><div class="kpi-value">1,268</div><div class="kpi-delta ">On duty now</div></div>
+        <div class="kpi k-red"><div class="kpi-label"><i class="fa-solid fa-door-open"></i>Unattended Posts</div><div class="kpi-value">3</div><div class="kpi-delta down">Immediate action</div></div>
+        <div class="kpi k-orange"><div class="kpi-label"><i class="fa-solid fa-clock"></i>Missed Check-ins</div><div class="kpi-value">5</div><div class="kpi-delta warn">Auto-escalated</div></div>
+        <div class="kpi k-orange"><div class="kpi-label"><i class="fa-solid fa-shoe-prints"></i>Missed Patrols</div><div class="kpi-value">2</div><div class="kpi-delta warn">Sites flagged</div></div>
+        <div class="kpi k-red"><div class="kpi-label"><i class="fa-solid fa-triangle-exclamation"></i>Critical Alerts</div><div class="kpi-value">1</div><div class="kpi-delta down">Intrusion — Site Beta</div></div>
+      </div>
+<div class="emergency-banner"><span><i class="fa-solid fa-tower-broadcast"></i> INTRUSION REPORTED — Site Beta (13:58). Supervisor dispatched; response in progress. Acknowledgment alone will not close this incident.</span><button class="btn-xs danger"><i class="fa-solid fa-check"></i>Acknowledge &amp; Dispatch</button></div>
+<div class="split-grid">
+        <div class="panel">
+          <div class="panel-head"><h3><i class="fa-solid fa-map-location-dot"></i>Live Site Map &amp; Deployments</h3><a class="panel-link" href="../modules/reports.html">Full map <i class="fa-solid fa-arrow-right"></i></a></div>
+          <div class="panel-body">
+            <div class="site-status"><span><i class="st-dot dot-g"></i><b>Site Alpha</b> — Apex Towers</span><span>Fully Staffed (4/4) · Patrol OK</span></div>
+            <div class="site-status"><span><i class="st-dot dot-r"></i><b>Site Beta</b> — Westlands Depot</span><span>UNSTAFFED (0/2) · Intrusion</span></div>
+            <div class="site-status"><span><i class="st-dot dot-g"></i><b>Site Gamma</b> — Valley School</span><span>Fully Staffed (3/3) · Patrol OK</span></div>
+            <div class="site-status"><span><i class="st-dot dot-o"></i><b>Site Delta</b> — Riverside Gardens</span><span>Partially Staffed (2/3)</span></div>
+            <div class="gps-note"><i class="fa-solid fa-location-crosshairs"></i> GPS: Guard #104 at Westlands · Guard #212 at Upper Hill · Guard #77 en route (relief)</div>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel-head"><h3><i class="fa-solid fa-book"></i>Real-Time Occurrence Log</h3></div>
+          <div class="panel-body">
+            <div class="log-row"><span class="log-time">14:20</span><span><span class="badge bg-green">OK</span> Radio check — Post 3 (Gate North), Site Alpha.</span></div>
+            <div class="log-row"><span class="log-time">14:15</span><span><span class="badge bg-orange">WARNING</span> Missed checkpoint — Apex Towers patrol route B.</span></div>
+            <div class="log-row"><span class="log-time">13:58</span><span><span class="badge bg-red">CRITICAL</span> Intrusion reported — Site Beta. Alarm triggered.</span></div>
+            <div class="log-row"><span class="log-time">13:52</span><span><span class="badge bg-orange">WARNING</span> Guard #88 has not clocked in — supervisor alerted.</span></div>
+            <div class="filters">
+              <b>Actions:</b>
+              <button class="btn-xs primary"><i class="fa-solid fa-rotate"></i>Dispatch Relief</button>
+              <button class="btn-xs danger"><i class="fa-solid fa-bell"></i>Alert Supervisor</button>
+              <button class="btn-xs"><i class="fa-solid fa-phone"></i>Call Site</button>
+              <button class="btn-xs"><i class="fa-solid fa-pen"></i>Log Entry</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel mb-24">
+        <div class="panel-head"><h3><i class="fa-solid fa-stopwatch"></i>Escalation &amp; Response Timeline — INC-2026-0417 (Site Beta Intrusion)</h3><a class="panel-link" href="../modules/reports.html"><i class="fa-solid fa-download"></i> Export</a></div>
+        <div class="table-wrap"><table class="tbl">
+          <thead><tr><th>Step</th><th>Action</th><th>Recorded</th><th>Elapsed</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>Alarm triggered — control room alerted</td><td>13:58:02</td><td>—</td><td><span class="badge bg-green">Done</span></td></tr>
+            <tr><td>2</td><td>Operator acknowledged &amp; verified (CCTV)</td><td>13:58:41</td><td>39s</td><td><span class="badge bg-green">Done</span></td></tr>
+            <tr><td>3</td><td>Supervisor dispatched to site</td><td>14:00:15</td><td>2m 13s</td><td><span class="badge bg-green">Done</span></td></tr>
+            <tr><td>4</td><td>Police liaison notified</td><td>14:02:30</td><td>4m 28s</td><td><span class="badge bg-green">Done</span></td></tr>
+            <tr><td>5</td><td>On-site intervention &amp; resolution</td><td>— pending —</td><td>—</td><td><span class="badge bg-orange">In Progress</span></td></tr>
+          </tbody>
+        </table></div>
+      </div>
+    </main>
+  </div>
+</div>
+</body>
+</html>

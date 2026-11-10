@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Finance Module — NOVAGUARD</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="../dashboards/assets/css/dashboard.css">
+<link rel="stylesheet" href="../dashboards/assets/css/responsive.css">
+</head>
+<body>
+<div class="app">
+  <input type="checkbox" id="navtoggle" class="nav-checkbox">
+  <aside class="sidebar">
+    <div class="side-brand"><span class="brand-mark"><i class="fa-solid fa-shield-halved"></i></span>NOVAGUARD</div>
+    <nav class="side-nav">
+      <div class="side-group">Modules</div>
+      <a class="side-link" href="../dashboards/admin/admin.html"><i class="fa-solid fa-table-columns"></i>Dashboards</a>
+      <a class="side-link" href="employees.html"><i class="fa-solid fa-users"></i>Employees</a>
+      <a class="side-link" href="clients.html"><i class="fa-solid fa-building"></i>Clients</a>
+      <a class="side-link" href="contracts.html"><i class="fa-solid fa-file-contract"></i>Contracts</a>
+      <a class="side-link" href="sites.html"><i class="fa-solid fa-map-location-dot"></i>Sites &amp; Posts</a>
+      <a class="side-link" href="deployment.html"><i class="fa-solid fa-calendar-days"></i>Deployment</a>
+      <a class="side-link" href="attendance.html"><i class="fa-solid fa-clock"></i>Attendance</a>
+      <a class="side-link" href="patrols.html"><i class="fa-solid fa-shoe-prints"></i>Patrols</a>
+      <a class="side-link" href="incidents.html"><i class="fa-solid fa-bullhorn"></i>Incidents</a>
+      <a class="side-link" href="handovers.html"><i class="fa-solid fa-right-left"></i>Handovers</a>
+      <a class="side-link" href="relief.html"><i class="fa-solid fa-rotate"></i>Relief</a>
+      <a class="side-link" href="payrolls.html"><i class="fa-solid fa-money-check-dollar"></i>Payroll</a>
+      <a class="side-link active" href="finance.html"><i class="fa-solid fa-sack-dollar"></i>Finance</a>
+      <a class="side-link" href="assets.html"><i class="fa-solid fa-boxes-stacked"></i>Assets</a>
+      <a class="side-link" href="compliance.html"><i class="fa-solid fa-certificate"></i>Compliance</a>
+      <a class="side-link" href="reports.html"><i class="fa-solid fa-chart-line"></i>Reports</a>
+      <a class="side-link" href="jobs.html"><i class="fa-solid fa-bullhorn"></i>Jobs &amp; Notices</a>
+    </nav>
+    <div class="side-foot"><a href="../webpages/login.html"><i class="fa-solid fa-right-from-bracket"></i> Sign out</a></div>
+  </aside>
+  <div class="main-area">
+    <header class="topbar">
+      <label for="navtoggle" class="icon-btn" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></label>
+      <div class="crumb">Modules / <b>Finance</b></div>
+      <div class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Search finance…"></div>
+      <div class="top-actions">
+        <div class="icon-btn"><i class="fa-solid fa-bell"></i><span class="dot">2</span></div>
+        <div class="avatar">NG</div>
+      </div>
+    </header>
+    <main class="content">
+      <div class="page-title-row">
+        <div>
+          <h1><i class="fa-solid fa-sack-dollar pg-ico"></i> Billing &amp; Finance</h1>
+          <div class="crumbs">Invoices · Payments · Statements · Aging</div>
+        </div>
+        <div class="page-actions">
+          <button class="btn-xs"><i class="fa-solid fa-download"></i>Export</button>
+          <button class="btn-xs primary"><i class="fa-solid fa-plus"></i>New Record</button>
+        </div>
+      </div>
+      <div class="kpi-grid">
+        <div class="kpi k-green"><div class="kpi-label"><i class="fa-solid fa-sack-dollar"></i>Revenue (MTD)</div><div class="kpi-value">KES 18.4M</div><div class="kpi-delta up">▲ 6.2% MoM</div></div>
+        <div class="kpi k-orange"><div class="kpi-label"><i class="fa-solid fa-hourglass-half"></i>Outstanding</div><div class="kpi-value">KES 3.8M</div><div class="kpi-delta warn">14 invoices</div></div>
+        <div class="kpi k-red"><div class="kpi-label"><i class="fa-solid fa-triangle-exclamation"></i>Overdue</div><div class="kpi-value">KES 1.2M</div><div class="kpi-delta down">3 &gt; 30 days</div></div>
+        <div class="kpi "><div class="kpi-label"><i class="fa-solid fa-file-invoice"></i>Invoices Issued</div><div class="kpi-value">42</div><div class="kpi-delta ">Recurring monthly</div></div>
+      </div>
+      <div class="filters"><select><option>All Clients</option></select><select><option>All Status</option></select><input type="month" value="2026-11"><button class="btn-xs primary">Apply</button></div>
+      <div class="panel mb-24">
+        <div class="panel-head"><h3><i class="fa-solid fa-sack-dollar"></i>Billing &amp; Finance Register</h3><a class="panel-link" href="../modules/reports.html"><i class="fa-solid fa-download"></i> Export Excel</a></div>
+        <div class="table-wrap"><table class="tbl">
+          <thead><tr><th>Invoice</th><th>Client</th><th>Period</th><th>Amount</th><th>Due</th><th>Status</th><th>Action</th></tr></thead>
+          <tbody>
+            <tr><td>INV-2026-1102</td><td>Apex Holdings Ltd</td><td>Nov 2026</td><td>KES 450,000</td><td>15/11/2026</td><td><span class="badge bg-orange">Pending</span></td><td>Remind</td></tr>
+            <tr><td>INV-2026-0987</td><td>Apex Holdings Ltd</td><td>Oct 2026</td><td>KES 450,000</td><td>15/10/2026</td><td><span class="badge bg-green">Paid</span></td><td>Receipt</td></tr>
+            <tr><td>INV-2026-1041</td><td>Riverside Gardens</td><td>Sep 2026</td><td>KES 310,000</td><td>30/09/2026</td><td><span class="badge bg-red">Overdue 41d</span></td><td>Escalate</td></tr>
+            <tr><td>INV-2026-1077</td><td>Westland Retail Park</td><td>Oct 2026</td><td>KES 198,000</td><td>31/10/2026</td><td><span class="badge bg-orange">Partial — 60%</span></td><td>Record Payment</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+      <div class="panel">
+        <div class="panel-head"><h3><i class="fa-solid fa-clock-rotate-left"></i>Recent Activity</h3><a class="panel-link" href="../modules/reports.html">View all <i class="fa-solid fa-arrow-right"></i></a></div>
+        <div class="panel-body">
+          <ul class="feed">
+            <li><span class="fdot fd-green"></span><div>Latest finance records synchronised successfully.<time>Today, 09:00</time></div></li>
+            <li><span class="fdot fd-blue"></span><div>Report exported to PDF by operations.<time>Today, 08:15</time></div></li>
+            <li><span class="fdot fd-orange"></span><div>Reminder notifications queued for stakeholders.<time>Yesterday</time></div></li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+</body>
+</html>
