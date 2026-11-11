@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="320" viewBox="0 0 900 320" role="img" aria-label="Pricing plans illustration">
+  <defs>
+    <linearGradient id="ph" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1e1b4b"/><stop offset="1" stop-color="#4f46e5"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="320" rx="20" fill="url(#ph)"/>
+  <circle cx="800" cy="50" r="120" fill="#a855f7" opacity=".3"/>
+  <circle cx="90" cy="280" r="100" fill="#10b981" opacity=".2"/>
+  <!-- three plan cards -->
+  <g>
+    <rect x="140" y="70" width="180" height="180" rx="16" fill="#ffffff" opacity=".12"/>
+    <rect x="360" y="50" width="180" height="220" rx="16" fill="#ffffff" opacity=".22" stroke="#34d399" stroke-width="3"/>
+    <rect x="580" y="70" width="180" height="180" rx="16" fill="#ffffff" opacity=".12"/>
+    <text x="230" y="120" text-anchor="middle" font-family="Sora, Arial, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Essential</text>
+    <text x="450" y="104" text-anchor="middle" font-family="Sora, Arial, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Professional</text>
+    <text x="670" y="120" text-anchor="middle" font-family="Sora, Arial, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Enterprise</text>
+    <g fill="#a5b4fc">
+      <rect x="180" y="140" width="100" height="8" rx="4"/><rect x="180" y="160" width="80" height="8" rx="4"/><rect x="180" y="180" width="110" height="8" rx="4"/>
+      <rect x="400" y="140" width="110" height="8" rx="4"/><rect x="400" y="160" width="90" height="8" rx="4"/><rect x="400" y="180" width="100" height="8" rx="4"/><rect x="400" y="200" width="80" height="8" rx="4"/>
+      <rect x="620" y="140" width="100" height="8" rx="4"/><rect x="620" y="160" width="90" height="8" rx="4"/><rect x="620" y="180" width="110" height="8" rx="4"/>
+    </g>
+    <circle cx="450" cy="248" r="16" fill="#34d399"/>
+    <path d="M442 248l6 6 12-13" stroke="#06281d" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

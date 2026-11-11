@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-label="Control room operations illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1e1b4b"/><stop offset=".6" stop-color="#3730a3"/><stop offset="1" stop-color="#4f46e5"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a5b4fc"/><stop offset="1" stop-color="#6366f1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="560" fill="url(#bg)"/>
+  <circle cx="1020" cy="80" r="180" fill="#a855f7" opacity=".25"/>
+  <circle cx="160" cy="480" r="150" fill="#10b981" opacity=".18"/>
+  <!-- control desk screens -->
+  <g>
+    <rect x="240" y="140" width="300" height="180" rx="14" fill="#0f0d2e" stroke="#a5b4fc" stroke-width="3"/>
+    <rect x="256" y="160" width="120" height="12" rx="6" fill="#10b981"/>
+    <rect x="256" y="184" width="220" height="8" rx="4" fill="#c7d2fe" opacity=".7"/>
+    <rect x="256" y="204" width="180" height="8" rx="4" fill="#c7d2fe" opacity=".5"/>
+    <polyline points="256,300 296,268 336,286 376,250 416,262 456,238 500,252" fill="none" stroke="#34d399" stroke-width="4" stroke-linecap="round"/>
+    <rect x="580" y="170" width="300" height="180" rx="14" fill="#0f0d2e" stroke="#c4b5fd" stroke-width="3"/>
+    <circle cx="640" cy="230" r="26" fill="none" stroke="#f43f5e" stroke-width="4"/>
+    <path d="M640 204v-18M640 256v18M614 230h-18M666 230h18" stroke="#f43f5e" stroke-width="4" stroke-linecap="round"/>
+    <rect x="700" y="196" width="140" height="10" rx="5" fill="#ddd6fe" opacity=".7"/>
+    <rect x="700" y="220" width="110" height="10" rx="5" fill="#ddd6fe" opacity=".5"/>
+    <rect x="700" y="244" width="130" height="10" rx="5" fill="#ddd6fe" opacity=".4"/>
+  </g>
+  <!-- guard silhouettes -->
+  <g fill="#0f0d2e">
+    <circle cx="470" cy="420" r="30"/>
+    <path d="M470 460c-40 0-70 26-70 62v38h140v-38c0-36-30-62-70-62z"/>
+    <circle cx="620" cy="410" r="26" opacity=".85"/>
+    <path d="M620 446c-34 0-60 22-60 54v60h120v-60c0-32-26-54-60-54z" opacity=".85"/>
+  </g>
+  <path d="M470 400l20 10v18c0 14-9 24-20 29-11-5-20-15-20-29v-18l20-10z" fill="#34d399" opacity=".9"/>
+  <text x="600" y="536" text-anchor="middle" font-family="Sora, Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#c7d2fe">Every guard. Every site. One control room.</text>
+</svg>
