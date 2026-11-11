@@ -1,124 +1,221 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Operations Command Dashboard — NOVAGUARD</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<link rel="stylesheet" href="../assets/css/dashboard.css">
-<link rel="stylesheet" href="../assets/css/responsive.css">
-</head>
-<body>
-<div class="app">
-  <input type="checkbox" id="navtoggle" class="nav-checkbox">
-  <aside class="sidebar">
-    <div class="side-brand"><span class="brand-mark"><i class="fa-solid fa-shield-halved"></i></span>NOVAGUARD</div>
-    <nav class="side-nav">
-      <div class="side-group">Operations</div>
-      <a class="side-link active" href="operations.html"><i class="fa-solid fa-table-columns"></i>Dashboard</a>
-      <a class="side-link" href="../modules/deployment.html"><i class="fa-solid fa-calendar-days"></i>Rosters &amp; Deployment</a>
-      <a class="side-link" href="../modules/relief.html"><i class="fa-solid fa-rotate"></i>Relief Management</a>
-      <a class="side-link" href="../modules/sites.html"><i class="fa-solid fa-map-location-dot"></i>Sites &amp; Posts</a>
-      <a class="side-link" href="../modules/attendance.html"><i class="fa-solid fa-clock"></i>Attendance</a>
-      <div class="side-group">Field</div>
-      <a class="side-link" href="../modules/patrols.html"><i class="fa-solid fa-shoe-prints"></i>Patrols</a>
-      <a class="side-link" href="../modules/handovers.html"><i class="fa-solid fa-right-left"></i>Handovers</a>
-      <a class="side-link" href="../modules/incidents.html"><i class="fa-solid fa-bullhorn"></i>Incidents</a>
-      <div class="side-group">Compliance</div>
-      <a class="side-link" href="../modules/compliance.html"><i class="fa-solid fa-certificate"></i>PSRA Tracker</a>
-      <a class="side-link" href="../modules/reports.html"><i class="fa-solid fa-chart-line"></i>Reports</a>
-    </nav>
-    <div class="side-foot"><a href="../../webpages/login.html"><i class="fa-solid fa-right-from-bracket"></i> Sign out</a></div>
-  </aside>
-  <div class="main-area">
-    <header class="topbar">
-      <label for="navtoggle" class="icon-btn" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></label>
-      <div class="crumb">Operations / <b>Dashboard</b></div>
-      <div class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Global search — guards, sites, records…"></div>
-      <div class="top-actions">
-        <div class="icon-btn"><i class="fa-solid fa-bell"></i><span class="dot">5</span></div>
-        <div class="avatar">OM</div>
-      </div>
-    </header>
-    <main class="content">
-      <div class="page-title-row">
-        <div>
-          <h1>Operations Command Dashboard</h1>
-          <div class="crumbs">Operations Command Dashboard</div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Deployment Overview — VIGILORA</title>
+    <link rel="stylesheet" href="../../css/vigilora.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <a class="brand" href="operations.html"
+          ><span class="mark">VIGI</span>LORA</a
+        >
+        <nav>
+          <div class="sb-group">Operations</div>
+          <a class="sb-item on" href="operations.html"
+            ><span class="ico-char">&#128462;</span
+            ><span class="txt">Deployment Overview</span></a
+          >
+          <a class="sb-item" href="site-coverage.html"
+            ><span class="ico-char">&#128506;</span
+            ><span class="txt">Site Coverage</span></a
+          >
+          <a class="sb-item" href="vacant-posts.html"
+            ><span class="ico-char">&#9873;</span
+            ><span class="txt">Vacant Posts</span><span class="pip"></span
+          ></a>
+          <div class="sb-group">Scheduling</div>
+          <a class="sb-item" href="shift-scheduling.html"
+            ><span class="ico-char">&#128197;</span
+            ><span class="txt">Shift Scheduling</span></a
+          >
+          <a class="sb-item" href="attendance-exceptions.html"
+            ><span class="ico-char">&#9200;</span
+            ><span class="txt">Attendance Exceptions</span
+            ><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="deployment-conflicts.html"
+            ><span class="ico-char">&#9878;</span
+            ><span class="txt">Deployment Conflicts</span></a
+          >
+          <a class="sb-item" href="relief-requests.html"
+            ><span class="ico-char">&#128260;</span
+            ><span class="txt">Relief Guard Requests</span></a
+          >
+          <div class="sb-group">Field</div>
+          <a class="sb-item" href="incidents.html"
+            ><span class="ico-char">&#128680;</span
+            ><span class="txt">Active Incidents</span><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="handovers.html"
+            ><span class="ico-char">&#128260;</span
+            ><span class="txt">Operational Handovers</span></a
+          >
+          <a class="sb-item" href="supervisor-assignments.html"
+            ><span class="ico-char">&#129492;</span
+            ><span class="txt">Supervisor Assignments</span></a
+          >
+        </nav>
+        <div class="sb-foot">
+          Operations Manager<br />VIGILORA v5 — static prototype
         </div>
-        <div class="page-actions">
-          <button class="btn-xs"><i class="fa-solid fa-download"></i>Export</button>
-          <button class="btn-xs primary"><i class="fa-solid fa-plus"></i>New Record</button>
-        </div>
-      </div>
-      <div class="kpi-grid">
-        <div class="kpi k-green"><div class="kpi-label"><i class="fa-solid fa-user-check"></i>Guards Deployed</div><div class="kpi-value">1,268</div><div class="kpi-delta up">▲ Live now</div></div>
-        <div class="kpi "><div class="kpi-label"><i class="fa-solid fa-user-clock"></i>Available / Standby</div><div class="kpi-value">142</div><div class="kpi-delta ">Eligible relief pool</div></div>
-        <div class="kpi k-red"><div class="kpi-label"><i class="fa-solid fa-user-slash"></i>Absent Guards</div><div class="kpi-value">12</div><div class="kpi-delta down">Supervisor alerted</div></div>
-        <div class="kpi k-orange"><div class="kpi-label"><i class="fa-solid fa-map-location-dot"></i>Understaffed Sites</div><div class="kpi-value">6</div><div class="kpi-delta warn">Below contract</div></div>
-        <div class="kpi k-red"><div class="kpi-label"><i class="fa-solid fa-door-open"></i>Unmanned Posts</div><div class="kpi-value">3</div><div class="kpi-delta down">Relief requested</div></div>
-        <div class="kpi k-gold"><div class="kpi-label"><i class="fa-solid fa-rotate"></i>Pending Relief Requests</div><div class="kpi-value">9</div><div class="kpi-delta warn">2 escalated</div></div>
-        <div class="kpi k-orange"><div class="kpi-label"><i class="fa-solid fa-bullhorn"></i>Active Incidents</div><div class="kpi-value">7</div><div class="kpi-delta warn">2 critical</div></div>
-        <div class="kpi "><div class="kpi-label"><i class="fa-solid fa-right-left"></i>Incomplete Handovers</div><div class="kpi-value">4</div><div class="kpi-delta ">Supervisor review</div></div>
-      </div>
-      <div class="panel mb-24">
-        <div class="panel-head"><h3><i class="fa-solid fa-bolt"></i>Quick Actions</h3></div>
-        <div class="panel-body qa-grid">
-          <div class="qa"><i class="fa-solid fa-plus"></i><span>Create Deployment</span></div>
-          <div class="qa"><i class="fa-solid fa-user-plus"></i><span>Assign Guard</span></div>
-          <div class="qa"><i class="fa-solid fa-calendar-plus"></i><span>Create Shift</span></div>
-          <div class="qa"><i class="fa-solid fa-rotate"></i><span>Request Relief</span></div>
-          <div class="qa"><i class="fa-solid fa-triangle-exclamation"></i><span>View Shortages</span></div>
-        </div>
-      </div>
-      <div class="panel mb-24">
-        <div class="panel-head"><h3><i class="fa-solid fa-calendar-days"></i>Deployment Roster &amp; Conflict Check</h3><div class="filters"><select><option>All Sites</option></select><select><option>All Shifts</option></select><input type="date" value="2026-11-10"></div><a class="panel-link" href="../modules/reports.html"><i class="fa-solid fa-download"></i> Export</a></div>
-        <div class="table-wrap"><table class="tbl">
-          <thead><tr><th>Site</th><th>Shift</th><th>Assigned Guard</th><th>Status</th><th>Conflict / Rest-Hours</th></tr></thead>
-          <tbody>
-            <tr><td>Apex Towers</td><td>Night (12h)</td><td>James Mwangi</td><td><span class="badge bg-green">Confirmed</span></td><td><span class="badge bg-green">Rest OK</span></td></tr>
-            <tr><td>Valley School</td><td>Day (12h)</td><td><b>UNASSIGNED</b></td><td><span class="badge bg-red">Vacant Post</span></td><td><span class="badge bg-red">Needs relief</span></td></tr>
-            <tr><td>Westlands Depot</td><td>Day (12h)</td><td>Alice Auma</td><td><span class="badge bg-green">Confirmed</span></td><td><span class="badge bg-green">Rest OK</span></td></tr>
-            <tr><td>Riverside Gardens</td><td>Night (12h)</td><td>David Njoroge</td><td><span class="badge bg-orange">Pending</span></td><td><span class="badge bg-orange">Check rest hours</span></td></tr>
-          </tbody>
-        </table></div>
-      </div>
-<div class="split-grid">
-        <div class="panel">
-          <div class="panel-head"><h3><i class="fa-solid fa-rotate"></i>Relief Management Queue</h3><a class="panel-link" href="../modules/reports.html">Open queue <i class="fa-solid fa-arrow-right"></i></a></div>
-          <div class="table-wrap"><table class="tbl">
-            <thead><tr><th>Request</th><th>Vacant Post</th><th>Recommended Relief</th><th>Status</th></tr></thead>
-            <tbody>
-              <tr><td>RR-2411</td><td>Valley School — Gate</td><td>S. Kirui (8 km)</td><td><span class="badge bg-orange">Dispatched</span></td></tr>
-              <tr><td>RR-2412</td><td>Site Beta — North Post</td><td>— awaiting acceptance</td><td><span class="badge bg-red">Escalated</span></td></tr>
-              <tr><td>RR-2413</td><td>Westlands Depot — Night</td><td>M. Otieno (eligible)</td><td><span class="badge bg-blue">Requested</span></td></tr>
-            </tbody>
-          </table></div>
-        </div>
-        <div class="panel">
-          <div class="panel-head"><h3><i class="fa-solid fa-certificate"></i>PSRA Compliance Monitor</h3></div>
-          <div class="panel-body">
-            <div class="emergency-banner"><span><i class="fa-solid fa-triangle-exclamation"></i> Guard G-8012 Guard Force Number expires in 14 days</span><button class="btn-xs primary"><i class="fa-solid fa-arrows-rotate"></i>Renew Record</button></div>
-            <div class="prog-row"><div class="prog-meta"><b>Guards with valid GFN</b><span>1,394 / 1,450</span></div><div class="prog-track"><div class="prog-fill pf-green w-96"></div></div></div>
-            <div class="prog-row"><div class="prog-meta"><b>Training certificates current</b><span>88%</span></div><div class="prog-track"><div class="prog-fill pf-gold w-88"></div></div></div>
-            <div class="prog-row"><div class="prog-meta"><b>Vetting records complete</b><span>92%</span></div><div class="prog-track"><div class="prog-fill pf-blue w-92"></div></div></div>
+      </aside>
+      <div class="main">
+        <header class="topbar">
+          <div>
+            <div class="page-title">Deployment Overview</div>
+            <div class="crumbs">Operations / Deployment Overview</div>
+          </div>
+          <div class="spacer"></div>
+          <a class="avatar" href="#" title="Notifications"
+            >&#128276;<span class="dot"></span
+          ></a>
+          <a class="avatar" href="#" title="Operations Manager">OM</a>
+        </header>
+        <div class="content">
+          <span class="demo-note"
+            >Demonstration data — not live operational information</span
+          >
+
+          <div class="row r4 mb20">
+            <div class="kpi">
+              <div class="label">Deployments</div>
+              <div class="val">118 posts</div>
+              <div class="sub">8 branches</div>
+            </div>
+            <div class="kpi bad">
+              <div class="label">Coverage</div>
+              <div class="val">96%</div>
+              <div class="sub">2 vacancies</div>
+            </div>
+            <div class="kpi bad">
+              <div class="label">Attendance today</div>
+              <div class="val">96.5%</div>
+              <div class="sub">4 late arrivals</div>
+            </div>
+            <div class="kpi bad">
+              <div class="label">Relief requests open</div>
+              <div class="val">3</div>
+              <div class="sub">2 urgent</div>
+            </div>
+          </div>
+
+          <div class="row r2 mb20">
+            <div class="panel">
+              <div class="panel-h"><h3>Today&rsquo;s exceptions</h3></div>
+              <div class="panel-b">
+                <ul class="list">
+                  <li>
+                    <span>B. Kiprop — late arrival 08:41</span
+                    ><span class="badge b-warn">Follow up</span>
+                  </li>
+                  <li>
+                    <span>Airport North — vacant post, night</span
+                    ><span class="badge b-red">Relief needed</span>
+                  </li>
+                  <li>
+                    <span>2 shift-change requests pending</span
+                    ><span><a class="linklike" href="#">Review</a></span>
+                  </li>
+                  <li>
+                    <span>Deployment conflict — Ruaraka Sat</span
+                    ><span class="badge b-warn">Resolve</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="panel-h"><h3>Site staffing snapshot</h3></div>
+              <div class="panel-b">
+                <ul class="list">
+                  <li>
+                    <span>ABC-style CBD Tower — 12/12</span
+                    ><span class="badge b-ok">Covered</span>
+                  </li>
+                  <li>
+                    <span>Greenview-style Estate — 7/8</span
+                    ><span class="badge b-red">Shortage</span>
+                  </li>
+                  <li>
+                    <span>Industrial Centre — 10/10</span
+                    ><span class="badge b-ok">Covered</span>
+                  </li>
+                  <li>
+                    <span>Riverside-style School — 5/6</span
+                    ><span class="badge b-red">Shortage</span>
+                  </li>
+                </ul>
+                <p class="tiny-note">
+                  Sample records for demonstration, not actual ABC LTD
+                  operations.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-h"><h3>Site coverage overview</h3></div>
+            <div class="tbl-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Site</th>
+                    <th>Type</th>
+                    <th>Hours</th>
+                    <th>Coverage</th>
+                    <th>Posts</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><b>Nairobi CBD Tower</b></td>
+                    <td>Commercial</td>
+                    <td>Day + Night</td>
+                    <td><span class="badge b-ok">Full</span></td>
+                    <td>12 posts</td>
+                    <td><a class="linklike" href="#">Open</a></td>
+                  </tr>
+                  <tr>
+                    <td><b>Westlands HQ Park</b></td>
+                    <td>Corporate</td>
+                    <td>Day</td>
+                    <td><span class="badge b-ok">Full</span></td>
+                    <td>6 posts</td>
+                    <td><a class="linklike" href="#">Open</a></td>
+                  </tr>
+                  <tr>
+                    <td><b>Industrial Area Depot</b></td>
+                    <td>Industrial</td>
+                    <td>24 hrs</td>
+                    <td><span class="badge b-red">Shortage</span></td>
+                    <td>9 posts</td>
+                    <td><a class="linklike" href="#">Open</a></td>
+                  </tr>
+                  <tr>
+                    <td><b>Airport North Warehouse</b></td>
+                    <td>Logistics</td>
+                    <td>24 hrs</td>
+                    <td><span class="badge b-red">Vacant</span></td>
+                    <td>0 posts</td>
+                    <td><a class="linklike" href="#">Open</a></td>
+                  </tr>
+                  <tr>
+                    <td><b>Ruaraka Shopping Mall</b></td>
+                    <td>Retail</td>
+                    <td>Extended</td>
+                    <td><span class="badge b-ok">Full</span></td>
+                    <td>14 posts</td>
+                    <td><a class="linklike" href="#">Open</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
-      <div class="panel">
-        <div class="panel-head"><h3><i class="fa-solid fa-clock-rotate-left"></i>Recent Activity</h3><a class="panel-link" href="../modules/reports.html">View all <i class="fa-solid fa-arrow-right"></i></a></div>
-        <div class="panel-body">
-          <ul class="feed">
-            <li><span class="fdot fd-red"></span><div>Vacancy detected at Valley School — supervisor alert sent.<time>Today, 13:58</time></div></li>
-            <li><span class="fdot fd-green"></span><div>Relief guard S. Kirui acknowledged dispatch to Valley School.<time>Today, 13:41</time></div></li>
-            <li><span class="fdot fd-orange"></span><div>Deployment change notification sent to 3 guards.<time>Today, 12:05</time></div></li>
-            <li><span class="fdot fd-blue"></span><div>Handover completed at Apex Towers — no discrepancies.<time>Today, 07:02</time></div></li>
-          </ul>
-        </div>
-      </div>
-    </main>
-  </div>
-</div>
-</body>
+    </div>
+  </body>
 </html>

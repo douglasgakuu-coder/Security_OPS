@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>V5 Product Blueprint — VIGILORA</title>
+    <link rel="stylesheet" href="../../css/vigilora.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <a class="brand" href="director.html"
+          ><span class="mark">VIGI</span>LORA</a
+        >
+        <nav>
+          <div class="sb-group">Executive</div>
+          <a class="sb-item" href="director.html"
+            ><span class="ico-char">&#128200;</span
+            ><span class="txt">Business Overview</span></a
+          >
+          <a class="sb-item" href="approvals.html"
+            ><span class="ico-char">&#9986;</span
+            ><span class="txt">Management Approvals</span
+            ><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="branch-performance.html"
+            ><span class="ico-char">&#127961;</span
+            ><span class="txt">Branch Performance</span></a
+          >
+          <div class="sb-group">Business</div>
+          <a class="sb-item" href="financial-summary.html"
+            ><span class="ico-char">&#128176;</span
+            ><span class="txt">Financial Summary</span></a
+          >
+          <a class="sb-item" href="payroll-summary.html"
+            ><span class="ico-char">&#129517;</span
+            ><span class="txt">Payroll Summary</span><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="compliance-overview.html"
+            ><span class="ico-char">&#9989;</span
+            ><span class="txt">Compliance Overview</span></a
+          >
+          <a class="sb-item" href="reports.html"
+            ><span class="ico-char">&#128202;</span
+            ><span class="txt">Reports Centre</span></a
+          >
+          <a class="sb-item on" href="product-blueprint.html"
+            ><span class="ico-char">&#128506;</span
+            ><span class="txt">V5 Product Blueprint</span></a
+          >
+          <a class="sb-item" href="success-metrics.html"
+            ><span class="ico-char">&#127919;</span
+            ><span class="txt">Success Metrics</span></a
+          >
+        </nav>
+        <div class="sb-foot">
+          Director / General Manager<br />VIGILORA v5 — static prototype
+        </div>
+      </aside>
+      <div class="main">
+        <header class="topbar">
+          <div>
+            <div class="page-title">V5 Product Blueprint</div>
+            <div class="crumbs">Business / V5 Product Blueprint</div>
+          </div>
+          <div class="spacer"></div>
+          <a class="avatar" href="#" title="Notifications"
+            >&#128276;<span class="dot"></span
+          ></a>
+          <a class="avatar" href="#" title="Director / General Manager">DG</a>
+        </header>
+        <div class="content">
+          <span class="demo-note"
+            >Reference page — design documentation, not operational data</span
+          >
+
+          <div class="page-head">
+            <div>
+              <h2>V5 Product Blueprint</h2>
+              <p>
+                Reference view of the VIGILORA V5 platform design — sixteen
+                modules, five core workflows, access rules and the data model
+                that sits underneath.
+              </p>
+            </div>
+          </div>
+
+          <div class="notice info">
+            <span
+              ><b>Design governance:</b> every feature must answer — what
+              problem it solves, who uses it, what action they can take, and how
+              ABC LTD measures whether it works.</span
+            >
+          </div>
+
+          <div class="panel mb20">
+            <div class="panel-h"><h3>The 16 V5 modules</h3></div>
+            <div class="tbl-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Group</th>
+                    <th>Module</th>
+                    <th>Scope</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="badge b-info">01</span></td>
+                    <td><span class="badge b-ok">Workforce</span></td>
+                    <td><b>People and Employment</b></td>
+                    <td>
+                      Profiles, recruitment, onboarding, contracts, leave,
+                      training, welfare, payroll records, self-service
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="badge b-info">02</span></td>
+                    <td><span class="badge b-ok">Workforce</span></td>
+                    <td><b>Careers and Recruitment</b></td>
+                    <td>
+                      Public vacancies, applications, candidate review,
+                      interviews, offers, onboarding, recruitment reporting
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="badge b-info">03</span></td>
+                    <td><span class="badge b-info">Operations</span></td>
+                    <td><b>Clients and Contracts</b></td>
+                    <td>
+                      Client records, agreements, service packages, billing
+                      terms, renewals, SLAs, communication
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="badge b-info">04</span></td>
+                    <td><span class="badge b-info">Operations</span></td>
+                    <td><b>Sites and Deployment</b></td>
+                    <td>
+                      Site profiles, instructions, post requirements, guard
+                      assignment, approvals, coverage monitoring
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="badge b-info">05</span></td>
+                    <td><span class="badge b-info">Operations</span></td>
+                    <td><b>Scheduling and Attendance</b></td>
+                    <td>
+                      Shift calendars, attendance, overtime, leave conflicts,
+                      rest days, absence management
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="badge b-info">06</span></td>
+                    <td><span class="badge b-info">Operations</span></td>
+                    <td><b>Field Supervision</b></td>
+                    <td>
+                      Supervisor visits, inspections, welfare checks, corrective
+                      actions, performance reports
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="badge b-info">07</span></td>
+                    <td><span class="badge b-info">Operations</span></td>
+                    <td><b>Relief and Handover</b></td>
+                    <td>
+                      Relief requests, replacements, handover forms, pending
+                      issues, shift-transfer records
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="badge b-info">08</span></td>
+                    <td><span class="badge b-red">Response</span></td>
+                    <td><b>Control Room and Incidents</b></td>
+                    <td>
+                      Alert queues, incident reports, escalation, assistance,
+                      response logs, operator handovers
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="badge b-info">09</span></td>
+                    <td><span class="badge b-ok">People</span></td>
+                    <td><b>Employee Welfare Centre</b></td>
+                    <td>
+                      Confidential complaints, conditions, rest facilities,
+                      support requests, case handling
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="badge b-info">10</span></td>
+                    <td><span class="badge b-ok">People</span></td>
+                    <td><b>Learning and Development</b></td>
+                    <td>
+                      Courses, assessments, attendance, certificates,
+                      refreshers, career progression
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="badge b-info">11</span></td>
+                    <td><span class="badge b-mut">Business</span></td>
+                    <td><b>Finance and Payroll</b></td>
+                    <td>
+                      Payroll preparation, payslips, invoices, expenses,
+                      payments, reconciliation, reporting
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="badge b-info">12</span></td>
+                    <td><span class="badge b-mut">Business</span></td>
+                    <td><b>Assets and Inventory</b></td>
+                    <td>
+                      Uniforms, equipment, assignment, stock, maintenance,
+                      returns, loss records
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="badge b-info">13</span></td>
+                    <td><span class="badge b-warn">Governance</span></td>
+                    <td><b>Compliance Centre</b></td>
+                    <td>
+                      PSRA records, staff documentation, reminders, checks,
+                      corrective actions
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="badge b-info">14</span></td>
+                    <td><span class="badge b-mut">Business</span></td>
+                    <td><b>Client Portal</b></td>
+                    <td>
+                      Client sites, service requests, attendance, incidents,
+                      reports, invoices
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="badge b-info">15</span></td>
+                    <td><span class="badge b-mut">Intelligence</span></td>
+                    <td><b>Reports and Analytics</b></td>
+                    <td>
+                      Workforce, operations, welfare, recruitment, finance,
+                      client and compliance reports
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="badge b-info">16</span></td>
+                    <td><span class="badge b-mut">Administration</span></td>
+                    <td><b>System Administration</b></td>
+                    <td>
+                      Users, roles, permissions, configuration, audit logs,
+                      security, integrations, backups
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="row r2 mb20">
+            <div class="panel">
+              <div class="panel-h">
+                <h3>Industry problems &rarr; V5 solutions</h3>
+              </div>
+              <div class="panel-b">
+                <ul class="list">
+                  <li>
+                    <span>Guards assigned to the wrong site</span
+                    ><span class="badge b-info">Eligibility validation</span>
+                  </li>
+                  <li>
+                    <span>Unfilled shifts</span
+                    ><span class="badge b-info"
+                      >Vacancy alerts &amp; relief</span
+                    >
+                  </li>
+                  <li>
+                    <span>Attendance disputes</span
+                    ><span class="badge b-info">Timestamped records</span>
+                  </li>
+                  <li>
+                    <span>Poor handovers</span
+                    ><span class="badge b-info">Structured forms</span>
+                  </li>
+                  <li>
+                    <span>Delayed incident reporting</span
+                    ><span class="badge b-info">Mobile submission</span>
+                  </li>
+                  <li>
+                    <span>Missing equipment records</span
+                    ><span class="badge b-info">Issue/return register</span>
+                  </li>
+                  <li>
+                    <span>Weak supervision</span
+                    ><span class="badge b-info">Digital inspections</span>
+                  </li>
+                  <li>
+                    <span>Inconsistent client communication</span
+                    ><span class="badge b-info">Client portal</span>
+                  </li>
+                  <li>
+                    <span>Contract obligations missed</span
+                    ><span class="badge b-info">Checklists &amp; SLAs</span>
+                  </li>
+                  <li>
+                    <span>Management lacks reliable information</span
+                    ><span class="badge b-info">Central reporting</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="panel-h"><h3>Core workflows</h3></div>
+              <div class="panel-b">
+                <ul class="list">
+                  <li>
+                    <span
+                      ><b>1 &middot; Recruitment</b> — vacancy &rarr;
+                      application &rarr; human review &rarr; offer &rarr;
+                      onboarding. No automatic rejection without human
+                      review.</span
+                    >
+                  </li>
+                  <li>
+                    <span
+                      ><b>2 &middot; Scheduling</b> — overlap blocking, rest
+                      validation, conflict check, attendance with correction
+                      history.</span
+                    >
+                  </li>
+                  <li>
+                    <span
+                      ><b>3 &middot; Welfare complaint</b> — restricted case,
+                      authorised officer only; never visible to general
+                      supervisors.</span
+                    >
+                  </li>
+                  <li>
+                    <span
+                      ><b>4 &middot; Incidents</b> — reference, priority,
+                      assignment, action log, authorised closure, full audit
+                      history.</span
+                    >
+                  </li>
+                  <li>
+                    <span
+                      ><b>5 &middot; Payroll</b> — exception report, finance
+                      review, separated approval, published payslips.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="row r2 mb20">
+            <div class="panel">
+              <div class="panel-h"><h3>Role-based access principles</h3></div>
+              <div class="panel-b">
+                <ul class="list">
+                  <li>
+                    <span>System Administrator</span
+                    ><span class="badge b-info"
+                      >Technical only — no confidential cases</span
+                    >
+                  </li>
+                  <li>
+                    <span>Director / GM</span
+                    ><span class="badge b-info">Aggregated welfare only</span>
+                  </li>
+                  <li>
+                    <span>HR Officer</span
+                    ><span class="badge b-info">Authorised HR records</span>
+                  </li>
+                  <li>
+                    <span>Guard</span
+                    ><span class="badge b-info"
+                      >Own records &amp; payslips</span
+                    >
+                  </li>
+                  <li>
+                    <span>Client</span
+                    ><span class="badge b-info"
+                      >Own contracted records only</span
+                    >
+                  </li>
+                  <li>
+                    <span>Control Room</span
+                    ><span class="badge b-info">No payroll access</span>
+                  </li>
+                  <li>
+                    <span>Finance</span
+                    ><span class="badge b-info">Preparer &ne; approver</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="panel-h"><h3>Database groups (target model)</h3></div>
+              <div class="panel-b">
+                <ul class="list">
+                  <li>
+                    <span>Authentication</span
+                    ><span
+                      ><small
+                        >users, roles, permissions, login_logs</small
+                      ></span
+                    >
+                  </li>
+                  <li>
+                    <span>Employees</span
+                    ><span><small>employees, contracts, documents</small></span>
+                  </li>
+                  <li>
+                    <span>Recruitment / Training</span
+                    ><span
+                      ><small>vacancies, applications, enrolments</small></span
+                    >
+                  </li>
+                  <li>
+                    <span>Welfare (restricted)</span
+                    ><span
+                      ><small>welfare_cases, updates, inspections</small></span
+                    >
+                  </li>
+                  <li>
+                    <span>Clients / Sites</span
+                    ><span
+                      ><small
+                        >clients, contracts, sites, requirements</small
+                      ></span
+                    >
+                  </li>
+                  <li>
+                    <span>Deployment / Attendance</span
+                    ><span
+                      ><small>deployments, schedules, attendance</small></span
+                    >
+                  </li>
+                  <li>
+                    <span>Incidents / Field</span
+                    ><span
+                      ><small>incidents, inspections, handovers</small></span
+                    >
+                  </li>
+                  <li>
+                    <span>Finance</span
+                    ><span
+                      ><small
+                        >payroll, invoices, payments, expenses</small
+                      ></span
+                    >
+                  </li>
+                  <li>
+                    <span>Compliance / Admin</span
+                    ><span
+                      ><small>compliance, audit_logs, settings</small></span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="row r2">
+            <div class="panel">
+              <div class="panel-h"><h3>Visual design system</h3></div>
+              <div class="panel-b">
+                <ul class="list">
+                  <li>
+                    <span
+                      >Royal Cobalt — primary buttons, sidebar, active
+                      navigation</span
+                    ><span class="badge b-info">#2457D6 family</span>
+                  </li>
+                  <li>
+                    <span
+                      >Racing Red — critical incidents, urgent notices, overdue
+                      actions</span
+                    ><span class="badge b-red">Danger only</span>
+                  </li>
+                  <li>
+                    <span>Bone White — main workspace and page background</span
+                    ><span class="badge b-mut">Workspace</span>
+                  </li>
+                  <li>
+                    <span
+                      >Lime Zest — positive indicators, completed actions,
+                      highlights</span
+                    ><span class="badge b-lime">Never small text on white</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="panel-h"><h3>Implementation roadmap</h3></div>
+              <div class="panel-b">
+                <ul class="list">
+                  <li>
+                    <span>Phase 1 — design foundation</span
+                    ><span class="badge b-ok">Done</span>
+                  </li>
+                  <li>
+                    <span>Phase 2 — authentication and permissions</span
+                    ><span class="badge b-warn">Planned</span>
+                  </li>
+                  <li>
+                    <span>Phase 3 — core company records</span
+                    ><span class="badge b-warn">Planned</span>
+                  </li>
+                  <li>
+                    <span>Phase 4 — workforce and operations</span
+                    ><span class="badge b-warn">Planned</span>
+                  </li>
+                  <li>
+                    <span>Phase 5 — welfare and finance</span
+                    ><span class="badge b-warn">Planned</span>
+                  </li>
+                  <li>
+                    <span>Phase 6 — control room and compliance</span
+                    ><span class="badge b-warn">Planned</span>
+                  </li>
+                  <li>
+                    <span>Phase 7 — portals and specialists</span
+                    ><span class="badge b-warn">Planned</span>
+                  </li>
+                  <li>
+                    <span>Phase 8 — testing and deployment</span
+                    ><span class="badge b-warn">Planned</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

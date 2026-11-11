@@ -1,112 +1,129 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Duty — NOVAGUARD</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<link rel="stylesheet" href="../assets/css/dashboard.css">
-<link rel="stylesheet" href="../assets/css/responsive.css">
-</head>
-<body>
-<div class="app">
-  <input type="checkbox" id="navtoggle" class="nav-checkbox">
-  <aside class="sidebar">
-    <div class="side-brand"><span class="brand-mark"><i class="fa-solid fa-shield-halved"></i></span>NOVAGUARD</div>
-    <nav class="side-nav">
-      <div class="side-group">My Duty</div>
-      <a class="side-link active" href="guard.html"><i class="fa-solid fa-table-columns"></i>Home</a>
-      <a class="side-link" href="../modules/reports.html"><i class="fa-solid fa-calendar-days"></i>My Schedule</a>
-      <a class="side-link" href="../modules/patrols.html"><i class="fa-solid fa-route"></i>Patrols &amp; Checkpoints</a>
-      <a class="side-link" href="../modules/incidents.html"><i class="fa-solid fa-bullhorn"></i>Report Incident</a>
-      <div class="side-group">My Info</div>
-      <a class="side-link" href="../modules/reports.html"><i class="fa-solid fa-user"></i>My Profile</a>
-      <a class="side-link" href="../modules/reports.html"><i class="fa-solid fa-scroll"></i>Site Standing Orders</a>
-      <a class="side-link" href="../modules/reports.html"><i class="fa-solid fa-phone"></i>Emergency Contacts</a>
-      <a class="side-link" href="../modules/attendance.html"><i class="fa-solid fa-clock"></i>Attendance History</a>
-      <a class="side-link" href="../modules/employees.html"><i class="fa-solid fa-umbrella-beach"></i>Leave Requests</a>
-      <a class="side-link" href="../modules/assets.html"><i class="fa-solid fa-toolbox"></i>My Equipment</a>
-      <a class="side-link" href="../modules/reports.html"><i class="fa-solid fa-graduation-cap"></i>My Training</a>
-      <a class="side-link" href="../modules/reports.html"><i class="fa-solid fa-bell"></i>Notifications</a>
-    </nav>
-    <div class="side-foot"><a href="../../webpages/login.html"><i class="fa-solid fa-right-from-bracket"></i> Sign out</a></div>
-  </aside>
-  <div class="main-area">
-    <header class="topbar">
-      <label for="navtoggle" class="icon-btn" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></label>
-      <div class="crumb">My Duty / <b>Home</b></div>
-      <div class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Global search — guards, sites, records…"></div>
-      <div class="top-actions">
-        <div class="icon-btn"><i class="fa-solid fa-bell"></i><span class="dot">1</span></div>
-        <div class="avatar">JM</div>
-      </div>
-    </header>
-    <main class="content">
-      <div class="page-title-row">
-        <div>
-          <h1>My Duty</h1>
-          <div class="crumbs">My Duty</div>
-        </div>
-        <div class="page-actions">
-          <button class="btn-xs"><i class="fa-solid fa-download"></i>Export</button>
-          <button class="btn-xs primary"><i class="fa-solid fa-plus"></i>New Record</button>
-        </div>
-      </div>
-      <div class="kpi-grid">
-        <div class="kpi k-green"><div class="kpi-label"><i class="fa-solid fa-clock"></i>Attendance Status</div><div class="kpi-value">Clocked In</div><div class="kpi-delta up">GPS &amp; QR verified</div></div>
-        <div class="kpi "><div class="kpi-label"><i class="fa-solid fa-calendar-day"></i>Next Shift</div><div class="kpi-value">Tomorrow 06:00</div><div class="kpi-delta ">Valley School · Day</div></div>
-        <div class="kpi k-orange"><div class="kpi-label"><i class="fa-solid fa-right-left"></i>Pending Handover</div><div class="kpi-value">1</div><div class="kpi-delta warn">Complete before 06:00</div></div>
-        <div class="kpi "><div class="kpi-label"><i class="fa-solid fa-hourglass-half"></i>Hours This Week</div><div class="kpi-value">38.5</div><div class="kpi-delta ">Overtime 2.0h</div></div>
-      </div>
-<div class="shift-card">
-        <div class="page-title-row">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Guard Portal — VIGILORA</title>
+    <link rel="stylesheet" href="../../css/vigilora.css" />
+  </head>
+  <body>
+    <div class="guard-page">
+      <div class="guard-hero">
+        <div
+          class="split-head"
+        >
           <div>
-            <span class="shift-meta">My Current Deployment — Night Shift</span>
-            <div class="shift-big">Apex Towers · Gate North</div>
-            <div class="shift-meta">Reporting 18:00 · Relief: S. Kirui · Post orders attached</div>
+            <div class="greet">Good morning</div>
+            <div class="who">James Otieno</div>
+            <div class="meta">
+              PSRA-44102 &middot; Day shift &middot; CBD Tower
+            </div>
           </div>
-          <div>
-            <div class="shift-big">On Duty</div>
-            <div class="shift-meta">Clocked in 17:56 · GPS verified <i class="fa-solid fa-circle-check"></i></div>
-          </div>
-        </div>
-        <div class="prog-track track-light"><div class="prog-fill pf-gold w-62"></div></div>
-        <div class="shift-meta mt6">Patrol Route B: 8 of 13 checkpoints scanned</div>
-      </div>
-      <div class="panel mb-24">
-        <div class="panel-head"><h3><i class="fa-solid fa-bolt"></i>Quick Actions</h3></div>
-        <div class="panel-body guard-actions">
-          <div class="guard-action"><i class="fa-solid fa-fingerprint"></i><span>Clock In / Out</span></div>
-          <div class="guard-action"><i class="fa-solid fa-shoe-prints"></i><span>Start Patrol</span></div>
-          <div class="guard-action"><i class="fa-solid fa-bullhorn"></i><span>Report Incident</span></div>
-          <div class="guard-action"><i class="fa-solid fa-right-left"></i><span>Complete Handover</span></div>
-          <div class="guard-action"><i class="fa-solid fa-life-ring"></i><span>Request Assistance</span></div>
-          <div class="guard-action"><i class="fa-solid fa-scroll"></i><span>Duty Instructions</span></div>
+          <a href="../../webpages/login.html" class="signout" title="Sign out">&#9099;</a>
         </div>
       </div>
-<div class="panel-grid">
-        <div class="panel">
-          <div class="panel-head"><h3><i class="fa-solid fa-route"></i>Patrol Progress — Route B (Apex Towers)</h3></div>
-          <div class="panel-body">
-            <div class="prog-row"><div class="prog-meta"><b>Gate North (CP-01)</b><span>Scanned 18:20</span></div><div class="prog-track"><div class="prog-fill pf-green w-100"></div></div></div>
-            <div class="prog-row"><div class="prog-meta"><b>Lobby (CP-02)</b><span>Scanned 19:05</span></div><div class="prog-track"><div class="prog-fill pf-green w-100"></div></div></div>
-            <div class="prog-row"><div class="prog-meta"><b>Parking B2 (CP-03)</b><span>Scanned 19:48</span></div><div class="prog-track"><div class="prog-fill pf-green w-100"></div></div></div>
-            <div class="prog-row"><div class="prog-meta"><b>Rooftop Access (CP-04)</b><span>Due next round</span></div><div class="prog-track"><div class="prog-fill pf-orange w-35"></div></div></div>
-            <div class="prog-row"><div class="prog-meta"><b>Service Corridor (CP-05)</b><span>Scheduled 23:00</span></div><div class="prog-track"><div class="prog-fill pf-blue w-10"></div></div></div>
+
+      <div class="card guard-card">
+        <div class="clock-pill">
+          <div class="tiny-note" class="tiny-note">
+            Current shift — CBD Tower
+          </div>
+          <div class="big">08:12</div>
+          <p class="tiny-note" class="tiny-note">
+            Clocked in at 07:58 &middot; on time
+          </p>
+          <button class="btn btn-danger btn-sm" type="button" class="mt10">
+            Clock Out
+          </button>
+        </div>
+
+        <div class="tile-grid" class="mt14">
+          <a class="tile" href="#shift"
+            ><span class="ti">&#128197;</span><small>My Shift</small></a
+          >
+          <a class="tile" href="#attendance"
+            ><span class="ti">&#9200;</span><small>Attendance</small></a
+          >
+          <a class="tile" href="#handover"
+            ><span class="ti">&#128260;</span><small>Handover</small></a
+          >
+          <a class="tile" href="#incident"
+            ><span class="ti">&#128680;</span><small>Report Incident</small></a
+          >
+          <a class="tile" href="#patrols"
+            ><span class="ti">&#128506;</span><small>Patrols</small></a
+          >
+          <a class="tile" href="#assistance"
+            ><span class="ti">&#128658;</span><small>Assistance</small></a
+          >
+          <a class="tile" href="#leave"
+            ><span class="ti">&#127774;</span><small>Leave</small></a
+          >
+          <a class="tile" href="#training"
+            ><span class="ti">&#127891;</span><small>Training</small></a
+          >
+          <a class="tile" href="#payslips"
+            ><span class="ti">&#128196;</span><small>Payslips</small></a
+          >
+          <a class="tile" href="#welfare"
+            ><span class="ti">&#128153;</span><small>Welfare</small></a
+          >
+          <a class="tile" href="#updates"
+            ><span class="ti">&#128276;</span><small>Updates</small></a
+          >
+          <a class="tile" href="#profile"
+            ><span class="ti">&#128100;</span><small>My Profile</small></a
+          >
+        </div>
+
+        <div class="panel" class="mt14">
+          <div class="panel-h"><h3>My employment information</h3></div>
+          <div class="panel-b">
+            <ul class="list">
+              <li>
+                <span>Employment documents</span
+                ><span class="badge b-ok">Available</span>
+              </li>
+              <li>
+                <span>Training record</span
+                ><span class="badge b-ok">Available</span>
+              </li>
+              <li>
+                <span>Leave balance</span
+                ><span><a class="linklike" href="#leave">View details</a></span>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="panel">
-          <div class="panel-head"><h3><i class="fa-solid fa-bullhorn"></i>Announcements</h3></div>
-          <div class="panel-body"><ul class="feed">
-            <li><span class="fdot fd-blue"></span><div>Patrol Route B checkpoint CP-04 relocated to stairwell B.<time>Ops · 16:00 today</time></div></li>
-            <li><span class="fdot fd-orange"></span><div>New client standing orders effective 15 Nov.<time>HR · yesterday</time></div></li>
-            <li><span class="fdot fd-green"></span><div>October payroll processed — payslips available.<time>Finance · 3 days ago</time></div></li>
-          </ul></div>
+
+        <div class="panel" class="mt14">
+          <div class="panel-h"><h3>Next shift</h3></div>
+          <div class="panel-b">
+            <ul class="list">
+              <li>
+                <span>Tomorrow &middot; 06:00–18:00</span
+                ><span class="badge b-ok">Confirmed</span>
+              </li>
+              <li>
+                <span>Westlands HQ &middot; Day</span
+                ><span class="badge b-info">Scheduled</span>
+              </li>
+            </ul>
+          </div>
         </div>
+
+        <p class="tiny-note" class="center">
+          Offline events are saved locally and synchronised later — the original
+          event time is always preserved.
+        </p>
       </div>
-    </main>
-  </div>
-</div>
-</body>
+
+      <nav class="guard-nav">
+        <a class="on" href="guard.html"><span>&#127968;</span>Home</a>
+        <a href="#shift"><span>&#128197;</span>Shift</a>
+        <a href="#incident"><span>&#128680;</span>Report</a>
+        <a href="#profile"><span>&#128100;</span>Me</a>
+      </nav>
+    </div>
+  </body>
 </html>

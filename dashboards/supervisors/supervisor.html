@@ -1,113 +1,211 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Field Supervisor Dashboard — NOVAGUARD</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<link rel="stylesheet" href="../assets/css/dashboard.css">
-<link rel="stylesheet" href="../assets/css/responsive.css">
-</head>
-<body>
-<div class="app">
-  <input type="checkbox" id="navtoggle" class="nav-checkbox">
-  <aside class="sidebar">
-    <div class="side-brand"><span class="brand-mark"><i class="fa-solid fa-shield-halved"></i></span>NOVAGUARD</div>
-    <nav class="side-nav">
-      <div class="side-group">Field Supervision</div>
-      <a class="side-link active" href="supervisor.html"><i class="fa-solid fa-table-columns"></i>Dashboard</a>
-      <a class="side-link" href="../modules/sites.html"><i class="fa-solid fa-map-location-dot"></i>My Sites</a>
-      <a class="side-link" href="../modules/reports.html"><i class="fa-solid fa-clipboard-check"></i>Inspections</a>
-      <a class="side-link" href="../modules/patrols.html"><i class="fa-solid fa-shoe-prints"></i>Patrol Monitoring</a>
-      <div class="side-group">Team</div>
-      <a class="side-link" href="../modules/reports.html"><i class="fa-solid fa-users"></i>Guards Supervised</a>
-      <a class="side-link" href="../modules/attendance.html"><i class="fa-solid fa-clock"></i>Attendance Exceptions</a>
-      <a class="side-link" href="../modules/handovers.html"><i class="fa-solid fa-right-left"></i>Handover Verification</a>
-      <a class="side-link" href="../modules/incidents.html"><i class="fa-solid fa-bullhorn"></i>Incident Reporting</a>
-      <a class="side-link" href="../modules/relief.html"><i class="fa-solid fa-rotate"></i>Request Relief</a>
-      <a class="side-link" href="../modules/assets.html"><i class="fa-solid fa-toolbox"></i>Equipment Checks</a>
-    </nav>
-    <div class="side-foot"><a href="../../webpages/login.html"><i class="fa-solid fa-right-from-bracket"></i> Sign out</a></div>
-  </aside>
-  <div class="main-area">
-    <header class="topbar">
-      <label for="navtoggle" class="icon-btn" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></label>
-      <div class="crumb">Field Supervisor / <b>Dashboard</b></div>
-      <div class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Global search — guards, sites, records…"></div>
-      <div class="top-actions">
-        <div class="icon-btn"><i class="fa-solid fa-bell"></i><span class="dot">2</span></div>
-        <div class="avatar">JO</div>
-      </div>
-    </header>
-    <main class="content">
-      <div class="page-title-row">
-        <div>
-          <h1>Field Supervisor Dashboard</h1>
-          <div class="crumbs">Field Supervisor Dashboard</div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Supervisor Dashboard — VIGILORA</title>
+    <link rel="stylesheet" href="../../css/vigilora.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <a class="brand" href="supervisor.html"
+          ><span class="mark">VIGI</span>LORA</a
+        >
+        <nav>
+          <div class="sb-group">Field Work</div>
+          <a class="sb-item on" href="supervisor.html"
+            ><span class="ico-char">&#129492;</span
+            ><span class="txt">Supervisor Dashboard</span></a
+          >
+          <a class="sb-item" href="assigned-sites.html"
+            ><span class="ico-char">&#128506;</span
+            ><span class="txt">Assigned Sites</span></a
+          >
+          <a class="sb-item" href="inspection-visits.html"
+            ><span class="ico-char">&#128269;</span
+            ><span class="txt">Inspection Visits</span></a
+          >
+          <div class="sb-group">Records</div>
+          <a class="sb-item" href="guard-attendance.html"
+            ><span class="ico-char">&#9200;</span
+            ><span class="txt">Guard Attendance</span></a
+          >
+          <a class="sb-item" href="handover-verification.html"
+            ><span class="ico-char">&#128260;</span
+            ><span class="txt">Handover Verification</span></a
+          >
+          <a class="sb-item" href="welfare-inspections.html"
+            ><span class="ico-char">&#128153;</span
+            ><span class="txt">Welfare Inspections</span
+            ><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="site-issues.html"
+            ><span class="ico-char">&#9888;</span
+            ><span class="txt">Site Issues</span></a
+          >
+          <a class="sb-item" href="corrective-actions.html"
+            ><span class="ico-char">&#9989;</span
+            ><span class="txt">Corrective Actions</span></a
+          >
+          <div class="sb-group">Reporting</div>
+          <a class="sb-item" href="incident-reporting.html"
+            ><span class="ico-char">&#128680;</span
+            ><span class="txt">Incident Reporting</span></a
+          >
+          <a class="sb-item" href="staff-shortages.html"
+            ><span class="ico-char">&#9888;</span
+            ><span class="txt">Staff Shortages</span><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="activity-reports.html"
+            ><span class="ico-char">&#128220;</span
+            ><span class="txt">Activity Reports</span></a
+          >
+        </nav>
+        <div class="sb-foot">
+          Field Supervisor<br />VIGILORA v5 — static prototype
         </div>
-        <div class="page-actions">
-          <button class="btn-xs"><i class="fa-solid fa-download"></i>Export</button>
-          <button class="btn-xs primary"><i class="fa-solid fa-plus"></i>New Record</button>
-        </div>
-      </div>
-      <div class="kpi-grid">
-        <div class="kpi "><div class="kpi-label"><i class="fa-solid fa-map-location-dot"></i>Assigned Sites</div><div class="kpi-value">7</div><div class="kpi-delta ">Across 3 clients</div></div>
-        <div class="kpi k-green"><div class="kpi-label"><i class="fa-solid fa-users"></i>Guards Supervised</div><div class="kpi-value">23</div><div class="kpi-delta up">21 on duty</div></div>
-        <div class="kpi k-orange"><div class="kpi-label"><i class="fa-solid fa-clock"></i>Attendance Exceptions</div><div class="kpi-value">3</div><div class="kpi-delta warn">Late / no-show</div></div>
-        <div class="kpi k-gold"><div class="kpi-label"><i class="fa-solid fa-clipboard-check"></i>Pending Inspections</div><div class="kpi-value">4</div><div class="kpi-delta ">Due this week</div></div>
-        <div class="kpi k-red"><div class="kpi-label"><i class="fa-solid fa-shoe-prints"></i>Missed Patrols</div><div class="kpi-value">2</div><div class="kpi-delta down">Routes B &amp; C</div></div>
-        <div class="kpi k-orange"><div class="kpi-label"><i class="fa-solid fa-right-left"></i>Incomplete Handovers</div><div class="kpi-value">1</div><div class="kpi-delta warn">Apex Towers</div></div>
-        <div class="kpi k-red"><div class="kpi-label"><i class="fa-solid fa-bullhorn"></i>Open Incidents</div><div class="kpi-value">3</div><div class="kpi-delta down">1 critical</div></div>
-      </div>
-      <div class="panel mb-24">
-        <div class="panel-head"><h3><i class="fa-solid fa-bolt"></i>Quick Actions</h3></div>
-        <div class="panel-body qa-grid">
-          <div class="qa"><i class="fa-solid fa-clipboard-check"></i><span>Start Inspection</span></div>
-          <div class="qa"><i class="fa-solid fa-camera"></i><span>Capture Finding</span></div>
-          <div class="qa"><i class="fa-solid fa-bullhorn"></i><span>Report Incident</span></div>
-          <div class="qa"><i class="fa-solid fa-rotate"></i><span>Request Relief</span></div>
-          <div class="qa"><i class="fa-solid fa-right-left"></i><span>Verify Handover</span></div>
-          <div class="qa"><i class="fa-solid fa-phone"></i><span>Call Control Room</span></div>
-        </div>
-      </div>
-<div class="split-grid">
-        <div class="panel">
-          <div class="panel-head"><h3><i class="fa-solid fa-map-location-dot"></i>Assigned Sites — Live Status</h3></div>
-          <div class="panel-body">
-            <div class="site-status"><span><i class="st-dot dot-g"></i><b>Apex Towers</b></span><span>4/4 staffed · Patrol 100%</span></div>
-            <div class="site-status"><span><i class="st-dot dot-o"></i><b>Valley School</b></span><span>2/3 staffed · Relief requested</span></div>
-            <div class="site-status"><span><i class="st-dot dot-r"></i><b>Site Beta Retail</b></span><span>0/2 staffed · Intrusion open</span></div>
-            <div class="site-status"><span><i class="st-dot dot-g"></i><b>Riverside Gardens</b></span><span>3/3 staffed · Patrol 100%</span></div>
-            <div class="site-status"><span><i class="st-dot dot-o"></i><b>Lavington Mall</b></span><span>3/4 staffed · Late clock-in</span></div>
+      </aside>
+      <div class="main">
+        <header class="topbar">
+          <div>
+            <div class="page-title">Supervisor Dashboard</div>
+            <div class="crumbs">Field Work / Supervisor Dashboard</div>
           </div>
-        </div>
-        <div class="panel">
-          <div class="panel-head"><h3><i class="fa-solid fa-clock"></i>Attendance Exceptions</h3></div>
-          <div class="panel-body">
-            <div class="prog-row"><div class="prog-meta"><b>Guard #88 — Westlands Depot</b><span>No show</span></div><div class="prog-track"><div class="prog-fill pf-red w-100"></div></div></div>
-            <div class="prog-row"><div class="prog-meta"><b>Guard #152 — Lavington Mall</b><span>42 min late</span></div><div class="prog-track"><div class="prog-fill pf-orange w-70"></div></div></div>
-            <div class="prog-row"><div class="prog-meta"><b>Guard #201 — Valley School</b><span>Early departure</span></div><div class="prog-track"><div class="prog-fill pf-orange w-55"></div></div></div>
-            <div class="filters">
-              <button class="btn-xs primary"><i class="fa-solid fa-check"></i>Approve Correction</button>
-              <button class="btn-xs"><i class="fa-solid fa-envelope"></i>Notify HR</button>
-              <button class="btn-xs danger"><i class="fa-solid fa-arrow-up"></i>Escalate</button>
+          <div class="spacer"></div>
+          <a class="avatar" href="#" title="Notifications"
+            >&#128276;<span class="dot"></span
+          ></a>
+          <a class="avatar" href="#" title="Field Supervisor">FS</a>
+        </header>
+        <div class="content">
+          <span class="demo-note"
+            >Demonstration data — not live operational information</span
+          >
+
+          <div class="row r4 mb20">
+            <div class="kpi">
+              <div class="label">Assigned sites</div>
+              <div class="val">6</div>
+              <div class="sub">2 due inspection</div>
+            </div>
+            <div class="kpi bad">
+              <div class="label">Attendance today</div>
+              <div class="val">94%</div>
+              <div class="sub">1 late arrival</div>
+            </div>
+            <div class="kpi">
+              <div class="label">Welfare inspections</div>
+              <div class="val">2 due</div>
+              <div class="sub">This week</div>
+            </div>
+            <div class="kpi bad">
+              <div class="label">Corrective actions open</div>
+              <div class="val">4</div>
+              <div class="sub">1 overdue</div>
+            </div>
+          </div>
+
+          <div class="row r2 mb20">
+            <div class="panel">
+              <div class="panel-h"><h3>Today&rsquo;s route</h3></div>
+              <div class="panel-b">
+                <ul class="list">
+                  <li>
+                    <span>08:00 — CBD Tower</span
+                    ><span class="badge b-ok">Done</span>
+                  </li>
+                  <li>
+                    <span>10:30 — Westlands HQ</span
+                    ><span class="badge b-ok">Done</span>
+                  </li>
+                  <li>
+                    <span>13:00 — Industrial Depot</span
+                    ><span class="badge b-warn">Welfare inspection due</span>
+                  </li>
+                  <li>
+                    <span>16:00 — Ruaraka Mall</span
+                    ><span class="badge b-info">Pending</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="panel-h"><h3>Site issues raised</h3></div>
+              <div class="panel-b">
+                <ul class="list">
+                  <li>
+                    <span>Industrial Depot — no running water post 3</span
+                    ><span class="badge b-red">Escalate</span>
+                  </li>
+                  <li>
+                    <span>Ruaraka Mall — broken floodlight, gate B</span
+                    ><span class="badge b-warn">Logged</span>
+                  </li>
+                </ul>
+                <p class="tiny-note">
+                  Supervisors see only their assigned sites and authorised
+                  employee information.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-h">
+              <h3>Guard attendance — assigned sites</h3>
+            </div>
+            <div class="tbl-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Guard</th>
+                    <th>Site</th>
+                    <th>Shift</th>
+                    <th>Status</th>
+                    <th>PSRA</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><b>James Otieno</b></td>
+                    <td>Nairobi CBD Tower</td>
+                    <td>Day</td>
+                    <td><span class="badge b-ok">On duty</span></td>
+                    <td>PSRA-44102</td>
+                    <td><a class="linklike" href="#">View</a></td>
+                  </tr>
+                  <tr>
+                    <td><b>Faith Njeri</b></td>
+                    <td>Karen Residence Estate</td>
+                    <td>Day</td>
+                    <td><span class="badge b-ok">On duty</span></td>
+                    <td>PSRA-47001</td>
+                    <td><a class="linklike" href="#">View</a></td>
+                  </tr>
+                  <tr>
+                    <td><b>Peter Kimani</b></td>
+                    <td>Industrial Area Depot</td>
+                    <td>Night</td>
+                    <td><span class="badge b-ok">On duty</span></td>
+                    <td>PSRA-45903</td>
+                    <td><a class="linklike" href="#">View</a></td>
+                  </tr>
+                  <tr>
+                    <td><b>Mary Achieng</b></td>
+                    <td>Ruaraka Mall</td>
+                    <td>Night</td>
+                    <td><span class="badge b-warn">Rest day</span></td>
+                    <td>PSRA-45577</td>
+                    <td><a class="linklike" href="#">View</a></td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
       </div>
-      <div class="panel">
-        <div class="panel-head"><h3><i class="fa-solid fa-clock-rotate-left"></i>Recent Activity</h3><a class="panel-link" href="../modules/reports.html">View all <i class="fa-solid fa-arrow-right"></i></a></div>
-        <div class="panel-body">
-          <ul class="feed">
-            <li><span class="fdot fd-red"></span><div>Intrusion reported at Site Beta Retail — police notified, awaiting resolution.<time>Today, 13:58</time></div></li>
-            <li><span class="fdot fd-orange"></span><div>Inspection finding recorded: broken perimeter floodlight, Riverside Gardens.<time>Today, 11:32</time></div></li>
-            <li><span class="fdot fd-green"></span><div>Handover verified — Apex Towers day → night, no discrepancies.<time>Today, 07:04</time></div></li>
-          </ul>
-        </div>
-      </div>
-    </main>
-  </div>
-</div>
-</body>
+    </div>
+  </body>
 </html>

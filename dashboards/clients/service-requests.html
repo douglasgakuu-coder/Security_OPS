@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Service Requests — VIGILORA</title>
+    <link rel="stylesheet" href="../../css/vigilora.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <a class="brand" href="client.html"
+          ><span class="mark">VIGI</span>LORA</a
+        >
+        <nav>
+          <div class="sb-group">Your Account</div>
+          <a class="sb-item" href="client.html"
+            ><span class="ico-char">&#127970;</span
+            ><span class="txt">Client Dashboard</span></a
+          >
+          <a class="sb-item" href="contract-details.html"
+            ><span class="ico-char">&#128196;</span
+            ><span class="txt">Contract Details</span></a
+          >
+          <a class="sb-item" href="assigned-sites.html"
+            ><span class="ico-char">&#128506;</span
+            ><span class="txt">Assigned Sites</span></a
+          >
+          <div class="sb-group">Service</div>
+          <a class="sb-item" href="deployments.html"
+            ><span class="ico-char">&#128462;</span
+            ><span class="txt">Deployments</span></a
+          >
+          <a class="sb-item" href="attendance-summaries.html"
+            ><span class="ico-char">&#9200;</span
+            ><span class="txt">Attendance Summaries</span></a
+          >
+          <a class="sb-item" href="incident-reports.html"
+            ><span class="ico-char">&#128680;</span
+            ><span class="txt">Incident Reports</span></a
+          >
+          <a class="sb-item on" href="service-requests.html"
+            ><span class="ico-char">&#128221;</span
+            ><span class="txt">Service Requests</span></a
+          >
+          <a class="sb-item" href="inspection-reports.html"
+            ><span class="ico-char">&#128269;</span
+            ><span class="txt">Inspection Reports</span></a
+          >
+          <div class="sb-group">Billing</div>
+          <a class="sb-item" href="invoices.html"
+            ><span class="ico-char">&#129534;</span
+            ><span class="txt">Invoices</span></a
+          >
+          <a class="sb-item" href="payment-records.html"
+            ><span class="ico-char">&#128181;</span
+            ><span class="txt">Payment Records</span></a
+          >
+          <a class="sb-item" href="communication-centre.html"
+            ><span class="ico-char">&#128172;</span
+            ><span class="txt">Communication Centre</span></a
+          >
+        </nav>
+        <div class="sb-foot">
+          Client Portal — Brightways Properties<br />VIGILORA v5 — static
+          prototype
+        </div>
+      </aside>
+      <div class="main">
+        <header class="topbar">
+          <div>
+            <div class="page-title">Service Requests</div>
+            <div class="crumbs">Service / Service Requests</div>
+          </div>
+          <div class="spacer"></div>
+          <a class="avatar" href="#" title="Notifications"
+            >&#128276;<span class="dot"></span
+          ></a>
+          <a class="avatar" href="#" title="Client Portal">CL</a>
+        </header>
+        <div class="content">
+          <span class="demo-note"
+            >Demonstration data — not live operational information</span
+          >
+          <div class="page-head">
+            <div>
+              <h2>Service Requests</h2>
+              <p>Trackable requests with status and resolution times.</p>
+            </div>
+            <div>
+              <button class="btn btn-primary btn-sm" type="button">
+                &plus; New request
+              </button>
+            </div>
+          </div>
+          <div class="panel mb20">
+            <div class="panel-h"><h3>Your requests</h3></div>
+            <div class="tbl-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Ref</th>
+                    <th>Subject</th>
+                    <th>Site</th>
+                    <th>Opened</th>
+                    <th>Status</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><b>SR-212</b></td>
+                    <td>Additional guard for AGM</td>
+                    <td>CBD Tower</td>
+                    <td>Today</td>
+                    <td><span class="badge b-info">Under review</span></td>
+                    <td><a class="linklike" href="#">View</a></td>
+                  </tr>
+                  <tr>
+                    <td><b>SR-210</b></td>
+                    <td>Gate camera angle adjustment</td>
+                    <td>Ruaraka Mall</td>
+                    <td>18 Oct</td>
+                    <td><span class="badge b-ok">Closed</span></td>
+                    <td><a class="linklike" href="#">View</a></td>
+                  </tr>
+                  <tr>
+                    <td><b>SR-209</b></td>
+                    <td>Visitor access process update</td>
+                    <td>CBD Tower</td>
+                    <td>11 Oct</td>
+                    <td><span class="badge b-ok">Closed</span></td>
+                    <td><a class="linklike" href="#">View</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-h"><h3>Raise a request</h3></div>
+            <div class="panel-b">
+              <form method="get" action="#">
+                <div class="form-grid">
+                  <div class="field">
+                    <label class="req">Site</label
+                    ><select name="site" required>
+                      <option value="">Select&hellip;</option>
+                      <option>CBD Tower</option>
+                      <option>Ruaraka Mall</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label class="req">Category</label
+                    ><select name="cat" required>
+                      <option value="">Select&hellip;</option>
+                      <option>Extra coverage</option>
+                      <option>Access process</option>
+                      <option>Concern</option>
+                      <option>General enquiry</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="field" class="mt14">
+                  <label class="req">Details</label
+                  ><textarea name="details" rows="4" required></textarea>
+                </div>
+                <div class="mt14">
+                  <button class="btn btn-primary" type="submit">
+                    Submit request
+                  </button>
+                </div>
+                <p class="tiny-note">
+                  Demonstration form — nothing is submitted to a server.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

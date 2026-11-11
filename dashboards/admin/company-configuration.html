@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Company Configuration — VIGILORA</title>
+    <link rel="stylesheet" href="../../css/vigilora.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <a class="brand" href="admin.html"
+          ><span class="mark">VIGI</span>LORA</a
+        >
+        <nav>
+          <div class="sb-group">Overview</div>
+          <a class="sb-item" href="admin.html"
+            ><span class="ico-char">&#128200;</span
+            ><span class="txt">System Overview</span></a
+          >
+          <a class="sb-item" href="system-activity.html"
+            ><span class="ico-char">&#9889;</span
+            ><span class="txt">System Activity</span></a
+          >
+          <div class="sb-group">Administration</div>
+          <a class="sb-item" href="users.html"
+            ><span class="ico-char">&#128100;</span
+            ><span class="txt">User Accounts</span><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="roles-permissions.html"
+            ><span class="ico-char">&#128274;</span
+            ><span class="txt">Roles &amp; Permissions</span></a
+          >
+          <a class="sb-item on" href="company-configuration.html"
+            ><span class="ico-char">&#9881;</span
+            ><span class="txt">Company Configuration</span></a
+          >
+          <a class="sb-item" href="integrations.html"
+            ><span class="ico-char">&#128268;</span
+            ><span class="txt">Integration Settings</span></a
+          >
+          <div class="sb-group">Security</div>
+          <a class="sb-item" href="security-settings.html"
+            ><span class="ico-char">&#128737;</span
+            ><span class="txt">Security Settings</span></a
+          >
+          <a class="sb-item" href="audit-logs.html"
+            ><span class="ico-char">&#128220;</span
+            ><span class="txt">Audit Logs</span></a
+          >
+          <a class="sb-item" href="backup-status.html"
+            ><span class="ico-char">&#128190;</span
+            ><span class="txt">Backup Status</span></a
+          >
+          <a class="sb-item" href="login-history.html"
+            ><span class="ico-char">&#128231;</span
+            ><span class="txt">Login History</span><span class="pip"></span
+          ></a>
+        </nav>
+        <div class="sb-foot">
+          System Administrator<br />VIGILORA v5 — static prototype
+        </div>
+      </aside>
+      <div class="main">
+        <header class="topbar">
+          <div>
+            <div class="page-title">Company Configuration</div>
+            <div class="crumbs">Administration / Company Configuration</div>
+          </div>
+          <div class="spacer"></div>
+          <a class="avatar" href="#" title="Notifications"
+            >&#128276;<span class="dot"></span
+          ></a>
+          <a class="avatar" href="#" title="System Administrator">SA</a>
+        </header>
+        <div class="content">
+          <span class="demo-note"
+            >Demonstration data — not live operational information</span
+          >
+          <div class="page-head">
+            <div>
+              <h2>Company Configuration</h2>
+              <p>
+                Company profile and configurable operational policy thresholds.
+              </p>
+            </div>
+          </div>
+          <div class="row r2">
+            <div class="panel">
+              <div class="panel-h"><h3>Company profile</h3></div>
+              <div class="panel-b">
+                <form method="get" action="#">
+                  <div class="field">
+                    <label class="req">Company name</label
+                    ><input type="text" name="cname" value="ABC LTD" required />
+                  </div>
+                  <div class="field" class="mt12">
+                    <label>PSRA registration</label
+                    ><input
+                      type="text"
+                      name="psra"
+                      value="PSRA-REG-2201 (demo)"
+                    />
+                  </div>
+                  <div class="field" class="mt12">
+                    <label>Head office branch</label
+                    ><select name="branch">
+                      <option>Nairobi HQ</option>
+                      <option>Mombasa Road</option>
+                      <option>Nakuru</option>
+                      <option>Kisumu</option>
+                    </select>
+                  </div>
+                  <div class="mt14">
+                    <button class="btn btn-primary" type="submit">
+                      Save profile
+                    </button>
+                  </div>
+                  <p class="tiny-note">
+                    Demonstration form — nothing is submitted to a server.
+                  </p>
+                </form>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="panel-h"><h3>Operational policy</h3></div>
+              <div class="panel-b">
+                <form method="get" action="#">
+                  <div class="form-grid">
+                    <div class="field">
+                      <label class="req">Max consecutive working days</label
+                      ><input type="number" name="days" value="6" required />
+                    </div>
+                    <div class="field">
+                      <label class="req">Min rest hours between shifts</label
+                      ><input type="number" name="rest" value="8" required />
+                    </div>
+                    <div class="field">
+                      <label>Overtime pre-approval threshold (hrs/wk)</label
+                      ><input type="number" name="ot" value="12" />
+                    </div>
+                  </div>
+                  <div class="mt14">
+                    <button class="btn btn-primary" type="submit">
+                      Save policy
+                    </button>
+                  </div>
+                  <p class="tiny-note">
+                    Policies are configurable — have payroll and employment
+                    rules reviewed by a Kenyan employment professional before
+                    enforcement.
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

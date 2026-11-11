@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="300" viewBox="0 0 800 300" role="img" aria-label="Security services illustration">
+  <rect width="800" height="300" rx="16" fill="#F7F6F2"/>
+  <g stroke="#2457D6" stroke-width="4" fill="#ffffff">
+    <circle cx="140" cy="110" r="46"/>
+    <circle cx="400" cy="110" r="46"/>
+    <circle cx="660" cy="110" r="46"/>
+  </g>
+  <g fill="none" stroke="#94B800" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M122 110l12 12 24-26"/>
+    <path d="M386 116l18-22 10 12"/>
+    <path d="M642 100l24 26"/>
+  </g>
+  <g font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="600" fill="#131722" text-anchor="middle">
+    <text x="140" y="200">Vetted guards</text>
+    <text x="400" y="200">Rapid response</text>
+    <text x="660" y="200">Verified records</text>
+  </g>
+  <g font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" fill="#6B7288" text-anchor="middle">
+    <text x="140" y="222">PSRA-checked &amp; trained</text>
+    <text x="400" y="222">24/7 control room</text>
+    <text x="660" y="222">Tracked to expiry</text>
+  </g>
+</svg>

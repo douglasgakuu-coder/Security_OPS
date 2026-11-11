@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360" role="img" aria-label="Recruitment illustration">
+  <rect width="900" height="360" rx="18" fill="#0E1F52"/>
+  <circle cx="720" cy="90" r="140" fill="#2457D6" opacity=".35"/>
+  <circle cx="180" cy="300" r="110" fill="#94B800" opacity=".18"/>
+  <g fill="#ffffff" opacity=".9">
+    <circle cx="410" cy="120" r="26"/>
+    <path d="M410 156c-30 0-54 20-54 48v26h108v-26c0-28-24-48-54-48z"/>
+    <circle cx="500" cy="140" r="22" opacity=".75"/>
+    <path d="M500 170c-25 0-45 17-45 40v22h90v-22c0-23-20-40-45-40z" opacity=".75"/>
+    <circle cx="322" cy="140" r="22" opacity=".75"/>
+    <path d="M322 170c-25 0-45 17-45 40v22h90v-22c0-23-20-40-45-40z" opacity=".75"/>
+  </g>
+  <text x="450" y="292" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="26" font-weight="700" fill="#ffffff">Join a team that invests in its people</text>
+</svg>

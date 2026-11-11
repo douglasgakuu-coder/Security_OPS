@@ -1,107 +1,223 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Control Room Desk — NOVAGUARD</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<link rel="stylesheet" href="../assets/css/dashboard.css">
-<link rel="stylesheet" href="../assets/css/responsive.css">
-</head>
-<body>
-<div class="app">
-  <input type="checkbox" id="navtoggle" class="nav-checkbox">
-  <aside class="sidebar">
-    <div class="side-brand"><span class="brand-mark"><i class="fa-solid fa-shield-halved"></i></span>NOVAGUARD</div>
-    <nav class="side-nav">
-      <div class="side-group">Control Room</div>
-      <a class="side-link active" href="control-room.html"><i class="fa-solid fa-table-columns"></i>Live Desk</a>
-      <a class="side-link" href="../modules/reports.html"><i class="fa-solid fa-book"></i>Occurrence Book</a>
-      <a class="side-link" href="../modules/incidents.html"><i class="fa-solid fa-bullhorn"></i>Incident Queue</a>
-      <a class="side-link" href="../modules/reports.html"><i class="fa-solid fa-tower-broadcast"></i>Dispatch Records</a>
-      <div class="side-group">Monitoring</div>
-      <a class="side-link" href="../modules/assets.html"><i class="fa-solid fa-tower-cell"></i>Welfare &amp; Radio Checks</a>
-      <a class="side-link" href="../modules/reports.html"><i class="fa-solid fa-video"></i>CCTV / Alarms</a>
-      <a class="side-link" href="../modules/reports.html"><i class="fa-solid fa-stopwatch"></i>Response Timelines</a>
-      <div class="side-group">Shift</div>
-      <a class="side-link" href="../modules/handovers.html"><i class="fa-solid fa-right-left"></i>Operator Handover</a>
-    </nav>
-    <div class="side-foot"><a href="../../webpages/login.html"><i class="fa-solid fa-right-from-bracket"></i> Sign out</a></div>
-  </aside>
-  <div class="main-area">
-    <header class="topbar">
-      <label for="navtoggle" class="icon-btn" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></label>
-      <div class="crumb">Control Room / <b>Live Desk</b></div>
-      <div class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Global search — guards, sites, records…"></div>
-      <div class="top-actions">
-        <div class="icon-btn"><i class="fa-solid fa-bell"></i><span class="dot">1</span></div>
-        <div class="avatar">CO</div>
-      </div>
-    </header>
-    <main class="content">
-      <div class="page-title-row">
-        <div>
-          <h1>Control Room Desk</h1>
-          <div class="crumbs">Control Room Desk</div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Control Room — VIGILORA</title>
+    <link rel="stylesheet" href="../../css/vigilora.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <a class="brand" href="control-room.html"
+          ><span class="mark">VIGI</span>LORA</a
+        >
+        <nav>
+          <div class="sb-group">Live Desk</div>
+          <a class="sb-item on" href="control-room.html"
+            ><span class="ico-char">&#127909;</span
+            ><span class="txt">Control Room</span><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="alert-queue.html"
+            ><span class="ico-char">&#128276;</span
+            ><span class="txt">Alert Queue</span><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="active-incidents.html"
+            ><span class="ico-char">&#128680;</span
+            ><span class="txt">Active Incidents</span><span class="pip"></span
+          ></a>
+          <div class="sb-group">Monitoring</div>
+          <a class="sb-item" href="missed-checkins.html"
+            ><span class="ico-char">&#9200;</span
+            ><span class="txt">Missed Check-ins</span><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="assistance-requests.html"
+            ><span class="ico-char">&#128658;</span
+            ><span class="txt">Assistance Requests</span
+            ><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="dispatch.html"
+            ><span class="ico-char">&#128666;</span
+            ><span class="txt">Dispatch Coordination</span></a
+          >
+          <div class="sb-group">Desk</div>
+          <a class="sb-item" href="comms-log.html"
+            ><span class="ico-char">&#128172;</span
+            ><span class="txt">Communication Logs</span></a
+          >
+          <a class="sb-item" href="operator-handover.html"
+            ><span class="ico-char">&#128260;</span
+            ><span class="txt">Operator Handover</span></a
+          >
+        </nav>
+        <div class="sb-foot">
+          Control Room Operator<br />VIGILORA v5 — static prototype
         </div>
-        <div class="page-actions">
-          <button class="btn-xs"><i class="fa-solid fa-download"></i>Export</button>
-          <button class="btn-xs primary"><i class="fa-solid fa-plus"></i>New Record</button>
-        </div>
-      </div>
-      <div class="kpi-grid">
-        <div class="kpi k-green"><div class="kpi-label"><i class="fa-solid fa-map-location-dot"></i>Active Sites</div><div class="kpi-value">85</div><div class="kpi-delta up">78 fully staffed</div></div>
-        <div class="kpi "><div class="kpi-label"><i class="fa-solid fa-user-shield"></i>Current Staffing</div><div class="kpi-value">1,268</div><div class="kpi-delta ">On duty now</div></div>
-        <div class="kpi k-red"><div class="kpi-label"><i class="fa-solid fa-door-open"></i>Unattended Posts</div><div class="kpi-value">3</div><div class="kpi-delta down">Immediate action</div></div>
-        <div class="kpi k-orange"><div class="kpi-label"><i class="fa-solid fa-clock"></i>Missed Check-ins</div><div class="kpi-value">5</div><div class="kpi-delta warn">Auto-escalated</div></div>
-        <div class="kpi k-orange"><div class="kpi-label"><i class="fa-solid fa-shoe-prints"></i>Missed Patrols</div><div class="kpi-value">2</div><div class="kpi-delta warn">Sites flagged</div></div>
-        <div class="kpi k-red"><div class="kpi-label"><i class="fa-solid fa-triangle-exclamation"></i>Critical Alerts</div><div class="kpi-value">1</div><div class="kpi-delta down">Intrusion — Site Beta</div></div>
-      </div>
-<div class="emergency-banner"><span><i class="fa-solid fa-tower-broadcast"></i> INTRUSION REPORTED — Site Beta (13:58). Supervisor dispatched; response in progress. Acknowledgment alone will not close this incident.</span><button class="btn-xs danger"><i class="fa-solid fa-check"></i>Acknowledge &amp; Dispatch</button></div>
-<div class="split-grid">
-        <div class="panel">
-          <div class="panel-head"><h3><i class="fa-solid fa-map-location-dot"></i>Live Site Map &amp; Deployments</h3><a class="panel-link" href="../modules/reports.html">Full map <i class="fa-solid fa-arrow-right"></i></a></div>
-          <div class="panel-body">
-            <div class="site-status"><span><i class="st-dot dot-g"></i><b>Site Alpha</b> — Apex Towers</span><span>Fully Staffed (4/4) · Patrol OK</span></div>
-            <div class="site-status"><span><i class="st-dot dot-r"></i><b>Site Beta</b> — Westlands Depot</span><span>UNSTAFFED (0/2) · Intrusion</span></div>
-            <div class="site-status"><span><i class="st-dot dot-g"></i><b>Site Gamma</b> — Valley School</span><span>Fully Staffed (3/3) · Patrol OK</span></div>
-            <div class="site-status"><span><i class="st-dot dot-o"></i><b>Site Delta</b> — Riverside Gardens</span><span>Partially Staffed (2/3)</span></div>
-            <div class="gps-note"><i class="fa-solid fa-location-crosshairs"></i> GPS: Guard #104 at Westlands · Guard #212 at Upper Hill · Guard #77 en route (relief)</div>
+      </aside>
+      <div class="main">
+        <header class="topbar">
+          <div>
+            <div class="page-title">Control Room</div>
+            <div class="crumbs">Live Desk / Control Room</div>
           </div>
-        </div>
-        <div class="panel">
-          <div class="panel-head"><h3><i class="fa-solid fa-book"></i>Real-Time Occurrence Log</h3></div>
-          <div class="panel-body">
-            <div class="log-row"><span class="log-time">14:20</span><span><span class="badge bg-green">OK</span> Radio check — Post 3 (Gate North), Site Alpha.</span></div>
-            <div class="log-row"><span class="log-time">14:15</span><span><span class="badge bg-orange">WARNING</span> Missed checkpoint — Apex Towers patrol route B.</span></div>
-            <div class="log-row"><span class="log-time">13:58</span><span><span class="badge bg-red">CRITICAL</span> Intrusion reported — Site Beta. Alarm triggered.</span></div>
-            <div class="log-row"><span class="log-time">13:52</span><span><span class="badge bg-orange">WARNING</span> Guard #88 has not clocked in — supervisor alerted.</span></div>
-            <div class="filters">
-              <b>Actions:</b>
-              <button class="btn-xs primary"><i class="fa-solid fa-rotate"></i>Dispatch Relief</button>
-              <button class="btn-xs danger"><i class="fa-solid fa-bell"></i>Alert Supervisor</button>
-              <button class="btn-xs"><i class="fa-solid fa-phone"></i>Call Site</button>
-              <button class="btn-xs"><i class="fa-solid fa-pen"></i>Log Entry</button>
+          <div class="spacer"></div>
+          <a class="avatar" href="#" title="Notifications"
+            >&#128276;<span class="dot"></span
+          ></a>
+          <a class="avatar" href="#" title="Control Room Operator">CR</a>
+        </header>
+        <div class="content">
+          <span class="demo-note"
+            >Demonstration data — not live operational information</span
+          >
+
+          <div class="row r4 mb20">
+            <div class="kpi bad">
+              <div class="label">Alert queue</div>
+              <div class="val">4 open</div>
+              <div class="sub">1 unacknowledged</div>
+            </div>
+            <div class="kpi bad">
+              <div class="label">Active incidents</div>
+              <div class="val">6</div>
+              <div class="sub">2 high priority</div>
+            </div>
+            <div class="kpi bad">
+              <div class="label">Missed check-ins</div>
+              <div class="val">2</div>
+              <div class="sub">Follow-up called</div>
+            </div>
+            <div class="kpi">
+              <div class="label">Relief dispatch</div>
+              <div class="val">1 vehicle</div>
+              <div class="sub">ETA 22 min</div>
+            </div>
+          </div>
+
+          <div class="notice red">
+            <span
+              ><b>Racing Red:</b> INC-1042 at CBD Tower is in progress —
+              supervisor en route.</span
+            >
+          </div>
+
+          <!-- Four-panel layout: new alerts · active cases · site status · activity timeline -->
+          <div class="row r2 mb20">
+            <div class="panel">
+              <div class="panel-h"><h3>1 &middot; New alerts</h3></div>
+              <div class="panel-b">
+                <ul class="list">
+                  <li>
+                    <span><b>AL-0912</b> — Duress alarm, Gate B, CBD Tower</span
+                    ><span class="badge b-red">New</span>
+                  </li>
+                  <li>
+                    <span
+                      ><b>AL-0911</b> — Missed patrol checkpoint 7, Ruaraka
+                      Mall</span
+                    ><span class="badge b-warn">New</span>
+                  </li>
+                  <li>
+                    <span
+                      ><b>AL-0910</b> — Attendance sync conflict, Industrial
+                      Depot</span
+                    ><span class="badge b-warn">Queued</span>
+                  </li>
+                  <li>
+                    <span
+                      ><b>AL-0909</b> — Panic test activation, Westlands
+                      HQ</span
+                    ><span class="badge b-info">Acknowledged</span>
+                  </li>
+                </ul>
+                <p class="tiny-note">
+                  Acknowledging an alert never closes an incident — incidents
+                  close only with a recorded outcome and authorised approval.
+                </p>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="panel-h"><h3>2 &middot; Active cases</h3></div>
+              <div class="panel-b">
+                <ul class="list">
+                  <li>
+                    <span>INC-1042 — Unauthorised entry attempt</span
+                    ><span class="badge b-red">Investigating</span>
+                  </li>
+                  <li>
+                    <span>INC-1040 — Vandalism in parking area</span
+                    ><span class="badge b-warn">Escalated</span>
+                  </li>
+                  <li>
+                    <span>INC-1038 — Medical assistance request</span
+                    ><span class="badge b-ok">Resolved</span>
+                  </li>
+                  <li>
+                    <span>INC-1041 — Fire alarm activation</span
+                    ><span class="badge b-ok">Resolved</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row r2">
+            <div class="panel">
+              <div class="panel-h"><h3>3 &middot; Site status</h3></div>
+              <div class="panel-b">
+                <ul class="list">
+                  <li>
+                    <span>CBD Tower</span
+                    ><span class="badge b-ok">Operational</span>
+                  </li>
+                  <li>
+                    <span>Ruaraka Mall</span
+                    ><span class="badge b-warn">Checkpoint missed</span>
+                  </li>
+                  <li>
+                    <span>Industrial Depot</span
+                    ><span class="badge b-ok">Operational</span>
+                  </li>
+                  <li>
+                    <span>Airport North Warehouse</span
+                    ><span class="badge b-red">Post vacant</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="panel-h"><h3>4 &middot; Activity timeline</h3></div>
+              <div class="panel-b">
+                <ul class="timeline">
+                  <li>
+                    <div class="t-dot bad"></div>
+                    <div class="t-time">08:44</div>
+                    <div>
+                      Duress alarm AL-0912 acknowledged — assigned to Operator 2
+                    </div>
+                  </li>
+                  <li>
+                    <div class="t-dot"></div>
+                    <div class="t-time">08:20</div>
+                    <div>
+                      Missed checkpoint logged — patrol supervisor notified
+                    </div>
+                  </li>
+                  <li>
+                    <div class="t-dot ok"></div>
+                    <div class="t-time">07:10</div>
+                    <div>INC-1041 closed with resolution summary</div>
+                  </li>
+                  <li>
+                    <div class="t-dot ok"></div>
+                    <div class="t-time">06:00</div>
+                    <div>Shift handover recorded — night to day operators</div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="panel mb-24">
-        <div class="panel-head"><h3><i class="fa-solid fa-stopwatch"></i>Escalation &amp; Response Timeline — INC-2026-0417 (Site Beta Intrusion)</h3><a class="panel-link" href="../modules/reports.html"><i class="fa-solid fa-download"></i> Export</a></div>
-        <div class="table-wrap"><table class="tbl">
-          <thead><tr><th>Step</th><th>Action</th><th>Recorded</th><th>Elapsed</th><th>Status</th></tr></thead>
-          <tbody>
-            <tr><td>1</td><td>Alarm triggered — control room alerted</td><td>13:58:02</td><td>—</td><td><span class="badge bg-green">Done</span></td></tr>
-            <tr><td>2</td><td>Operator acknowledged &amp; verified (CCTV)</td><td>13:58:41</td><td>39s</td><td><span class="badge bg-green">Done</span></td></tr>
-            <tr><td>3</td><td>Supervisor dispatched to site</td><td>14:00:15</td><td>2m 13s</td><td><span class="badge bg-green">Done</span></td></tr>
-            <tr><td>4</td><td>Police liaison notified</td><td>14:02:30</td><td>4m 28s</td><td><span class="badge bg-green">Done</span></td></tr>
-            <tr><td>5</td><td>On-site intervention &amp; resolution</td><td>— pending —</td><td>—</td><td><span class="badge bg-orange">In Progress</span></td></tr>
-          </tbody>
-        </table></div>
-      </div>
-    </main>
-  </div>
-</div>
-</body>
+    </div>
+  </body>
 </html>

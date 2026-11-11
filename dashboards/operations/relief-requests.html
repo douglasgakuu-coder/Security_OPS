@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Relief Guard Requests — VIGILORA</title>
+    <link rel="stylesheet" href="../../css/vigilora.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <a class="brand" href="operations.html"
+          ><span class="mark">VIGI</span>LORA</a
+        >
+        <nav>
+          <div class="sb-group">Operations</div>
+          <a class="sb-item" href="operations.html"
+            ><span class="ico-char">&#128462;</span
+            ><span class="txt">Deployment Overview</span></a
+          >
+          <a class="sb-item" href="site-coverage.html"
+            ><span class="ico-char">&#128506;</span
+            ><span class="txt">Site Coverage</span></a
+          >
+          <a class="sb-item" href="vacant-posts.html"
+            ><span class="ico-char">&#9873;</span
+            ><span class="txt">Vacant Posts</span><span class="pip"></span
+          ></a>
+          <div class="sb-group">Scheduling</div>
+          <a class="sb-item" href="shift-scheduling.html"
+            ><span class="ico-char">&#128197;</span
+            ><span class="txt">Shift Scheduling</span></a
+          >
+          <a class="sb-item" href="attendance-exceptions.html"
+            ><span class="ico-char">&#9200;</span
+            ><span class="txt">Attendance Exceptions</span
+            ><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="deployment-conflicts.html"
+            ><span class="ico-char">&#9878;</span
+            ><span class="txt">Deployment Conflicts</span></a
+          >
+          <a class="sb-item on" href="relief-requests.html"
+            ><span class="ico-char">&#128260;</span
+            ><span class="txt">Relief Guard Requests</span></a
+          >
+          <div class="sb-group">Field</div>
+          <a class="sb-item" href="incidents.html"
+            ><span class="ico-char">&#128680;</span
+            ><span class="txt">Active Incidents</span><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="handovers.html"
+            ><span class="ico-char">&#128260;</span
+            ><span class="txt">Operational Handovers</span></a
+          >
+          <a class="sb-item" href="supervisor-assignments.html"
+            ><span class="ico-char">&#129492;</span
+            ><span class="txt">Supervisor Assignments</span></a
+          >
+        </nav>
+        <div class="sb-foot">
+          Operations Manager<br />VIGILORA v5 — static prototype
+        </div>
+      </aside>
+      <div class="main">
+        <header class="topbar">
+          <div>
+            <div class="page-title">Relief Guard Requests</div>
+            <div class="crumbs">Scheduling / Relief Guard Requests</div>
+          </div>
+          <div class="spacer"></div>
+          <a class="avatar" href="#" title="Notifications"
+            >&#128276;<span class="dot"></span
+          ></a>
+          <a class="avatar" href="#" title="Operations Manager">OM</a>
+        </header>
+        <div class="content">
+          <span class="demo-note"
+            >Demonstration data — not live operational information</span
+          >
+          <div class="page-head">
+            <div>
+              <h2>Relief Guard Requests</h2>
+              <p>Cover for absences without breaking rest-day rules.</p>
+            </div>
+          </div>
+          <div class="panel mb20">
+            <div class="panel-h"><h3>Open relief requests</h3></div>
+            <div class="tbl-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Ref</th>
+                    <th>Site</th>
+                    <th>Shift</th>
+                    <th>Urgency</th>
+                    <th>Status</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><b>RL-118</b></td>
+                    <td>Airport North Warehouse</td>
+                    <td>Night, tonight</td>
+                    <td><span class="badge b-red">Urgent</span></td>
+                    <td>
+                      <span class="badge b-warn">Awaiting assignment</span>
+                    </td>
+                    <td><a class="linklike" href="#">Assign</a></td>
+                  </tr>
+                  <tr>
+                    <td><b>RL-117</b></td>
+                    <td>Industrial Depot</td>
+                    <td>Day, tomorrow</td>
+                    <td><span class="badge b-warn">High</span></td>
+                    <td><span class="badge b-info">Candidates found</span></td>
+                    <td><a class="linklike" href="#">Review</a></td>
+                  </tr>
+                  <tr>
+                    <td><b>RL-116</b></td>
+                    <td>Ruaraka Mall</td>
+                    <td>Night, 14 Nov</td>
+                    <td><span class="badge b-mut">Planned</span></td>
+                    <td><span class="badge b-info">Scheduled</span></td>
+                    <td><a class="linklike" href="#">View</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-h"><h3>Raise a relief request</h3></div>
+            <div class="panel-b">
+              <form method="get" action="#">
+                <div class="form-grid">
+                  <div class="field">
+                    <label class="req">Site</label
+                    ><select name="site" required>
+                      <option value="">Select&hellip;</option>
+                      <option>Nairobi CBD Tower</option>
+                      <option>Westlands HQ Park</option>
+                      <option>Industrial Area Depot</option>
+                      <option>Ruaraka Shopping Mall</option>
+                      <option>Airport North Warehouse</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label class="req">Shift date</label
+                    ><input type="date" name="date" required />
+                  </div>
+                  <div class="field">
+                    <label class="req">Shift window</label
+                    ><select name="window" required>
+                      <option value="">Select&hellip;</option>
+                      <option>Day 06:00–18:00</option>
+                      <option>Night 18:00–06:00</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label class="req">Urgency</label
+                    ><select name="urgency" required>
+                      <option value="">Select&hellip;</option>
+                      <option>Planned</option>
+                      <option>High</option>
+                      <option>Urgent</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="field" class="mt14">
+                  <label>Reason and notes</label
+                  ><textarea name="notes" rows="3"></textarea>
+                </div>
+                <div class="mt14">
+                  <button class="btn btn-primary" type="submit">
+                    Submit request
+                  </button>
+                </div>
+                <p class="tiny-note">
+                  Demonstration form — nothing is submitted to a server.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

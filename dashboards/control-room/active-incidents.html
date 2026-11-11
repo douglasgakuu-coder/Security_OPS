@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Active Incidents — VIGILORA</title>
+    <link rel="stylesheet" href="../../css/vigilora.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <a class="brand" href="control-room.html"
+          ><span class="mark">VIGI</span>LORA</a
+        >
+        <nav>
+          <div class="sb-group">Live Desk</div>
+          <a class="sb-item" href="control-room.html"
+            ><span class="ico-char">&#127909;</span
+            ><span class="txt">Control Room</span><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="alert-queue.html"
+            ><span class="ico-char">&#128276;</span
+            ><span class="txt">Alert Queue</span><span class="pip"></span
+          ></a>
+          <a class="sb-item on" href="active-incidents.html"
+            ><span class="ico-char">&#128680;</span
+            ><span class="txt">Active Incidents</span><span class="pip"></span
+          ></a>
+          <div class="sb-group">Monitoring</div>
+          <a class="sb-item" href="missed-checkins.html"
+            ><span class="ico-char">&#9200;</span
+            ><span class="txt">Missed Check-ins</span><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="assistance-requests.html"
+            ><span class="ico-char">&#128658;</span
+            ><span class="txt">Assistance Requests</span
+            ><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="dispatch.html"
+            ><span class="ico-char">&#128666;</span
+            ><span class="txt">Dispatch Coordination</span></a
+          >
+          <div class="sb-group">Desk</div>
+          <a class="sb-item" href="comms-log.html"
+            ><span class="ico-char">&#128172;</span
+            ><span class="txt">Communication Logs</span></a
+          >
+          <a class="sb-item" href="operator-handover.html"
+            ><span class="ico-char">&#128260;</span
+            ><span class="txt">Operator Handover</span></a
+          >
+        </nav>
+        <div class="sb-foot">
+          Control Room Operator<br />VIGILORA v5 — static prototype
+        </div>
+      </aside>
+      <div class="main">
+        <header class="topbar">
+          <div>
+            <div class="page-title">Active Incidents</div>
+            <div class="crumbs">Live Desk / Active Incidents</div>
+          </div>
+          <div class="spacer"></div>
+          <a class="avatar" href="#" title="Notifications"
+            >&#128276;<span class="dot"></span
+          ></a>
+          <a class="avatar" href="#" title="Control Room Operator">CR</a>
+        </header>
+        <div class="content">
+          <span class="demo-note"
+            >Demonstration data — not live operational information</span
+          >
+          <div class="page-head">
+            <div>
+              <h2>Active Incidents</h2>
+              <p>
+                Every incident record: reference, reporter, site and time,
+                category, priority, assigned officer, status, action history,
+                evidence permissions, resolution summary and closure approval.
+              </p>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-h"><h3>Incident board</h3></div>
+            <div class="tbl-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Ref</th>
+                    <th>Incident</th>
+                    <th>Site</th>
+                    <th>Priority</th>
+                    <th>Status</th>
+                    <th>Reported</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><b>INC-1042</b></td>
+                    <td>Unauthorised entry attempt</td>
+                    <td>CBD Tower</td>
+                    <td><span class="badge b-red">High</span></td>
+                    <td><span class="badge b-warn">Investigating</span></td>
+                    <td>Today 08:12</td>
+                    <td><a class="linklike" href="#">Open</a></td>
+                  </tr>
+                  <tr>
+                    <td><b>INC-1040</b></td>
+                    <td>Vandalism in parking area</td>
+                    <td>Industrial Depot</td>
+                    <td><span class="badge b-warn">Medium</span></td>
+                    <td><span class="badge b-red">Escalated</span></td>
+                    <td>Yesterday 16:05</td>
+                    <td><a class="linklike" href="#">Open</a></td>
+                  </tr>
+                  <tr>
+                    <td><b>INC-1041</b></td>
+                    <td>Fire alarm activation</td>
+                    <td>Ruaraka Mall</td>
+                    <td><span class="badge b-warn">Medium</span></td>
+                    <td><span class="badge b-ok">Resolved</span></td>
+                    <td>Yesterday 19:44</td>
+                    <td><a class="linklike" href="#">Open</a></td>
+                  </tr>
+                  <tr>
+                    <td><b>INC-1039</b></td>
+                    <td>Suspicious vehicle loitering</td>
+                    <td>Westlands HQ</td>
+                    <td><span class="badge b-info">Low</span></td>
+                    <td><span class="badge b-ok">Closed</span></td>
+                    <td>Tue 14:20</td>
+                    <td><a class="linklike" href="#">Open</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

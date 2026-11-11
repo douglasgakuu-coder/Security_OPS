@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Active Incidents — VIGILORA</title>
+    <link rel="stylesheet" href="../../css/vigilora.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <a class="brand" href="operations.html"
+          ><span class="mark">VIGI</span>LORA</a
+        >
+        <nav>
+          <div class="sb-group">Operations</div>
+          <a class="sb-item" href="operations.html"
+            ><span class="ico-char">&#128462;</span
+            ><span class="txt">Deployment Overview</span></a
+          >
+          <a class="sb-item" href="site-coverage.html"
+            ><span class="ico-char">&#128506;</span
+            ><span class="txt">Site Coverage</span></a
+          >
+          <a class="sb-item" href="vacant-posts.html"
+            ><span class="ico-char">&#9873;</span
+            ><span class="txt">Vacant Posts</span><span class="pip"></span
+          ></a>
+          <div class="sb-group">Scheduling</div>
+          <a class="sb-item" href="shift-scheduling.html"
+            ><span class="ico-char">&#128197;</span
+            ><span class="txt">Shift Scheduling</span></a
+          >
+          <a class="sb-item" href="attendance-exceptions.html"
+            ><span class="ico-char">&#9200;</span
+            ><span class="txt">Attendance Exceptions</span
+            ><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="deployment-conflicts.html"
+            ><span class="ico-char">&#9878;</span
+            ><span class="txt">Deployment Conflicts</span></a
+          >
+          <a class="sb-item" href="relief-requests.html"
+            ><span class="ico-char">&#128260;</span
+            ><span class="txt">Relief Guard Requests</span></a
+          >
+          <div class="sb-group">Field</div>
+          <a class="sb-item on" href="incidents.html"
+            ><span class="ico-char">&#128680;</span
+            ><span class="txt">Active Incidents</span><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="handovers.html"
+            ><span class="ico-char">&#128260;</span
+            ><span class="txt">Operational Handovers</span></a
+          >
+          <a class="sb-item" href="supervisor-assignments.html"
+            ><span class="ico-char">&#129492;</span
+            ><span class="txt">Supervisor Assignments</span></a
+          >
+        </nav>
+        <div class="sb-foot">
+          Operations Manager<br />VIGILORA v5 — static prototype
+        </div>
+      </aside>
+      <div class="main">
+        <header class="topbar">
+          <div>
+            <div class="page-title">Active Incidents</div>
+            <div class="crumbs">Field / Active Incidents</div>
+          </div>
+          <div class="spacer"></div>
+          <a class="avatar" href="#" title="Notifications"
+            >&#128276;<span class="dot"></span
+          ></a>
+          <a class="avatar" href="#" title="Operations Manager">OM</a>
+        </header>
+        <div class="content">
+          <span class="demo-note"
+            >Demonstration data — not live operational information</span
+          >
+          <div class="page-head">
+            <div>
+              <h2>Active Incidents</h2>
+              <p>
+                Every incident carries a unique reference, priority, assigned
+                officer and full action history before authorised closure.
+              </p>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-h">
+              <h3>Incident register</h3>
+              <div>
+                <select class="btn btn-ghost btn-sm">
+                  <option>All statuses</option>
+                  <option>Investigating</option>
+                  <option>Escalated</option>
+                  <option>Resolved</option>
+                  <option>Closed</option>
+                </select>
+              </div>
+            </div>
+            <div class="tbl-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Ref</th>
+                    <th>Incident</th>
+                    <th>Site</th>
+                    <th>Priority</th>
+                    <th>Status</th>
+                    <th>Reported</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><b>INC-1042</b></td>
+                    <td>Unauthorised entry attempt</td>
+                    <td>CBD Tower</td>
+                    <td><span class="badge b-red">High</span></td>
+                    <td><span class="badge b-warn">Investigating</span></td>
+                    <td>Today 08:12</td>
+                    <td><a class="linklike" href="#">Open</a></td>
+                  </tr>
+                  <tr>
+                    <td><b>INC-1041</b></td>
+                    <td>Fire alarm activation</td>
+                    <td>Ruaraka Mall</td>
+                    <td><span class="badge b-warn">Medium</span></td>
+                    <td><span class="badge b-ok">Resolved</span></td>
+                    <td>Yesterday 19:44</td>
+                    <td><a class="linklike" href="#">Open</a></td>
+                  </tr>
+                  <tr>
+                    <td><b>INC-1040</b></td>
+                    <td>Vandalism in parking area</td>
+                    <td>Industrial Depot</td>
+                    <td><span class="badge b-warn">Medium</span></td>
+                    <td><span class="badge b-red">Escalated</span></td>
+                    <td>Yesterday 16:05</td>
+                    <td><a class="linklike" href="#">Open</a></td>
+                  </tr>
+                  <tr>
+                    <td><b>INC-1039</b></td>
+                    <td>Suspicious vehicle loitering</td>
+                    <td>Westlands HQ</td>
+                    <td><span class="badge b-info">Low</span></td>
+                    <td><span class="badge b-ok">Closed</span></td>
+                    <td>Tue 14:20</td>
+                    <td><a class="linklike" href="#">Open</a></td>
+                  </tr>
+                  <tr>
+                    <td><b>INC-1038</b></td>
+                    <td>Medical assistance request</td>
+                    <td>Karen Residence</td>
+                    <td><span class="badge b-red">High</span></td>
+                    <td><span class="badge b-ok">Resolved</span></td>
+                    <td>Mon 22:31</td>
+                    <td><a class="linklike" href="#">Open</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

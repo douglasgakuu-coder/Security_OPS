@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Maintenance — VIGILORA</title>
+    <link rel="stylesheet" href="../../css/vigilora.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <a class="brand" href="assets.html"
+          ><span class="mark">VIGI</span>LORA</a
+        >
+        <nav>
+          <div class="sb-group">Inventory</div>
+          <a class="sb-item" href="assets.html"
+            ><span class="ico-char">&#128737;</span
+            ><span class="txt">Asset Dashboard</span></a
+          >
+          <a class="sb-item" href="asset-register.html"
+            ><span class="ico-char">&#128202;</span
+            ><span class="txt">Asset Register</span></a
+          >
+          <a class="sb-item" href="uniforms.html"
+            ><span class="ico-char">&#128085;</span
+            ><span class="txt">Uniform Inventory</span></a
+          >
+          <a class="sb-item" href="stock-levels.html"
+            ><span class="ico-char">&#128230;</span
+            ><span class="txt">Stock Levels</span><span class="pip"></span
+          ></a>
+          <div class="sb-group">Movement</div>
+          <a class="sb-item" href="equipment-issue.html"
+            ><span class="ico-char">&#128099;</span
+            ><span class="txt">Equipment Issue</span></a
+          >
+          <a class="sb-item" href="equipment-returns.html"
+            ><span class="ico-char">&#128260;</span
+            ><span class="txt">Equipment Returns</span></a
+          >
+          <a class="sb-item" href="damaged-missing.html"
+            ><span class="ico-char">&#9888;</span
+            ><span class="txt">Damaged / Missing</span><span class="pip"></span
+          ></a>
+          <a class="sb-item on" href="maintenance.html"
+            ><span class="ico-char">&#128295;</span
+            ><span class="txt">Maintenance</span></a
+          >
+          <div class="sb-group">Procurement</div>
+          <a class="sb-item" href="purchase-requests.html"
+            ><span class="ico-char">&#128717;</span
+            ><span class="txt">Purchase Requests</span></a
+          >
+          <a class="sb-item" href="assignment-history.html"
+            ><span class="ico-char">&#128218;</span
+            ><span class="txt">Assignment History</span></a
+          >
+        </nav>
+        <div class="sb-foot">
+          Asset &amp; Inventory Officer<br />VIGILORA v5 — static prototype
+        </div>
+      </aside>
+      <div class="main">
+        <header class="topbar">
+          <div>
+            <div class="page-title">Maintenance</div>
+            <div class="crumbs">Movement / Maintenance</div>
+          </div>
+          <div class="spacer"></div>
+          <a class="avatar" href="#" title="Notifications"
+            >&#128276;<span class="dot"></span
+          ></a>
+          <a class="avatar" href="#" title="Asset &amp; Inventory Officer"
+            >AO</a
+          >
+        </header>
+        <div class="content">
+          <span class="demo-note"
+            >Demonstration data — not live operational information</span
+          >
+          <div class="page-head">
+            <div>
+              <h2>Maintenance</h2>
+              <p>Repair and servicing records.</p>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-h"><h3>Workshop records</h3></div>
+            <div class="tbl-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Asset</th>
+                    <th>Item</th>
+                    <th>Fault</th>
+                    <th>Sent</th>
+                    <th>Status</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><b>RD-0045</b></td>
+                    <td>Radio repeater</td>
+                    <td>Intermittent dropout</td>
+                    <td>04 Nov</td>
+                    <td><span class="badge b-warn">Under maintenance</span></td>
+                    <td><a class="linklike" href="#">View</a></td>
+                  </tr>
+                  <tr>
+                    <td><b>TOR-0225</b></td>
+                    <td>Torchlight</td>
+                    <td>Switch failure</td>
+                    <td>02 Nov</td>
+                    <td><span class="badge b-info">Parts ordered</span></td>
+                    <td><a class="linklike" href="#">View</a></td>
+                  </tr>
+                  <tr>
+                    <td><b>WT-0125</b></td>
+                    <td>Walkie-talkie</td>
+                    <td>Antenna damaged</td>
+                    <td>28 Oct</td>
+                    <td>
+                      <span class="badge b-ok"
+                        >Repaired — returned to store</span
+                      >
+                    </td>
+                    <td><a class="linklike" href="#">View</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

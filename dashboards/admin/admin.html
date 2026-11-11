@@ -1,128 +1,213 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>System Administrator Dashboard — NOVAGUARD</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<link rel="stylesheet" href="../assets/css/dashboard.css">
-<link rel="stylesheet" href="../assets/css/responsive.css">
-</head>
-<body>
-<div class="app">
-  <input type="checkbox" id="navtoggle" class="nav-checkbox">
-  <aside class="sidebar">
-    <div class="side-brand"><span class="brand-mark"><i class="fa-solid fa-shield-halved"></i></span>NOVAGUARD</div>
-    <nav class="side-nav">
-      <div class="side-group">Overview</div>
-      <a class="side-link active" href="admin.html"><i class="fa-solid fa-table-columns"></i>Dashboard</a>
-      <div class="side-group">Administration</div>
-      <a class="side-link" href="../modules/employees.html"><i class="fa-solid fa-users-gear"></i>Users &amp; RBAC</a>
-      <a class="side-link" href="../modules/employees.html"><i class="fa-solid fa-id-badge"></i>Guard Records</a>
-      <a class="side-link" href="../modules/reports.html"><i class="fa-solid fa-scroll"></i>Audit Logs</a>
-      <a class="side-link" href="admin.html"><i class="fa-solid fa-shield-halved"></i>Security Settings</a>
-      <a class="side-link" href="admin.html"><i class="fa-solid fa-plug"></i>API Gateways</a>
-      <div class="side-group">System</div>
-      <a class="side-link" href="admin.html"><i class="fa-solid fa-sitemap"></i>Branches</a>
-      <a class="side-link" href="admin.html"><i class="fa-solid fa-gears"></i>Configuration</a>
-      <a class="side-link" href="admin.html"><i class="fa-solid fa-database"></i>Backup Status</a>
-    </nav>
-    <div class="side-foot"><a href="../../webpages/login.html"><i class="fa-solid fa-right-from-bracket"></i> Sign out</a></div>
-  </aside>
-  <div class="main-area">
-    <header class="topbar">
-      <label for="navtoggle" class="icon-btn" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></label>
-      <div class="crumb">Admin / <b>Dashboard</b></div>
-      <div class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Global search — guards, sites, records…"></div>
-      <div class="top-actions">
-        <div class="icon-btn"><i class="fa-solid fa-bell"></i><span class="dot">3</span></div>
-        <div class="avatar">SW</div>
-      </div>
-    </header>
-    <main class="content">
-      <div class="page-title-row">
-        <div>
-          <h1>System Administrator Dashboard</h1>
-          <div class="crumbs">System Administrator Dashboard</div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>System Overview — VIGILORA</title>
+    <link rel="stylesheet" href="../../css/vigilora.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <a class="brand" href="admin.html"
+          ><span class="mark">VIGI</span>LORA</a
+        >
+        <nav>
+          <div class="sb-group">Overview</div>
+          <a class="sb-item on" href="admin.html"
+            ><span class="ico-char">&#128200;</span
+            ><span class="txt">System Overview</span></a
+          >
+          <a class="sb-item" href="system-activity.html"
+            ><span class="ico-char">&#9889;</span
+            ><span class="txt">System Activity</span></a
+          >
+          <div class="sb-group">Administration</div>
+          <a class="sb-item" href="users.html"
+            ><span class="ico-char">&#128100;</span
+            ><span class="txt">User Accounts</span><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="roles-permissions.html"
+            ><span class="ico-char">&#128274;</span
+            ><span class="txt">Roles &amp; Permissions</span></a
+          >
+          <a class="sb-item" href="company-configuration.html"
+            ><span class="ico-char">&#9881;</span
+            ><span class="txt">Company Configuration</span></a
+          >
+          <a class="sb-item" href="integrations.html"
+            ><span class="ico-char">&#128268;</span
+            ><span class="txt">Integration Settings</span></a
+          >
+          <div class="sb-group">Security</div>
+          <a class="sb-item" href="security-settings.html"
+            ><span class="ico-char">&#128737;</span
+            ><span class="txt">Security Settings</span></a
+          >
+          <a class="sb-item" href="audit-logs.html"
+            ><span class="ico-char">&#128220;</span
+            ><span class="txt">Audit Logs</span></a
+          >
+          <a class="sb-item" href="backup-status.html"
+            ><span class="ico-char">&#128190;</span
+            ><span class="txt">Backup Status</span></a
+          >
+          <a class="sb-item" href="login-history.html"
+            ><span class="ico-char">&#128231;</span
+            ><span class="txt">Login History</span><span class="pip"></span
+          ></a>
+        </nav>
+        <div class="sb-foot">
+          System Administrator<br />VIGILORA v5 — static prototype
         </div>
-        <div class="page-actions">
-          <button class="btn-xs"><i class="fa-solid fa-download"></i>Export</button>
-          <button class="btn-xs primary"><i class="fa-solid fa-plus"></i>New Record</button>
-        </div>
-      </div>
-      <div class="kpi-grid">
-        <div class="kpi k-green"><div class="kpi-label"><i class="fa-solid fa-users"></i>System Users</div><div class="kpi-value">312</div><div class="kpi-delta up">▲ 4% vs last month</div></div>
-        <div class="kpi "><div class="kpi-label"><i class="fa-solid fa-user-shield"></i>Active Employees</div><div class="kpi-value">1,450</div><div class="kpi-delta up">▲ 12 new this week</div></div>
-        <div class="kpi k-gold"><div class="kpi-label"><i class="fa-solid fa-building"></i>Active Clients</div><div class="kpi-value">47</div><div class="kpi-delta up">▲ 2 new contracts</div></div>
-        <div class="kpi k-green"><div class="kpi-label"><i class="fa-solid fa-server"></i>System Uptime</div><div class="kpi-value">99.5%</div><div class="kpi-delta up">Healthy</div></div>
-        <div class="kpi k-red"><div class="kpi-label"><i class="fa-solid fa-triangle-exclamation"></i>Security Alerts</div><div class="kpi-value">3</div><div class="kpi-delta down">2 require attention</div></div>
-        <div class="kpi k-orange"><div class="kpi-label"><i class="fa-solid fa-hourglass-half"></i>Pending Approvals</div><div class="kpi-value">8</div><div class="kpi-delta warn">Awaiting review</div></div>
-      </div>
-      <div class="panel-grid">
-        <div class="panel">
-          <div class="panel-head"><h3><i class="fa-solid fa-chart-column"></i>User Activity — Logins per Day</h3><a class="panel-link" href="../modules/reports.html">View report <i class="fa-solid fa-arrow-right"></i></a></div>
-          <div class="panel-body">
-            <div class="bars">
-              <div class="bar bh-62"><em>240</em><i></i><span>Mon</span></div>
-              <div class="bar bh-74"><em>285</em><i></i><span>Tue</span></div>
-              <div class="bar bh-80"><em>310</em><i></i><span>Wed</span></div>
-              <div class="bar bh-76"><em>295</em><i></i><span>Thu</span></div>
-              <div class="bar bh-88"><em>340</em><i></i><span>Fri</span></div>
-              <div class="bar bh-32"><em>120</em><i></i><span>Sat</span></div>
-              <div class="bar bh-24"><em>90</em><i></i><span>Sun</span></div>
+      </aside>
+      <div class="main">
+        <header class="topbar">
+          <div>
+            <div class="page-title">System Overview</div>
+            <div class="crumbs">Overview / System Overview</div>
+          </div>
+          <div class="spacer"></div>
+          <a class="avatar" href="#" title="Notifications"
+            >&#128276;<span class="dot"></span
+          ></a>
+          <a class="avatar" href="#" title="System Administrator">SA</a>
+        </header>
+        <div class="content">
+          <span class="demo-note"
+            >Demonstration data — not live operational information</span
+          >
 
+          <div class="row r4 mb20">
+            <div class="kpi">
+              <div class="label">User accounts</div>
+              <div class="val">48</div>
+              <div class="sub">2 pending activation</div>
+            </div>
+            <div class="kpi">
+              <div class="label">Active sessions</div>
+              <div class="val">17</div>
+              <div class="sub">Across 3 branches</div>
+            </div>
+            <div class="kpi bad">
+              <div class="label">Failed logins (24h)</div>
+              <div class="val">3</div>
+              <div class="sub">Reviewed</div>
+            </div>
+            <div class="kpi good">
+              <div class="label">Last backup</div>
+              <div class="val">Today 02:00</div>
+              <div class="sub">Automated daily</div>
+            </div>
+          </div>
+
+          <div class="row r2 mb20">
+            <div class="panel">
+              <div class="panel-h"><h3>System activity</h3></div>
+              <div class="panel-b">
+                <ul class="timeline">
+                  <li>
+                    <div class="t-dot"></div>
+                    <div class="t-time">08:40 — today</div>
+                    <div>Role permission updated for HR Officer</div>
+                  </li>
+                  <li>
+                    <div class="t-dot"></div>
+                    <div class="t-time">07:55 — today</div>
+                    <div>New user account created: CCTV Operator</div>
+                  </li>
+                  <li>
+                    <div class="t-dot bad"></div>
+                    <div class="t-time">22:14 — yesterday</div>
+                    <div>3 failed login attempts — account locked</div>
+                  </li>
+                  <li>
+                    <div class="t-dot ok"></div>
+                    <div class="t-time">18:30 — yesterday</div>
+                    <div>Nightly backup completed successfully (2.4 GB)</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="panel-h"><h3>Quick status</h3></div>
+              <div class="panel-b">
+                <ul class="list">
+                  <li>
+                    <span>Backup schedule</span
+                    ><span><b>Daily 02:00 — healthy</b></span>
+                  </li>
+                  <li>
+                    <span>SMS gateway</span
+                    ><span class="badge b-warn">Not configured (demo)</span>
+                  </li>
+                  <li>
+                    <span>Password policy</span
+                    ><span><b>Strong — enforced</b></span>
+                  </li>
+                  <li>
+                    <span>Retention policy</span
+                    ><span><b>24 months, configurable</b></span>
+                  </li>
+                </ul>
+                <p class="tiny-note">
+                  Administrators have technical access — not automatic access to
+                  confidential welfare or disciplinary case content.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-h"><h3>Recent user account activity</h3></div>
+            <div class="tbl-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>User</th>
+                    <th>Role</th>
+                    <th>Status</th>
+                    <th>Last login</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><b>A. Mwangi</b></td>
+                    <td>System Administrator</td>
+                    <td><span class="badge b-ok">Active</span></td>
+                    <td>Today 08:02</td>
+                    <td><a class="linklike" href="#">Manage</a></td>
+                  </tr>
+                  <tr>
+                    <td><b>L. Achieng</b></td>
+                    <td>HR Officer</td>
+                    <td><span class="badge b-ok">Active</span></td>
+                    <td>Today 07:44</td>
+                    <td><a class="linklike" href="#">Manage</a></td>
+                  </tr>
+                  <tr>
+                    <td><b>P. Kariuki</b></td>
+                    <td>Control Room Operator</td>
+                    <td>
+                      <span class="badge b-warn">Password reset pending</span>
+                    </td>
+                    <td>Yesterday</td>
+                    <td><a class="linklike" href="#">Manage</a></td>
+                  </tr>
+                  <tr>
+                    <td><b>S. Otieno</b></td>
+                    <td>Field Supervisor</td>
+                    <td><span class="badge b-red">Inactive</span></td>
+                    <td>12 Oct</td>
+                    <td><a class="linklike" href="#">Enable</a></td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
-        <div class="panel">
-          <div class="panel-head"><h3><i class="fa-solid fa-chart-pie"></i>Breakdown</h3></div>
-          <div class="panel-body donut-wrap">
-            <div class="donut"></div>
-            <div class="legend">
-<div><i class="sw lg-green"></i>Guards — 62%</div>
-              <div><i class="sw lg-blue"></i>Supervisors &amp; Ops — 22%</div>
-              <div><i class="sw lg-orange"></i>Finance &amp; HR — 10%</div>
-              <div><i class="sw lg-red"></i>Administrators — 6%</div>
-            </div>
-          </div>
-        </div>
       </div>
-      <div class="panel mb-24">
-        <div class="panel-head"><h3><i class="fa-solid fa-bolt"></i>Quick Actions</h3></div>
-        <div class="panel-body qa-grid">
-          <div class="qa"><i class="fa-solid fa-user-plus"></i><span>Create User</span></div>
-          <div class="qa"><i class="fa-solid fa-user-gear"></i><span>Manage Roles</span></div>
-          <div class="qa"><i class="fa-solid fa-database"></i><span>Restore Backup</span></div>
-          <div class="qa"><i class="fa-solid fa-gears"></i><span>System Settings</span></div>
-          <div class="qa"><i class="fa-solid fa-scroll"></i><span>View Audit Logs</span></div>
-        </div>
-      </div>
-      <div class="panel mb-24">
-        <div class="panel-head"><h3><i class="fa-solid fa-users-gear"></i>User Management &amp; Access Control</h3><div class="filters"><select><option>All Roles</option></select><select><option>Status: Active</option></select></div><a class="panel-link" href="../modules/reports.html"><i class="fa-solid fa-download"></i> Export</a></div>
-        <div class="table-wrap"><table class="tbl">
-          <thead><tr><th>ID</th><th>Full Name</th><th>Assigned Role</th><th>Status</th><th>Last Login</th><th>Action</th></tr></thead>
-          <tbody>
-            <tr><td>U-01</td><td>Sarah Wanjiku</td><td>Control Operator</td><td><span class="badge bg-green">Active</span></td><td>2 mins ago</td><td><button class="btn-xs"><i class="fa-solid fa-pen"></i>Edit</button></td></tr>
-            <tr><td>U-02</td><td>John Otieno</td><td>Field Supervisor</td><td><span class="badge bg-green">Active</span></td><td>1 hour ago</td><td><button class="btn-xs"><i class="fa-solid fa-pen"></i>Edit</button></td></tr>
-            <tr><td>U-03</td><td>Peter Koech</td><td>Finance Officer</td><td><span class="badge bg-green">Active</span></td><td>1 day ago</td><td><button class="btn-xs"><i class="fa-solid fa-pen"></i>Edit</button></td></tr>
-            <tr><td>U-04</td><td>Mercy Kilonzo</td><td>HR Officer</td><td><span class="badge bg-orange">Suspended</span></td><td>3 days ago</td><td><button class="btn-xs"><i class="fa-solid fa-pen"></i>Edit</button></td></tr>
-          </tbody>
-        </table></div>
-      </div>
-      <div class="panel">
-        <div class="panel-head"><h3><i class="fa-solid fa-clock-rotate-left"></i>Recent Activity</h3><a class="panel-link" href="../modules/reports.html">View all <i class="fa-solid fa-arrow-right"></i></a></div>
-        <div class="panel-body">
-          <ul class="feed">
-            <li><span class="fdot fd-blue"></span><div>Admin U-01 modified site deployment rules for Apex Towers.<time>Today, 14:22</time></div></li>
-            <li><span class="fdot fd-orange"></span><div>Role "Field Supervisor" permission set updated.<time>Today, 13:40</time></div></li>
-            <li><span class="fdot fd-green"></span><div>Nightly encrypted backup completed successfully.<time>Today, 11:05</time></div></li>
-            <li><span class="fdot fd-red"></span><div>Failed login attempts (×5) blocked for user U-04.<time>Today, 09:58</time></div></li>
-          </ul>
-        </div>
-      </div>
-    </main>
-  </div>
-</div>
-</body>
+    </div>
+  </body>
 </html>

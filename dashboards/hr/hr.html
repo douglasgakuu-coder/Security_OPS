@@ -1,126 +1,211 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Human Resources Dashboard — NOVAGUARD</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<link rel="stylesheet" href="../assets/css/dashboard.css">
-<link rel="stylesheet" href="../assets/css/responsive.css">
-</head>
-<body>
-<div class="app">
-  <input type="checkbox" id="navtoggle" class="nav-checkbox">
-  <aside class="sidebar">
-    <div class="side-brand"><span class="brand-mark"><i class="fa-solid fa-shield-halved"></i></span>NOVAGUARD</div>
-    <nav class="side-nav">
-      <div class="side-group">Human Resources</div>
-      <a class="side-link active" href="hr.html"><i class="fa-solid fa-table-columns"></i>Dashboard</a>
-      <a class="side-link" href="../modules/reports.html"><i class="fa-solid fa-users"></i>Employees &amp; Profiles</a>
-      <a class="side-link" href="../modules/employees.html"><i class="fa-solid fa-folder-open"></i>Document Management</a>
-      <a class="side-link" href="../modules/employees.html"><i class="fa-solid fa-graduation-cap"></i>Training Records</a>
-      <div class="side-group">Records</div>
-      <a class="side-link" href="../modules/employees.html"><i class="fa-solid fa-umbrella-beach"></i>Leave Management</a>
-      <a class="side-link" href="../modules/employees.html"><i class="fa-solid fa-gavel"></i>Disciplinary</a>
-      <a class="side-link" href="../modules/contracts.html"><i class="fa-solid fa-file-contract"></i>Contract Renewals</a>
-      <a class="side-link" href="../modules/employees.html"><i class="fa-solid fa-right-left"></i>Transfers</a>
-      <a class="side-link" href="../modules/reports.html"><i class="fa-solid fa-chart-line"></i>HR Reports</a>
-    </nav>
-    <div class="side-foot"><a href="../../webpages/login.html"><i class="fa-solid fa-right-from-bracket"></i> Sign out</a></div>
-  </aside>
-  <div class="main-area">
-    <header class="topbar">
-      <label for="navtoggle" class="icon-btn" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></label>
-      <div class="crumb">HR / <b>Dashboard</b></div>
-      <div class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Global search — guards, sites, records…"></div>
-      <div class="top-actions">
-        <div class="icon-btn"><i class="fa-solid fa-bell"></i><span class="dot">4</span></div>
-        <div class="avatar">MK</div>
-      </div>
-    </header>
-    <main class="content">
-      <div class="page-title-row">
-        <div>
-          <h1>Human Resources Dashboard</h1>
-          <div class="crumbs">Human Resources Dashboard</div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>HR Overview — VIGILORA</title>
+    <link rel="stylesheet" href="../../css/vigilora.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <a class="brand" href="hr.html"><span class="mark">VIGI</span>LORA</a>
+        <nav>
+          <div class="sb-group">People</div>
+          <a class="sb-item on" href="hr.html"
+            ><span class="ico-char">&#128101;</span
+            ><span class="txt">HR Overview</span></a
+          >
+          <a class="sb-item" href="employees.html"
+            ><span class="ico-char">&#128100;</span
+            ><span class="txt">Employee Directory</span></a
+          >
+          <a class="sb-item" href="applicants.html"
+            ><span class="ico-char">&#128221;</span
+            ><span class="txt">Recruitment &amp; Applicants</span
+            ><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="onboarding.html"
+            ><span class="ico-char">&#127881;</span
+            ><span class="txt">Onboarding</span></a
+          >
+          <div class="sb-group">Employment</div>
+          <a class="sb-item" href="contracts.html"
+            ><span class="ico-char">&#128196;</span
+            ><span class="txt">Contracts &amp; Records</span
+            ><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="leave.html"
+            ><span class="ico-char">&#127774;</span
+            ><span class="txt">Leave Management</span></a
+          >
+          <a class="sb-item" href="training.html"
+            ><span class="ico-char">&#127891;</span
+            ><span class="txt">Training Records</span><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="disciplinary.html"
+            ><span class="ico-char">&#9878;</span
+            ><span class="txt">Disciplinary Cases</span></a
+          >
+          <div class="sb-group">Care</div>
+          <a class="sb-item" href="welfare-centre.html"
+            ><span class="ico-char">&#128153;</span
+            ><span class="txt">Welfare Centre</span><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="staff-performance.html"
+            ><span class="ico-char">&#127942;</span
+            ><span class="txt">Staff Performance</span></a
+          >
+        </nav>
+        <div class="sb-foot">
+          HR Officer<br />VIGILORA v5 — static prototype
         </div>
-        <div class="page-actions">
-          <button class="btn-xs"><i class="fa-solid fa-download"></i>Export</button>
-          <button class="btn-xs primary"><i class="fa-solid fa-plus"></i>New Record</button>
-        </div>
-      </div>
-      <div class="kpi-grid">
-        <div class="kpi "><div class="kpi-label"><i class="fa-solid fa-users"></i>Total Employees</div><div class="kpi-value">1,450</div><div class="kpi-delta up">▲ 12 this month</div></div>
-        <div class="kpi k-green"><div class="kpi-label"><i class="fa-solid fa-user-shield"></i>Active Guards</div><div class="kpi-value">1,268</div><div class="kpi-delta ">On duty</div></div>
-        <div class="kpi k-blue"><div class="kpi-label"><i class="fa-solid fa-umbrella-beach"></i>On Leave</div><div class="kpi-value">38</div><div class="kpi-delta ">Approved</div></div>
-        <div class="kpi k-orange"><div class="kpi-label"><i class="fa-solid fa-hourglass-half"></i>Pending Leave</div><div class="kpi-value">11</div><div class="kpi-delta warn">Awaiting approval</div></div>
-        <div class="kpi k-orange"><div class="kpi-label"><i class="fa-solid fa-file-contract"></i>Expiring Contracts</div><div class="kpi-value">17</div><div class="kpi-delta warn">Within 60 days</div></div>
-        <div class="kpi k-red"><div class="kpi-label"><i class="fa-solid fa-file-circle-exclamation"></i>Expired Documents</div><div class="kpi-value">6</div><div class="kpi-delta down">Immediate action</div></div>
-        <div class="kpi k-orange"><div class="kpi-label"><i class="fa-solid fa-gavel"></i>Disciplinary Cases</div><div class="kpi-value">4</div><div class="kpi-delta warn">Hearings pending</div></div>
-        <div class="kpi k-gold"><div class="kpi-label"><i class="fa-solid fa-graduation-cap"></i>Training Expiries</div><div class="kpi-value">9</div><div class="kpi-delta warn">Refresher due</div></div>
-      </div>
-      <div class="panel-grid">
-        <div class="panel">
-          <div class="panel-head"><h3><i class="fa-solid fa-chart-column"></i>Headcount by Employment Status</h3><a class="panel-link" href="../modules/reports.html">View report <i class="fa-solid fa-arrow-right"></i></a></div>
-          <div class="panel-body">
-            <div class="bars">
-              <div class="bar gold-bar bh-88"><em>1,262</em><i></i><span>Active</span></div>
-              <div class="bar bh-24"><em>38</em><i></i><span>Leave</span></div>
-              <div class="bar bh-16"><em>6</em><i></i><span>Susp.</span></div>
-              <div class="bar bh-44"><em>94</em><i></i><span>Exited</span></div>
-              <div class="bar bh-52"><em>50</em><i></i><span>New</span></div>
+      </aside>
+      <div class="main">
+        <header class="topbar">
+          <div>
+            <div class="page-title">HR Overview</div>
+            <div class="crumbs">People / HR Overview</div>
+          </div>
+          <div class="spacer"></div>
+          <a class="avatar" href="#" title="Notifications"
+            >&#128276;<span class="dot"></span
+          ></a>
+          <a class="avatar" href="#" title="HR Officer">HR</a>
+        </header>
+        <div class="content">
+          <span class="demo-note"
+            >Demonstration data — not live operational information</span
+          >
 
+          <div class="row r4 mb20">
+            <div class="kpi">
+              <div class="label">Employees</div>
+              <div class="val">452</div>
+              <div class="sub">8 on leave today</div>
+            </div>
+            <div class="kpi">
+              <div class="label">Open vacancies</div>
+              <div class="val">12</div>
+              <div class="sub">6 in interview stage</div>
+            </div>
+            <div class="kpi good">
+              <div class="label">Applications this week</div>
+              <div class="val">34</div>
+              <div class="sub">7 shortlisted</div>
+            </div>
+            <div class="kpi bad">
+              <div class="label">Certificates expiring (30d)</div>
+              <div class="val">9</div>
+              <div class="sub">2 PSRA renewals</div>
+            </div>
+          </div>
+
+          <div class="row r2 mb20">
+            <div class="panel">
+              <div class="panel-h"><h3>Attention needed</h3></div>
+              <div class="panel-b">
+                <ul class="list">
+                  <li>
+                    <span>M. Achieng — PSRA expired 30 Oct</span
+                    ><span class="badge b-red">Suspend deployment</span>
+                  </li>
+                  <li>
+                    <span>Incident reporting refresher — 4 staff overdue</span
+                    ><span class="badge b-warn">Schedule</span>
+                  </li>
+                  <li>
+                    <span>Welfare complaint CMP-0030 escalated</span
+                    ><span class="badge b-red">Restricted case</span>
+                  </li>
+                  <li>
+                    <span>Onboarding — 3 new hires Friday</span
+                    ><span class="badge b-info">Prepare kits</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="panel-h"><h3>Recruitment pipeline (demo)</h3></div>
+              <div class="panel-b">
+                <ul class="list">
+                  <li>
+                    <span>Applied</span><span><b>34</b></span>
+                  </li>
+                  <li>
+                    <span>Screening</span><span><b>14</b></span>
+                  </li>
+                  <li>
+                    <span>Interview</span><span><b>7</b></span>
+                  </li>
+                  <li>
+                    <span>Offer</span><span><b>3</b></span>
+                  </li>
+                  <li>
+                    <span>Hired</span><span><b>1</b></span>
+                  </li>
+                </ul>
+                <p class="tiny-note">
+                  Selection decisions are always made by HR reviewers — no
+                  automated rejection.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-h"><h3>Employee snapshot</h3></div>
+            <div class="tbl-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Employee</th>
+                    <th>Site</th>
+                    <th>Shift</th>
+                    <th>Status</th>
+                    <th>PSRA</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><b>James Otieno</b></td>
+                    <td>Nairobi CBD Tower</td>
+                    <td>Day</td>
+                    <td><span class="badge b-ok">On duty</span></td>
+                    <td>PSRA-44102</td>
+                    <td><a class="linklike" href="#">View</a></td>
+                  </tr>
+                  <tr>
+                    <td><b>Grace Wanjiru</b></td>
+                    <td>Westlands HQ</td>
+                    <td>Day</td>
+                    <td><span class="badge b-ok">On duty</span></td>
+                    <td>PSRA-44718</td>
+                    <td><a class="linklike" href="#">View</a></td>
+                  </tr>
+                  <tr>
+                    <td><b>Samuel Mutua</b></td>
+                    <td>Airport North Warehouse</td>
+                    <td>Day</td>
+                    <td><span class="badge b-warn">On leave</span></td>
+                    <td>PSRA-46210</td>
+                    <td><a class="linklike" href="#">View</a></td>
+                  </tr>
+                  <tr>
+                    <td><b>Brian Kiprop</b></td>
+                    <td>Nakuru Branch Office</td>
+                    <td>Night</td>
+                    <td><span class="badge b-warn">Late arrival</span></td>
+                    <td>PSRA-47332</td>
+                    <td><a class="linklike" href="#">View</a></td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
-        <div class="panel">
-          <div class="panel-head"><h3><i class="fa-solid fa-chart-pie"></i>Breakdown</h3></div>
-          <div class="panel-body donut-wrap">
-            <div class="donut"></div>
-            <div class="legend">
-<div><i class="sw lg-green"></i>Active — 87%</div>
-              <div><i class="sw lg-blue"></i>On Leave — 3%</div>
-              <div><i class="sw lg-orange"></i>Suspended — 5%</div>
-              <div><i class="sw lg-red"></i>Exited — 5%</div>
-            </div>
-          </div>
-        </div>
       </div>
-      <div class="panel-grid">
-        <div class="panel">
-          <div class="panel-head"><h3><i class="fa-solid fa-chart-simple"></i>Workforce Compliance</h3></div>
-          <div class="panel-body">
-            <div class="prog-row"><div class="prog-meta"><b>Annual leave utilisation</b><span>71%</span></div><div class="prog-track"><div class="prog-fill pf-gold w-71"></div></div></div>
-            <div class="prog-row"><div class="prog-meta"><b>Signed contracts on file</b><span>96%</span></div><div class="prog-track"><div class="prog-fill pf-green w-96"></div></div></div>
-            <div class="prog-row"><div class="prog-meta"><b>Training certificates valid</b><span>88%</span></div><div class="prog-track"><div class="prog-fill pf-orange w-88"></div></div></div>
-            <div class="prog-row"><div class="prog-meta"><b>Background vetting complete</b><span>92%</span></div><div class="prog-track"><div class="prog-fill pf-blue w-92"></div></div></div>
-
-          </div>
-        </div>
-      </div>
-      <div class="panel mb-24">
-        <div class="panel-head"><h3><i class="fa-solid fa-umbrella-beach"></i>Pending Leave Requests</h3><div class="filters"><select><option>All Types</option></select></div><a class="panel-link" href="../modules/reports.html"><i class="fa-solid fa-download"></i> Export</a></div>
-        <div class="table-wrap"><table class="tbl">
-          <thead><tr><th>Emp No.</th><th>Name</th><th>Type</th><th>Period</th><th>Days</th><th>Status</th><th>Action</th></tr></thead>
-          <tbody>
-            <tr><td>G-8031</td><td>Kevin Maina</td><td>Annual</td><td>20–24 Nov</td><td>5</td><td><span class="badge bg-orange">Pending</span></td><td><button class="btn-xs primary"><i class="fa-solid fa-check"></i>Approve</button> <button class="btn-xs danger"><i class="fa-solid fa-xmark"></i>Reject</button></td></tr>
-            <tr><td>G-8044</td><td>Faith Chebet</td><td>Sick</td><td>12–14 Nov</td><td>3</td><td><span class="badge bg-orange">Pending</span></td><td><button class="btn-xs primary"><i class="fa-solid fa-check"></i>Approve</button> <button class="btn-xs danger"><i class="fa-solid fa-xmark"></i>Reject</button></td></tr>
-          </tbody>
-        </table></div>
-      </div>
-      <div class="panel mb-24">
-        <div class="panel-head"><h3><i class="fa-solid fa-file-circle-exclamation"></i>Expiring Contracts &amp; Documents</h3><a class="panel-link" href="../modules/reports.html"><i class="fa-solid fa-download"></i> Export</a></div>
-        <div class="table-wrap"><table class="tbl">
-          <thead><tr><th>Employee</th><th>Item</th><th>Expires</th><th>Days Left</th><th>Status</th><th>Action</th></tr></thead>
-          <tbody>
-            <tr><td>James Mwangi (G-8012)</td><td>Employment Contract</td><td>18 Dec 2026</td><td>38</td><td><span class="badge bg-orange">Renew soon</span></td><td><button class="btn-xs"><i class="fa-solid fa-arrows-rotate"></i>Renew</button></td></tr>
-            <tr><td>Peter Koech (G-8020)</td><td>First-Aid Certificate</td><td>25 Nov 2026</td><td>15</td><td><span class="badge bg-red">Expiring</span></td><td><button class="btn-xs"><i class="fa-solid fa-graduation-cap"></i>Book Training</button></td></tr>
-          </tbody>
-        </table></div>
-      </div>
-    </main>
-  </div>
-</div>
-</body>
+    </div>
+  </body>
 </html>

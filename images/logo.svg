@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="48" viewBox="0 0 220 48" role="img" aria-label="VIGILORA logo">
+  <circle cx="24" cy="24" r="20" fill="#2457D6"/>
+  <path d="M24 9l11 5v9c0 7-5 12-11 15-6-3-11-8-11-15v-9l11-5z" fill="#ffffff" opacity=".92"/>
+  <path d="M18 24l4 4 8-9" stroke="#94B800" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="52" y="31" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="800" fill="#0E1F52">VIGI<tspan fill="#2457D6">LORA</tspan></text>
+</svg>

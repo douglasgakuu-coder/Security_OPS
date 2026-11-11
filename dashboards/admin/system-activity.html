@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>System Activity — VIGILORA</title>
+    <link rel="stylesheet" href="../../css/vigilora.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <a class="brand" href="admin.html"
+          ><span class="mark">VIGI</span>LORA</a
+        >
+        <nav>
+          <div class="sb-group">Overview</div>
+          <a class="sb-item" href="admin.html"
+            ><span class="ico-char">&#128200;</span
+            ><span class="txt">System Overview</span></a
+          >
+          <a class="sb-item on" href="system-activity.html"
+            ><span class="ico-char">&#9889;</span
+            ><span class="txt">System Activity</span></a
+          >
+          <div class="sb-group">Administration</div>
+          <a class="sb-item" href="users.html"
+            ><span class="ico-char">&#128100;</span
+            ><span class="txt">User Accounts</span><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="roles-permissions.html"
+            ><span class="ico-char">&#128274;</span
+            ><span class="txt">Roles &amp; Permissions</span></a
+          >
+          <a class="sb-item" href="company-configuration.html"
+            ><span class="ico-char">&#9881;</span
+            ><span class="txt">Company Configuration</span></a
+          >
+          <a class="sb-item" href="integrations.html"
+            ><span class="ico-char">&#128268;</span
+            ><span class="txt">Integration Settings</span></a
+          >
+          <div class="sb-group">Security</div>
+          <a class="sb-item" href="security-settings.html"
+            ><span class="ico-char">&#128737;</span
+            ><span class="txt">Security Settings</span></a
+          >
+          <a class="sb-item" href="audit-logs.html"
+            ><span class="ico-char">&#128220;</span
+            ><span class="txt">Audit Logs</span></a
+          >
+          <a class="sb-item" href="backup-status.html"
+            ><span class="ico-char">&#128190;</span
+            ><span class="txt">Backup Status</span></a
+          >
+          <a class="sb-item" href="login-history.html"
+            ><span class="ico-char">&#128231;</span
+            ><span class="txt">Login History</span><span class="pip"></span
+          ></a>
+        </nav>
+        <div class="sb-foot">
+          System Administrator<br />VIGILORA v5 — static prototype
+        </div>
+      </aside>
+      <div class="main">
+        <header class="topbar">
+          <div>
+            <div class="page-title">System Activity</div>
+            <div class="crumbs">Overview / System Activity</div>
+          </div>
+          <div class="spacer"></div>
+          <a class="avatar" href="#" title="Notifications"
+            >&#128276;<span class="dot"></span
+          ></a>
+          <a class="avatar" href="#" title="System Administrator">SA</a>
+        </header>
+        <div class="content">
+          <span class="demo-note"
+            >Demonstration data — not live operational information</span
+          >
+          <div class="page-head">
+            <div>
+              <h2>System Activity</h2>
+              <p>Platform-level event log.</p>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-h"><h3>System activity log</h3></div>
+            <div class="tbl-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Time</th>
+                    <th>Event</th>
+                    <th>Actor</th>
+                    <th>Severity</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Today 08:40</td>
+                    <td>Role permission updated — HR Officer</td>
+                    <td>System Administrator</td>
+                    <td><span class="badge b-info">Normal</span></td>
+                  </tr>
+                  <tr>
+                    <td>Today 07:55</td>
+                    <td>User account created — CCTV Operator</td>
+                    <td>System Administrator</td>
+                    <td><span class="badge b-info">Normal</span></td>
+                  </tr>
+                  <tr>
+                    <td>Yesterday 22:14</td>
+                    <td>3 failed logins — account p.kariuki locked</td>
+                    <td>Automatic</td>
+                    <td><span class="badge b-red">High</span></td>
+                  </tr>
+                  <tr>
+                    <td>Yesterday 18:30</td>
+                    <td>Nightly backup completed — 2.4 GB</td>
+                    <td>Automatic</td>
+                    <td><span class="badge b-ok">Normal</span></td>
+                  </tr>
+                  <tr>
+                    <td>Yesterday 12:02</td>
+                    <td>Payroll PR-2026-11 prepared</td>
+                    <td>Finance Officer</td>
+                    <td><span class="badge b-info">Normal</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

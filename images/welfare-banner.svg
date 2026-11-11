@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360" role="img" aria-label="Welfare and support illustration">
+  <rect width="900" height="360" rx="18" fill="#16327F"/>
+  <circle cx="760" cy="70" r="120" fill="#94B800" opacity=".22"/>
+  <path d="M450 84l44 20v38c0 28-19 50-44 61-25-11-44-33-44-61v-38l44-20z" fill="#ffffff" opacity=".92"/>
+  <path d="M450 156v-40M450 116c0-12 10-20 20-16M450 116c0-12-10-20-20-16" stroke="#94B800" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <g fill="#ffffff" opacity=".85">
+    <circle cx="330" cy="230" r="20"/><path d="M330 260c-24 0-42 15-42 36v20h84v-20c0-21-18-36-42-36z"/>
+    <circle cx="450" cy="230" r="20"/><path d="M450 260c-24 0-42 15-42 36v20h84v-20c0-21-18-36-42-36z"/>
+    <circle cx="570" cy="230" r="20"/><path d="M570 260c-24 0-42 15-42 36v20h84v-20c0-21-18-36-42-36z"/>
+  </g>
+  <text x="450" y="336" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="600" fill="#CFE0FF">Fair hours &middot; transparent pay &middot; confidential support</text>
+</svg>

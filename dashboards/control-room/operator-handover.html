@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Operator Handover — VIGILORA</title>
+    <link rel="stylesheet" href="../../css/vigilora.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <a class="brand" href="control-room.html"
+          ><span class="mark">VIGI</span>LORA</a
+        >
+        <nav>
+          <div class="sb-group">Live Desk</div>
+          <a class="sb-item" href="control-room.html"
+            ><span class="ico-char">&#127909;</span
+            ><span class="txt">Control Room</span><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="alert-queue.html"
+            ><span class="ico-char">&#128276;</span
+            ><span class="txt">Alert Queue</span><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="active-incidents.html"
+            ><span class="ico-char">&#128680;</span
+            ><span class="txt">Active Incidents</span><span class="pip"></span
+          ></a>
+          <div class="sb-group">Monitoring</div>
+          <a class="sb-item" href="missed-checkins.html"
+            ><span class="ico-char">&#9200;</span
+            ><span class="txt">Missed Check-ins</span><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="assistance-requests.html"
+            ><span class="ico-char">&#128658;</span
+            ><span class="txt">Assistance Requests</span
+            ><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="dispatch.html"
+            ><span class="ico-char">&#128666;</span
+            ><span class="txt">Dispatch Coordination</span></a
+          >
+          <div class="sb-group">Desk</div>
+          <a class="sb-item" href="comms-log.html"
+            ><span class="ico-char">&#128172;</span
+            ><span class="txt">Communication Logs</span></a
+          >
+          <a class="sb-item on" href="operator-handover.html"
+            ><span class="ico-char">&#128260;</span
+            ><span class="txt">Operator Handover</span></a
+          >
+        </nav>
+        <div class="sb-foot">
+          Control Room Operator<br />VIGILORA v5 — static prototype
+        </div>
+      </aside>
+      <div class="main">
+        <header class="topbar">
+          <div>
+            <div class="page-title">Operator Handover</div>
+            <div class="crumbs">Desk / Operator Handover</div>
+          </div>
+          <div class="spacer"></div>
+          <a class="avatar" href="#" title="Notifications"
+            >&#128276;<span class="dot"></span
+          ></a>
+          <a class="avatar" href="#" title="Control Room Operator">CR</a>
+        </header>
+        <div class="content">
+          <span class="demo-note"
+            >Demonstration data — not live operational information</span
+          >
+          <div class="page-head">
+            <div>
+              <h2>Operator Handover</h2>
+              <p>Structured desk-to-desk transfer with pending items.</p>
+            </div>
+          </div>
+          <div class="panel mb20">
+            <div class="panel-h">
+              <h3>Last handover — 06:00, night to day</h3>
+            </div>
+            <div class="panel-b">
+              <ul class="list">
+                <li>
+                  <span>Outgoing operator</span><span><b>M. Wambui</b></span>
+                </li>
+                <li>
+                  <span>Incoming operator</span><span><b>K. Otieno</b></span>
+                </li>
+                <li>
+                  <span>Open alerts transferred</span><span><b>2</b></span>
+                </li>
+                <li>
+                  <span>Open incidents transferred</span
+                  ><span><b>INC-1040, INC-1042</b></span>
+                </li>
+                <li>
+                  <span>Equipment in service</span
+                  ><span class="badge b-ok">Radios 1–12 verified</span>
+                </li>
+                <li>
+                  <span>Accepted by incoming</span
+                  ><span class="badge b-ok">Signed 06:04</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-h"><h3>Raise next handover</h3></div>
+            <div class="panel-b">
+              <form method="get" action="#">
+                <div class="form-grid">
+                  <div class="field">
+                    <label class="req">Incoming operator</label
+                    ><select name="to" required>
+                      <option value="">Select&hellip;</option>
+                      <option>K. Otieno</option>
+                      <option>M. Wambui</option>
+                      <option>J. Sifuna</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label class="req">Handover time</label
+                    ><input type="time" name="time" required />
+                  </div>
+                </div>
+                <div class="field" class="mt14">
+                  <label class="req">Pending items to transfer</label
+                  ><textarea name="items" rows="4" required></textarea>
+                </div>
+                <div class="mt14">
+                  <button class="btn btn-primary" type="submit">
+                    Record handover
+                  </button>
+                </div>
+                <p class="tiny-note">
+                  Demonstration form — nothing is submitted to a server.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

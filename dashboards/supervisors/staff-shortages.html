@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Staff Shortages — VIGILORA</title>
+    <link rel="stylesheet" href="../../css/vigilora.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <a class="brand" href="supervisor.html"
+          ><span class="mark">VIGI</span>LORA</a
+        >
+        <nav>
+          <div class="sb-group">Field Work</div>
+          <a class="sb-item" href="supervisor.html"
+            ><span class="ico-char">&#129492;</span
+            ><span class="txt">Supervisor Dashboard</span></a
+          >
+          <a class="sb-item" href="assigned-sites.html"
+            ><span class="ico-char">&#128506;</span
+            ><span class="txt">Assigned Sites</span></a
+          >
+          <a class="sb-item" href="inspection-visits.html"
+            ><span class="ico-char">&#128269;</span
+            ><span class="txt">Inspection Visits</span></a
+          >
+          <div class="sb-group">Records</div>
+          <a class="sb-item" href="guard-attendance.html"
+            ><span class="ico-char">&#9200;</span
+            ><span class="txt">Guard Attendance</span></a
+          >
+          <a class="sb-item" href="handover-verification.html"
+            ><span class="ico-char">&#128260;</span
+            ><span class="txt">Handover Verification</span></a
+          >
+          <a class="sb-item" href="welfare-inspections.html"
+            ><span class="ico-char">&#128153;</span
+            ><span class="txt">Welfare Inspections</span
+            ><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="site-issues.html"
+            ><span class="ico-char">&#9888;</span
+            ><span class="txt">Site Issues</span></a
+          >
+          <a class="sb-item" href="corrective-actions.html"
+            ><span class="ico-char">&#9989;</span
+            ><span class="txt">Corrective Actions</span></a
+          >
+          <div class="sb-group">Reporting</div>
+          <a class="sb-item" href="incident-reporting.html"
+            ><span class="ico-char">&#128680;</span
+            ><span class="txt">Incident Reporting</span></a
+          >
+          <a class="sb-item on" href="staff-shortages.html"
+            ><span class="ico-char">&#9888;</span
+            ><span class="txt">Staff Shortages</span><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="activity-reports.html"
+            ><span class="ico-char">&#128220;</span
+            ><span class="txt">Activity Reports</span></a
+          >
+        </nav>
+        <div class="sb-foot">
+          Field Supervisor<br />VIGILORA v5 — static prototype
+        </div>
+      </aside>
+      <div class="main">
+        <header class="topbar">
+          <div>
+            <div class="page-title">Staff Shortages</div>
+            <div class="crumbs">Reporting / Staff Shortages</div>
+          </div>
+          <div class="spacer"></div>
+          <a class="avatar" href="#" title="Notifications"
+            >&#128276;<span class="dot"></span
+          ></a>
+          <a class="avatar" href="#" title="Field Supervisor">FS</a>
+        </header>
+        <div class="content">
+          <span class="demo-note"
+            >Demonstration data — not live operational information</span
+          >
+          <div class="page-head">
+            <div>
+              <h2>Staff Shortages</h2>
+              <p>Report gaps so relief can be arranged quickly.</p>
+            </div>
+          </div>
+          <div class="panel mb20">
+            <div class="panel-h"><h3>Current shortages at your sites</h3></div>
+            <div class="tbl-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Site</th>
+                    <th>Shift</th>
+                    <th>Gap</th>
+                    <th>Relief status</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Industrial Depot</td>
+                    <td>Tonight</td>
+                    <td>1 guard</td>
+                    <td>
+                      <span class="badge b-warn">Request RL-118 open</span>
+                    </td>
+                    <td><a class="linklike" href="#">Escalate</a></td>
+                  </tr>
+                  <tr>
+                    <td>Ruaraka Mall</td>
+                    <td>14 Nov night</td>
+                    <td>1 guard</td>
+                    <td><span class="badge b-info">Scheduled</span></td>
+                    <td><a class="linklike" href="#">View</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-h"><h3>Report a shortage</h3></div>
+            <div class="panel-b">
+              <form method="get" action="#">
+                <div class="form-grid">
+                  <div class="field">
+                    <label class="req">Site</label
+                    ><select name="site" required>
+                      <option value="">Select&hellip;</option>
+                      <option>CBD Tower</option>
+                      <option>Westlands HQ</option>
+                      <option>Karen Residence</option>
+                      <option>Ruaraka Mall</option>
+                      <option>Industrial Depot</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label class="req">Shift date</label
+                    ><input type="date" name="date" required />
+                  </div>
+                  <div class="field">
+                    <label class="req">Guards needed</label
+                    ><input type="number" name="qty" min="1" required />
+                  </div>
+                  <div class="field">
+                    <label class="req">Reason</label
+                    ><select name="reason" required>
+                      <option value="">Select&hellip;</option>
+                      <option>Sick leave</option>
+                      <option>No-show</option>
+                      <option>Approved leave</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="mt14">
+                  <button class="btn btn-primary" type="submit">
+                    Submit shortage report
+                  </button>
+                </div>
+                <p class="tiny-note">
+                  Demonstration form — nothing is submitted to a server.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

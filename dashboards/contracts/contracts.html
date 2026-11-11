@@ -1,95 +1,159 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contract Management — NOVAGUARD</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<link rel="stylesheet" href="../assets/css/dashboard.css">
-<link rel="stylesheet" href="../assets/css/responsive.css">
-</head>
-<body>
-<div class="app">
-  <input type="checkbox" id="navtoggle" class="nav-checkbox">
-  <aside class="sidebar">
-    <div class="side-brand"><span class="brand-mark"><i class="fa-solid fa-shield-halved"></i></span>NOVAGUARD</div>
-    <nav class="side-nav">
-      <div class="side-group">Contracts</div>
-      <a class="side-link active" href="contracts.html"><i class="fa-solid fa-table-columns"></i>Dashboard</a>
-      <a class="side-link" href="../modules/contracts.html"><i class="fa-solid fa-file-contract"></i>Client Contracts</a>
-      <a class="side-link" href="../modules/contracts.html"><i class="fa-solid fa-arrows-rotate"></i>Renewals</a>
-      <a class="side-link" href="../modules/contracts.html"><i class="fa-solid fa-file-signature"></i>SLAs</a>
-      <div class="side-group">Site Rules</div>
-      <a class="side-link" href="../modules/reports.html"><i class="fa-solid fa-user-check"></i>Guard Requirements</a>
-      <a class="side-link" href="../modules/contracts.html"><i class="fa-solid fa-coins"></i>Contract Rates</a>
-      <a class="side-link" href="../modules/reports.html"><i class="fa-solid fa-scroll"></i>Client-Specific Rules</a>
-      <a class="side-link" href="../modules/contracts.html"><i class="fa-solid fa-chart-line"></i>Performance</a>
-    </nav>
-    <div class="side-foot"><a href="../../webpages/login.html"><i class="fa-solid fa-right-from-bracket"></i> Sign out</a></div>
-  </aside>
-  <div class="main-area">
-    <header class="topbar">
-      <label for="navtoggle" class="icon-btn" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></label>
-      <div class="crumb">Contracts / <b>Dashboard</b></div>
-      <div class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Global search — guards, sites, records…"></div>
-      <div class="top-actions">
-        <div class="icon-btn"><i class="fa-solid fa-bell"></i><span class="dot">2</span></div>
-        <div class="avatar">CM</div>
-      </div>
-    </header>
-    <main class="content">
-      <div class="page-title-row">
-        <div>
-          <h1>Contract Management</h1>
-          <div class="crumbs">Contract Management</div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Contract Dashboard — VIGILORA</title>
+    <link rel="stylesheet" href="../../css/vigilora.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <a class="brand" href="contracts.html"
+          ><span class="mark">VIGI</span>LORA</a
+        >
+        <nav>
+          <div class="sb-group">Contracts</div>
+          <a class="sb-item on" href="contracts.html"
+            ><span class="ico-char">&#128196;</span
+            ><span class="txt">Contract Dashboard</span></a
+          >
+          <a class="sb-item" href="client-contracts.html"
+            ><span class="ico-char">&#128221;</span
+            ><span class="txt">Client Contracts</span></a
+          >
+          <a class="sb-item" href="service-level-agreements.html"
+            ><span class="ico-char">&#9986;</span
+            ><span class="txt">Service-Level Agreements</span></a
+          >
+          <a class="sb-item" href="renewals.html"
+            ><span class="ico-char">&#128293;</span
+            ><span class="txt">Renewals &amp; Reminders</span
+            ><span class="pip"></span
+          ></a>
+          <div class="sb-group">Planning</div>
+          <a class="sb-item" href="site-requirements.html"
+            ><span class="ico-char">&#128506;</span
+            ><span class="txt">Site Requirements</span></a
+          >
+          <a class="sb-item" href="staffing-requirements.html"
+            ><span class="ico-char">&#128101;</span
+            ><span class="txt">Staffing Requirements</span></a
+          >
+          <a class="sb-item" href="contract-documents.html"
+            ><span class="ico-char">&#128193;</span
+            ><span class="txt">Contract Documents</span></a
+          >
+          <a class="sb-item" href="contract-performance.html"
+            ><span class="ico-char">&#128201;</span
+            ><span class="txt">Contract Performance</span></a
+          >
+        </nav>
+        <div class="sb-foot">
+          Contract Manager<br />VIGILORA v5 — static prototype
         </div>
-        <div class="page-actions">
-          <button class="btn-xs"><i class="fa-solid fa-download"></i>Export</button>
-          <button class="btn-xs primary"><i class="fa-solid fa-plus"></i>New Record</button>
-        </div>
-      </div>
-      <div class="kpi-grid">
-        <div class="kpi "><div class="kpi-label"><i class="fa-solid fa-file-contract"></i>Active Contracts</div><div class="kpi-value">52</div><div class="kpi-delta up">▲ 3 this quarter</div></div>
-        <div class="kpi k-orange"><div class="kpi-label"><i class="fa-solid fa-arrows-rotate"></i>Renewals Due (90d)</div><div class="kpi-value">7</div><div class="kpi-delta warn">Notifications sent</div></div>
-        <div class="kpi k-green"><div class="kpi-label"><i class="fa-solid fa-chart-line"></i>SLA Performance</div><div class="kpi-value">92%</div><div class="kpi-delta up">Above target</div></div>
-        <div class="kpi k-gold"><div class="kpi-label"><i class="fa-solid fa-coins"></i>Monthly Contract Value</div><div class="kpi-value">KES 17.9M</div><div class="kpi-delta ">Recurring billing</div></div>
-      </div>
-      <div class="panel mb-24">
-        <div class="panel-head"><h3><i class="fa-solid fa-file-contract"></i>Client Contracts</h3><div class="filters"><select><option>All Clients</option></select><select><option>All Status</option></select></div><a class="panel-link" href="../modules/reports.html"><i class="fa-solid fa-download"></i> Export</a></div>
-        <div class="table-wrap"><table class="tbl">
-          <thead><tr><th>Contract</th><th>Client</th><th>Sites</th><th>Guards/Shift</th><th>Monthly Rate</th><th>Ends</th><th>Status</th><th>Action</th></tr></thead>
-          <tbody>
-            <tr><td>CT-0118</td><td>Apex Holdings Ltd</td><td>2</td><td>6</td><td>KES 450,000</td><td>30 Jun 2027</td><td><span class="badge bg-green">Active</span></td><td><button class="btn-xs"><i class="fa-solid fa-eye"></i>View</button></td></tr>
-            <tr><td>CT-0104</td><td>Valley School</td><td>1</td><td>3</td><td>KES 210,000</td><td>01 Dec 2026</td><td><span class="badge bg-orange">Renewal Due</span></td><td><button class="btn-xs primary"><i class="fa-solid fa-arrows-rotate"></i>Renew</button></td></tr>
-            <tr><td>CT-0132</td><td>Riverside Gardens</td><td>1</td><td>4</td><td>KES 310,000</td><td>31 Mar 2027</td><td><span class="badge bg-green">Active</span></td><td><button class="btn-xs"><i class="fa-solid fa-eye"></i>View</button></td></tr>
-          </tbody>
-        </table></div>
-      </div>
-<div class="panel-grid">
-        <div class="panel">
-          <div class="panel-head"><h3><i class="fa-solid fa-scroll"></i>Client-Specific Site Rules (Versioned)</h3></div>
-          <div class="table-wrap"><table class="tbl">
-            <thead><tr><th>Site</th><th>Rule Set</th><th>Effective</th><th>Version</th><th>Override Approval</th></tr></thead>
-            <tbody>
-              <tr><td>Apex Tower HQ</td><td>2 guards lobby 06:00–22:00 · badge scanning</td><td>01 Nov 2026</td><td>v4</td><td><span class="badge bg-grey">None</span></td></tr>
-              <tr><td>Valley School</td><td>Visitor screening mandatory · restricted lists</td><td>10 Sep 2026</td><td>v2</td><td><span class="badge bg-orange">Director approval</span></td></tr>
-              <tr><td>Westlands Depot</td><td>Clock-in GPS radius 100m · patrol every 2h</td><td>15 Oct 2026</td><td>v3</td><td><span class="badge bg-grey">None</span></td></tr>
-            </tbody>
-          </table></div>
-        </div>
-        <div class="panel">
-          <div class="panel-head"><h3><i class="fa-solid fa-chart-line"></i>Contract Performance</h3></div>
-          <div class="panel-body">
-            <div class="prog-row"><div class="prog-meta"><b>Apex Holdings</b><span>97%</span></div><div class="prog-track"><div class="prog-fill pf-green w-97"></div></div></div>
-            <div class="prog-row"><div class="prog-meta"><b>Valley School</b><span>89%</span></div><div class="prog-track"><div class="prog-fill pf-gold w-89"></div></div></div>
-            <div class="prog-row"><div class="prog-meta"><b>Riverside Gardens</b><span>93%</span></div><div class="prog-track"><div class="prog-fill pf-green w-93"></div></div></div>
-            <div class="prog-row"><div class="prog-meta"><b>Westland Retail Park</b><span>84%</span></div><div class="prog-track"><div class="prog-fill pf-orange w-84"></div></div></div>
+      </aside>
+      <div class="main">
+        <header class="topbar">
+          <div>
+            <div class="page-title">Contract Dashboard</div>
+            <div class="crumbs">Contracts / Contract Dashboard</div>
+          </div>
+          <div class="spacer"></div>
+          <a class="avatar" href="#" title="Notifications"
+            >&#128276;<span class="dot"></span
+          ></a>
+          <a class="avatar" href="#" title="Contract Manager">CM</a>
+        </header>
+        <div class="content">
+          <span class="demo-note"
+            >Demonstration data — not live operational information</span
+          >
+
+          <div class="row r4 mb20">
+            <div class="kpi">
+              <div class="label">Active contracts</div>
+              <div class="val">18</div>
+              <div class="sub">KSh 41.6M annual value</div>
+            </div>
+            <div class="kpi">
+              <div class="label">Renewing (90d)</div>
+              <div class="val">4</div>
+              <div class="sub">1 critical</div>
+            </div>
+            <div class="kpi bad">
+              <div class="label">SLA breaches (30d)</div>
+              <div class="val">2</div>
+              <div class="sub">Response time</div>
+            </div>
+            <div class="kpi good">
+              <div class="label">Contract documents</div>
+              <div class="val">36</div>
+              <div class="sub">All signed copies stored</div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-h"><h3>Client contracts</h3></div>
+            <div class="tbl-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Ref</th>
+                    <th>Client</th>
+                    <th>Scope</th>
+                    <th>Value</th>
+                    <th>Status</th>
+                    <th>Note</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><b>CTR-118</b></td>
+                    <td>Brightways Properties</td>
+                    <td>CBD Tower — manned guarding</td>
+                    <td><b>KSh 4.6M / yr</b></td>
+                    <td><span class="badge b-ok">Active</span></td>
+                    <td>Renews Mar 2027</td>
+                  </tr>
+                  <tr>
+                    <td><b>CTR-116</b></td>
+                    <td>Kevo Logistics</td>
+                    <td>Depot — 24hr guarding</td>
+                    <td><b>KSh 5.2M / yr</b></td>
+                    <td><span class="badge b-ok">Active</span></td>
+                    <td>Renews Jan 2027</td>
+                  </tr>
+                  <tr>
+                    <td><b>CTR-109</b></td>
+                    <td>Garden City Mall</td>
+                    <td>Retail — 14 posts</td>
+                    <td><b>KSh 3.8M / yr</b></td>
+                    <td><span class="badge b-ok">Active</span></td>
+                    <td>SLA review due</td>
+                  </tr>
+                  <tr>
+                    <td><b>CTR-104</b></td>
+                    <td>Ridgewood Residences</td>
+                    <td>Estate — night cover</td>
+                    <td><b>KSh 2.9M / yr</b></td>
+                    <td><span class="badge b-ok">Active</span></td>
+                    <td>Renews Feb 2027</td>
+                  </tr>
+                  <tr>
+                    <td><b>CTR-099</b></td>
+                    <td>Nairobi International School</td>
+                    <td>Institutional</td>
+                    <td><b>KSh 4.1M / yr</b></td>
+                    <td><span class="badge b-red">Expiring</span></td>
+                    <td>Expires 31 Dec 2026</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
-    </main>
-  </div>
-</div>
-</body>
+    </div>
+  </body>
 </html>

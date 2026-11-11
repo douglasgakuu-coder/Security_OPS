@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Communication Logs — VIGILORA</title>
+    <link rel="stylesheet" href="../../css/vigilora.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <a class="brand" href="control-room.html"
+          ><span class="mark">VIGI</span>LORA</a
+        >
+        <nav>
+          <div class="sb-group">Live Desk</div>
+          <a class="sb-item" href="control-room.html"
+            ><span class="ico-char">&#127909;</span
+            ><span class="txt">Control Room</span><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="alert-queue.html"
+            ><span class="ico-char">&#128276;</span
+            ><span class="txt">Alert Queue</span><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="active-incidents.html"
+            ><span class="ico-char">&#128680;</span
+            ><span class="txt">Active Incidents</span><span class="pip"></span
+          ></a>
+          <div class="sb-group">Monitoring</div>
+          <a class="sb-item" href="missed-checkins.html"
+            ><span class="ico-char">&#9200;</span
+            ><span class="txt">Missed Check-ins</span><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="assistance-requests.html"
+            ><span class="ico-char">&#128658;</span
+            ><span class="txt">Assistance Requests</span
+            ><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="dispatch.html"
+            ><span class="ico-char">&#128666;</span
+            ><span class="txt">Dispatch Coordination</span></a
+          >
+          <div class="sb-group">Desk</div>
+          <a class="sb-item on" href="comms-log.html"
+            ><span class="ico-char">&#128172;</span
+            ><span class="txt">Communication Logs</span></a
+          >
+          <a class="sb-item" href="operator-handover.html"
+            ><span class="ico-char">&#128260;</span
+            ><span class="txt">Operator Handover</span></a
+          >
+        </nav>
+        <div class="sb-foot">
+          Control Room Operator<br />VIGILORA v5 — static prototype
+        </div>
+      </aside>
+      <div class="main">
+        <header class="topbar">
+          <div>
+            <div class="page-title">Communication Logs</div>
+            <div class="crumbs">Desk / Communication Logs</div>
+          </div>
+          <div class="spacer"></div>
+          <a class="avatar" href="#" title="Notifications"
+            >&#128276;<span class="dot"></span
+          ></a>
+          <a class="avatar" href="#" title="Control Room Operator">CR</a>
+        </header>
+        <div class="content">
+          <span class="demo-note"
+            >Demonstration data — not live operational information</span
+          >
+          <div class="page-head">
+            <div>
+              <h2>Communication Logs</h2>
+              <p>Radio, phone and SMS records linked to incidents.</p>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-h"><h3>Today&rsquo;s log</h3></div>
+            <div class="tbl-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Time</th>
+                    <th>Channel</th>
+                    <th>Parties</th>
+                    <th>Related</th>
+                    <th>Summary</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>09:04</td>
+                    <td>Radio</td>
+                    <td>CR &rarr; UNIT-2</td>
+                    <td>AR-091</td>
+                    <td>Dispatch to CBD Tower confirmed</td>
+                  </tr>
+                  <tr>
+                    <td>08:50</td>
+                    <td>Phone</td>
+                    <td>CR &rarr; SUP-A</td>
+                    <td>INC-1042</td>
+                    <td>Supervisor briefed, en route</td>
+                  </tr>
+                  <tr>
+                    <td>08:20</td>
+                    <td>SMS</td>
+                    <td>CR &rarr; R. Chebet</td>
+                    <td>AL-0911</td>
+                    <td>Checkpoint miss notification sent</td>
+                  </tr>
+                  <tr>
+                    <td>07:40</td>
+                    <td>Radio</td>
+                    <td>G. Wanjiru &rarr; CR</td>
+                    <td>AR-090</td>
+                    <td>Access dispute guidance given</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

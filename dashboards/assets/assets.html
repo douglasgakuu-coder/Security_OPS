@@ -1,95 +1,170 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Equipment &amp; Asset Management — NOVAGUARD</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<link rel="stylesheet" href="../assets/css/dashboard.css">
-<link rel="stylesheet" href="../assets/css/responsive.css">
-</head>
-<body>
-<div class="app">
-  <input type="checkbox" id="navtoggle" class="nav-checkbox">
-  <aside class="sidebar">
-    <div class="side-brand"><span class="brand-mark"><i class="fa-solid fa-shield-halved"></i></span>NOVAGUARD</div>
-    <nav class="side-nav">
-      <div class="side-group">Inventory</div>
-      <a class="side-link active" href="assets.html"><i class="fa-solid fa-table-columns"></i>Dashboard</a>
-      <a class="side-link" href="../modules/assets.html"><i class="fa-solid fa-boxes-stacked"></i>Equipment Inventory</a>
-      <a class="side-link" href="../modules/assets.html"><i class="fa-solid fa-shirt"></i>Uniform Issuance</a>
-      <a class="side-link" href="../modules/assets.html"><i class="fa-solid fa-walkie-talkie"></i>Radio Allocation</a>
-      <a class="side-link" href="../modules/assets.html"><i class="fa-solid fa-car"></i>Vehicle Records</a>
-      <div class="side-group">Control</div>
-      <a class="side-link" href="../modules/assets.html"><i class="fa-solid fa-right-from-bracket"></i>Equipment Returns</a>
-      <a class="side-link" href="../modules/assets.html"><i class="fa-solid fa-bandaged"></i>Lost / Damaged</a>
-      <a class="side-link" href="../modules/assets.html"><i class="fa-solid fa-screwdriver-wrench"></i>Maintenance Schedules</a>
-      <a class="side-link" href="../modules/reports.html"><i class="fa-solid fa-chart-simple"></i>Accountability Reports</a>
-    </nav>
-    <div class="side-foot"><a href="../../webpages/login.html"><i class="fa-solid fa-right-from-bracket"></i> Sign out</a></div>
-  </aside>
-  <div class="main-area">
-    <header class="topbar">
-      <label for="navtoggle" class="icon-btn" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></label>
-      <div class="crumb">Assets / <b>Dashboard</b></div>
-      <div class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Global search — guards, sites, records…"></div>
-      <div class="top-actions">
-        <div class="icon-btn"><i class="fa-solid fa-bell"></i><span class="dot">0</span></div>
-        <div class="avatar">AO</div>
-      </div>
-    </header>
-    <main class="content">
-      <div class="page-title-row">
-        <div>
-          <h1>Equipment &amp; Asset Management</h1>
-          <div class="crumbs">Equipment &amp; Asset Management</div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Asset Dashboard — VIGILORA</title>
+    <link rel="stylesheet" href="../../css/vigilora.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <a class="brand" href="assets.html"
+          ><span class="mark">VIGI</span>LORA</a
+        >
+        <nav>
+          <div class="sb-group">Inventory</div>
+          <a class="sb-item on" href="assets.html"
+            ><span class="ico-char">&#128737;</span
+            ><span class="txt">Asset Dashboard</span></a
+          >
+          <a class="sb-item" href="asset-register.html"
+            ><span class="ico-char">&#128202;</span
+            ><span class="txt">Asset Register</span></a
+          >
+          <a class="sb-item" href="uniforms.html"
+            ><span class="ico-char">&#128085;</span
+            ><span class="txt">Uniform Inventory</span></a
+          >
+          <a class="sb-item" href="stock-levels.html"
+            ><span class="ico-char">&#128230;</span
+            ><span class="txt">Stock Levels</span><span class="pip"></span
+          ></a>
+          <div class="sb-group">Movement</div>
+          <a class="sb-item" href="equipment-issue.html"
+            ><span class="ico-char">&#128099;</span
+            ><span class="txt">Equipment Issue</span></a
+          >
+          <a class="sb-item" href="equipment-returns.html"
+            ><span class="ico-char">&#128260;</span
+            ><span class="txt">Equipment Returns</span></a
+          >
+          <a class="sb-item" href="damaged-missing.html"
+            ><span class="ico-char">&#9888;</span
+            ><span class="txt">Damaged / Missing</span><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="maintenance.html"
+            ><span class="ico-char">&#128295;</span
+            ><span class="txt">Maintenance</span></a
+          >
+          <div class="sb-group">Procurement</div>
+          <a class="sb-item" href="purchase-requests.html"
+            ><span class="ico-char">&#128717;</span
+            ><span class="txt">Purchase Requests</span></a
+          >
+          <a class="sb-item" href="assignment-history.html"
+            ><span class="ico-char">&#128218;</span
+            ><span class="txt">Assignment History</span></a
+          >
+        </nav>
+        <div class="sb-foot">
+          Asset &amp; Inventory Officer<br />VIGILORA v5 — static prototype
         </div>
-        <div class="page-actions">
-          <button class="btn-xs"><i class="fa-solid fa-download"></i>Export</button>
-          <button class="btn-xs primary"><i class="fa-solid fa-plus"></i>New Record</button>
+      </aside>
+      <div class="main">
+        <header class="topbar">
+          <div>
+            <div class="page-title">Asset Dashboard</div>
+            <div class="crumbs">Inventory / Asset Dashboard</div>
+          </div>
+          <div class="spacer"></div>
+          <a class="avatar" href="#" title="Notifications"
+            >&#128276;<span class="dot"></span
+          ></a>
+          <a class="avatar" href="#" title="Asset &amp; Inventory Officer"
+            >AO</a
+          >
+        </header>
+        <div class="content">
+          <span class="demo-note"
+            >Demonstration data — not live operational information</span
+          >
+
+          <div class="row r4 mb20">
+            <div class="kpi">
+              <div class="label">Total assets</div>
+              <div class="val">1,284</div>
+              <div class="sub">Across 9 stores</div>
+            </div>
+            <div class="kpi">
+              <div class="label">Issued to guards</div>
+              <div class="val">612</div>
+              <div class="sub">Return policy tracked</div>
+            </div>
+            <div class="kpi bad">
+              <div class="label">Damaged / missing</div>
+              <div class="val">7</div>
+              <div class="sub">Reported this month</div>
+            </div>
+            <div class="kpi">
+              <div class="label">Stock alerts</div>
+              <div class="val">4</div>
+              <div class="sub">Below reorder level</div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-h"><h3>Asset register snapshot</h3></div>
+            <div class="tbl-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Tag</th>
+                    <th>Item</th>
+                    <th>Assignment</th>
+                    <th>Condition</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><b>WT-0141</b></td>
+                    <td>Walkie-talkie</td>
+                    <td>Issued — J. Otieno</td>
+                    <td><span class="badge b-ok">Good</span></td>
+                    <td><a class="linklike" href="#">Details</a></td>
+                  </tr>
+                  <tr>
+                    <td><b>WT-0142</b></td>
+                    <td>Walkie-talkie</td>
+                    <td>Store</td>
+                    <td><span class="badge b-ok">Good</span></td>
+                    <td><a class="linklike" href="#">Details</a></td>
+                  </tr>
+                  <tr>
+                    <td><b>TOR-0230</b></td>
+                    <td>Torchlight</td>
+                    <td>Issued — P. Kimani</td>
+                    <td><span class="badge b-warn">Battery weak</span></td>
+                    <td><a class="linklike" href="#">Details</a></td>
+                  </tr>
+                  <tr>
+                    <td><b>UN-L-118</b></td>
+                    <td>Uniform set (L)</td>
+                    <td>Store</td>
+                    <td><span class="badge b-warn">Low stock</span></td>
+                    <td><a class="linklike" href="#">Details</a></td>
+                  </tr>
+                  <tr>
+                    <td><b>BC-0902</b></td>
+                    <td>Boots pair 42</td>
+                    <td>Issued — F. Njeri</td>
+                    <td><span class="badge b-red">Sole worn</span></td>
+                    <td><a class="linklike" href="#">Details</a></td>
+                  </tr>
+                  <tr>
+                    <td><b>RD-0045</b></td>
+                    <td>Radio repeater</td>
+                    <td>Control room</td>
+                    <td><span class="badge b-warn">Under maintenance</span></td>
+                    <td><a class="linklike" href="#">Details</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="kpi-grid">
-        <div class="kpi "><div class="kpi-label"><i class="fa-solid fa-boxes-stacked"></i>Items Registered</div><div class="kpi-value">3,214</div><div class="kpi-delta ">All categories</div></div>
-        <div class="kpi k-green"><div class="kpi-label"><i class="fa-solid fa-arrow-right-arrow-left"></i>Issued</div><div class="kpi-value">2,786</div><div class="kpi-delta up">87% utilisation</div></div>
-        <div class="kpi k-orange"><div class="kpi-label"><i class="fa-solid fa-hourglass-half"></i>Outstanding Returns</div><div class="kpi-value">64</div><div class="kpi-delta warn">Follow-up required</div></div>
-        <div class="kpi k-red"><div class="kpi-label"><i class="fa-solid fa-bandaged"></i>Lost / Damaged (MTD)</div><div class="kpi-value">9</div><div class="kpi-delta down">Replacements logged</div></div>
-        <div class="kpi k-gold"><div class="kpi-label"><i class="fa-solid fa-screwdriver-wrench"></i>Maintenance Due</div><div class="kpi-value">17</div><div class="kpi-delta warn">Vehicles &amp; radios</div></div>
-      </div>
-      <div class="panel mb-24">
-        <div class="panel-head"><h3><i class="fa-solid fa-bolt"></i>Quick Actions</h3></div>
-        <div class="panel-body qa-grid">
-          <div class="qa"><i class="fa-solid fa-arrow-right-arrow-left"></i><span>Assign Equipment</span></div>
-          <div class="qa"><i class="fa-solid fa-rotate-left"></i><span>Record Return</span></div>
-          <div class="qa"><i class="fa-solid fa-bandaged"></i><span>Log Damage/Loss</span></div>
-          <div class="qa"><i class="fa-solid fa-screwdriver-wrench"></i><span>Schedule Maintenance</span></div>
-          <div class="qa"><i class="fa-solid fa-chart-simple"></i><span>Stock Report</span></div>
-        </div>
-      </div>
-      <div class="panel mb-24">
-        <div class="panel-head"><h3><i class="fa-solid fa-boxes-stacked"></i>Equipment Issue Register</h3><div class="filters"><select><option>All Categories</option></select><input type="text" placeholder="Serial no…"></div><a class="panel-link" href="../modules/reports.html"><i class="fa-solid fa-download"></i> Export</a></div>
-        <div class="table-wrap"><table class="tbl">
-          <thead><tr><th>Item</th><th>Serial</th><th>Assigned To</th><th>Issued</th><th>Condition</th><th>Return Due</th><th>Action</th></tr></thead>
-          <tbody>
-            <tr><td>Two-Way Radio</td><td>RD-0042</td><td>G-8012 — Apex Towers</td><td>02 Nov 2026</td><td><span class="badge bg-green">Good</span></td><td>On shift end</td><td><button class="btn-xs"><i class="fa-solid fa-rotate-left"></i>Return</button></td></tr>
-            <tr><td>Uniform Set (M)</td><td>UN-1188</td><td>G-8013 — Westlands Depot</td><td>28 Oct 2026</td><td><span class="badge bg-green">New</span></td><td>—</td><td><button class="btn-xs"><i class="fa-solid fa-eye"></i>View</button></td></tr>
-            <tr><td>Flashlight LED</td><td>FL-0210</td><td>G-8031 — Valley School</td><td>20 Oct 2026</td><td><span class="badge bg-orange">Worn</span></td><td>30 Nov 2026</td><td><button class="btn-xs"><i class="fa-solid fa-arrows-rotate"></i>Replace</button></td></tr>
-            <tr><td>Patrol Vehicle</td><td>KBX 442J</td><td>Mobile Team 2</td><td>—</td><td><span class="badge bg-orange">Service Due</span></td><td>14 Nov 2026</td><td><button class="btn-xs primary"><i class="fa-solid fa-screwdriver-wrench"></i>Book Service</button></td></tr>
-          </tbody>
-        </table></div>
-      </div>
-      <div class="panel">
-        <div class="panel-head"><h3><i class="fa-solid fa-chart-simple"></i>Category Accountability</h3></div>
-        <div class="panel-body">
-          <div class="prog-row"><div class="prog-meta"><b>Uniforms accounted for</b><span>94%</span></div><div class="prog-track"><div class="prog-fill pf-green w-94"></div></div></div>
-          <div class="prog-row"><div class="prog-meta"><b>Radios accounted for</b><span>90%</span></div><div class="prog-track"><div class="prog-fill pf-gold w-90"></div></div></div>
-          <div class="prog-row"><div class="prog-meta"><b>Flashlights accounted for</b><span>86%</span></div><div class="prog-track"><div class="prog-fill pf-orange w-86"></div></div></div>
-          <div class="prog-row"><div class="prog-meta"><b>Vehicles roadworthy</b><span>100%</span></div><div class="prog-track"><div class="prog-fill pf-green w-100"></div></div></div>
-        </div>
-      </div>
-    </main>
-  </div>
-</div>
-</body>
+    </div>
+  </body>
 </html>

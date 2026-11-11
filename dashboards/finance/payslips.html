@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Payslips — VIGILORA</title>
+    <link rel="stylesheet" href="../../css/vigilora.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <a class="brand" href="finance.html"
+          ><span class="mark">VIGI</span>LORA</a
+        >
+        <nav>
+          <div class="sb-group">Money</div>
+          <a class="sb-item" href="finance.html"
+            ><span class="ico-char">&#128176;</span
+            ><span class="txt">Finance Dashboard</span></a
+          >
+          <a class="sb-item" href="invoices.html"
+            ><span class="ico-char">&#129534;</span
+            ><span class="txt">Client Invoices</span><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="payments.html"
+            ><span class="ico-char">&#128181;</span
+            ><span class="txt">Payment Tracking</span></a
+          >
+          <a class="sb-item" href="expenses.html"
+            ><span class="ico-char">&#128182;</span
+            ><span class="txt">Expenses</span></a
+          >
+          <div class="sb-group">Payroll</div>
+          <a class="sb-item" href="payroll-prep.html"
+            ><span class="ico-char">&#129517;</span
+            ><span class="txt">Payroll Preparation</span
+            ><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="payroll-approval.html"
+            ><span class="ico-char">&#9986;</span
+            ><span class="txt">Payroll Approval</span></a
+          >
+          <a class="sb-item on" href="payslips.html"
+            ><span class="ico-char">&#128196;</span
+            ><span class="txt">Payslips</span></a
+          >
+          <a class="sb-item" href="deductions.html"
+            ><span class="ico-char">&#127963;</span
+            ><span class="txt">Statutory Deductions</span></a
+          >
+          <div class="sb-group">Reporting</div>
+          <a class="sb-item" href="overtime.html"
+            ><span class="ico-char">&#9200;</span
+            ><span class="txt">Overtime &amp; Allowances</span></a
+          >
+          <a class="sb-item" href="reconciliation.html"
+            ><span class="ico-char">&#9878;</span
+            ><span class="txt">Reconciliation</span></a
+          >
+          <a class="sb-item" href="financial-reports.html"
+            ><span class="ico-char">&#128202;</span
+            ><span class="txt">Financial Reports</span></a
+          >
+        </nav>
+        <div class="sb-foot">
+          Finance Officer<br />VIGILORA v5 — static prototype
+        </div>
+      </aside>
+      <div class="main">
+        <header class="topbar">
+          <div>
+            <div class="page-title">Payslips</div>
+            <div class="crumbs">Payroll / Payslips</div>
+          </div>
+          <div class="spacer"></div>
+          <a class="avatar" href="#" title="Notifications"
+            >&#128276;<span class="dot"></span
+          ></a>
+          <a class="avatar" href="#" title="Finance Officer">FO</a>
+        </header>
+        <div class="content">
+          <span class="demo-note"
+            >Demonstration data — not live operational information</span
+          >
+          <div class="page-head">
+            <div>
+              <h2>Payslips</h2>
+              <p>
+                Itemised, employee-visible payslip records with deduction
+                explanations and payment status.
+              </p>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-h">
+              <h3>Payslip register — October 2026</h3>
+              <div>
+                <a class="btn btn-primary btn-sm" href="#"
+                  >Publish to portals</a
+                >
+              </div>
+            </div>
+            <div class="tbl-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Employee</th>
+                    <th>Gross</th>
+                    <th>Deductions</th>
+                    <th>Net</th>
+                    <th>Published</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><b>J. Otieno</b></td>
+                    <td>KSh 32,400</td>
+                    <td>KSh 6,180</td>
+                    <td><b>KSh 26,220</b></td>
+                    <td><span class="badge b-ok">Visible to employee</span></td>
+                    <td><a class="linklike" href="#">View</a></td>
+                  </tr>
+                  <tr>
+                    <td><b>G. Wanjiru</b></td>
+                    <td>KSh 34,900</td>
+                    <td>KSh 6,650</td>
+                    <td><b>KSh 28,250</b></td>
+                    <td><span class="badge b-ok">Visible to employee</span></td>
+                    <td><a class="linklike" href="#">View</a></td>
+                  </tr>
+                  <tr>
+                    <td><b>P. Kimani</b></td>
+                    <td>KSh 36,100</td>
+                    <td>KSh 6,900</td>
+                    <td><b>KSh 29,200</b></td>
+                    <td><span class="badge b-ok">Visible to employee</span></td>
+                    <td><a class="linklike" href="#">View</a></td>
+                  </tr>
+                  <tr>
+                    <td><b>M. Achieng</b></td>
+                    <td>KSh 30,800</td>
+                    <td>KSh 5,860</td>
+                    <td><b>KSh 24,940</b></td>
+                    <td>
+                      <span class="badge b-warn"
+                        >Dispute open — overtime query</span
+                      >
+                    </td>
+                    <td><a class="linklike" href="#">View</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

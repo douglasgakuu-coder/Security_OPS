@@ -1,289 +1,194 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Our Services — NOVAGUARD</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
-    <link rel="stylesheet" href="../csswebpages/style.css" />
-    <link rel="stylesheet" href="../csswebpages/responsive.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Services — VIGILORA</title>
+    <link rel="stylesheet" href="../css/vigilora.css" />
   </head>
   <body>
-    <input type="checkbox" id="navtoggle" class="nav-checkbox" />
-    <header class="navbar">
-      <div class="container nav-inner">
+    <header class="pub-header">
+      <div class="container">
         <a class="brand" href="index.html"
-          ><span class="brand-mark"
-            ><i class="fa-solid fa-shield-halved"></i></span
-          >NOVA<span class="gold">GUARD</span></a
+          ><span class="mark">VIGI</span>LORA</a
         >
         <nav class="nav-links">
           <a href="index.html">Home</a><a href="about.html">About</a>
-          <a href="services.html" class="active">Services</a
-          ><a href="careers.html">Careers</a>
-          <a href="index.html#platform">Platform</a
-          ><a href="faq.html">FAQ</a><a href="contact.html">Contact</a>
+          <a href="services.html" class="nav-active"
+            >Services</a
+          ><a href="industries.html">Industries</a>
+          <a href="careers.html">Careers</a><a href="welfare.html">Welfare</a
+          ><a href="contact.html">Contact</a>
+          <a class="nav-cta" href="login.html">Portal Login</a>
         </nav>
-        <div class="nav-actions">
-          <a href="login.html" class="btn btn-outline"
-            ><i class="fa-solid fa-right-to-bracket"></i>Login</a
-          >
-          <a href="signup.html" class="btn btn-gold"
-            ><i class="fa-solid fa-file-invoice"></i>Request a Quote</a
-          >
-          <label for="navtoggle" class="nav-toggle-btn" aria-label="Menu"
-            ><i class="fa-solid fa-bars"></i
-          ></label>
-        </div>
       </div>
     </header>
 
-    <section class="page-hero">
-      <div class="container">
-        <div class="breadcrumb">
-          <a href="index.html">Home</a> / Our Services
-        </div>
-        <h1>Complete protection for every environment</h1>
-        <p>
-          Every service is delivered under a structured deployment model — site
-          rules, qualified guards, verified patrols and accountable reporting.
-        </p>
-      </div>
-    </section>
-
     <section class="section">
       <div class="container">
-        <div class="cards-3">
-          <article class="card service-card">
-            <div class="service-icon">
-              <i class="fa-solid fa-user-shield"></i>
-            </div>
+        <span class="eyebrow">Services</span>
+        <h2>Security services</h2>
+        <p class="h-sub">
+          Each service is backed by verified guards, documented procedures and
+          client-visible reporting.
+        </p>
+        <img
+          src="../images/services-grid.svg"
+          alt="Vetted guards, rapid response and verified records"
+          class="banner-img-mt"
+        />
+        <div class="grid g3" class="mt32">
+          <div class="card">
+            <div class="ico cobalt">&#128110;</div>
             <h3>Manned Guarding</h3>
             <p>
-              Trained, PSRA-registered guards on structured 24/7 rosters with
-              GPS-verified attendance and electronic handovers.
+              Static guards and access-control posts with defined post
+              instructions.
             </p>
-            <a class="link-more" href="service-detail.html?svc=manned"
-              >Learn more <i class="fa-solid fa-arrow-right"></i
-            ></a>
-          </article>
-          <article class="card service-card">
-            <div class="service-icon"><i class="fa-solid fa-building"></i></div>
-            <h3>Corporate &amp; Commercial</h3>
-            <p>
-              Access control, reception management, opening/closing procedures
-              and asset protection for commercial premises.
-            </p>
-            <a class="link-more" href="service-detail.html?svc=corporate"
-              >Learn more <i class="fa-solid fa-arrow-right"></i
-            ></a>
-          </article>
-          <article class="card service-card">
-            <div class="service-icon">
-              <i class="fa-solid fa-house-lock"></i>
-            </div>
-            <h3>Residential Estate</h3>
-            <p>
-              Visitor registers, perimeter patrols and resident incident
-              reporting for gated communities.
-            </p>
-            <a class="link-more" href="service-detail.html?svc=residential"
-              >Learn more <i class="fa-solid fa-arrow-right"></i
-            ></a>
-          </article>
-          <article class="card service-card">
-            <div class="service-icon"><i class="fa-solid fa-industry"></i></div>
-            <h3>Industrial &amp; Manufacturing</h3>
-            <p>
-              Materials movement control, gate passes, equipment protection and
-              shift-consistent staffing.
-            </p>
-            <a class="link-more" href="service-detail.html?svc=industrial"
-              >Learn more <i class="fa-solid fa-arrow-right"></i
-            ></a>
-          </article>
-          <article class="card service-card">
-            <div class="service-icon">
-              <i class="fa-solid fa-helmet-safety"></i>
-            </div>
-            <h3>Construction Sites</h3>
-            <p>
-              Perimeter security, materials and plant protection, and
-              after-hours monitoring for active sites.
-            </p>
-            <a class="link-more" href="service-detail.html?svc=construction"
-              >Learn more <i class="fa-solid fa-arrow-right"></i
-            ></a>
-          </article>
-          <article class="card service-card">
-            <div class="service-icon"><i class="fa-solid fa-hotel"></i></div>
-            <h3>Hotel &amp; Hospitality</h3>
-            <p>
-              Guest safety, vehicle access coordination and emergency response
-              for hospitality venues.
-            </p>
-            <a class="link-more" href="service-detail.html?svc=hospitality"
-              >Learn more <i class="fa-solid fa-arrow-right"></i
-            ></a>
-          </article>
-          <article class="card service-card">
-            <div class="service-icon">
-              <i class="fa-solid fa-graduation-cap"></i>
-            </div>
-            <h3>School &amp; Institutional</h3>
-            <p>
-              Gate control, visitor screening and student protection with
-              shift-appropriate staffing.
-            </p>
-            <a class="link-more" href="service-detail.html?svc=institutional"
-              >Learn more <i class="fa-solid fa-arrow-right"></i
-            ></a>
-          </article>
-          <article class="card service-card">
-            <div class="service-icon">
-              <i class="fa-solid fa-van-shuttle"></i>
-            </div>
-            <h3>Mobile Security Support</h3>
-            <p>
-              Rapid mobile response crews, relief guard dispatch and remote-site
-              communications coverage.
-            </p>
-            <a class="link-more" href="service-detail.html?svc=mobile"
-              >Learn more <i class="fa-solid fa-arrow-right"></i
-            ></a>
-          </article>
-          <article class="card service-card">
-            <div class="service-icon">
-              <i class="fa-solid fa-tower-observation"></i>
-            </div>
-            <h3>Operations Monitoring</h3>
-            <p>
-              24/7 control room oversight: welfare and radio checks, alarm and
-              CCTV integration, incident escalation.
-            </p>
-            <a class="link-more" href="service-detail.html?svc=monitoring"
-              >Learn more <i class="fa-solid fa-arrow-right"></i
-            ></a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section solution">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">Built Around Your Site</span>
-          <h2>Client-specific deployment rules</h2>
-          <p>
-            Requirements configured per client and per site — enforced by the
-            system before any guard is assigned.
-          </p>
-        </div>
-        <div class="pill-grid">
-          <div class="pill">
-            <i class="fa-solid fa-user-check"></i>Contractual guard counts
-            enforced
+            <a class="btn btn-outline btn-sm" href="request-service.html"
+              >Request this service</a
+            >
           </div>
-          <div class="pill">
-            <i class="fa-solid fa-list-check"></i>Client-approved guard lists
+          <div class="card">
+            <div class="ico cobalt">&#128374;</div>
+            <h3>Alarm &amp; Rapid Response</h3>
+            <p>Monitored alarms with coordinated response dispatch.</p>
+            <a class="btn btn-outline btn-sm" href="request-service.html"
+              >Request this service</a
+            >
           </div>
-          <div class="pill">
-            <i class="fa-solid fa-scroll"></i>Site standing orders attached
+          <div class="card">
+            <div class="ico cobalt">&#128249;</div>
+            <h3>CCTV Monitoring</h3>
+            <p>
+              Control-room surveillance support with documented operator
+              procedures.
+            </p>
+            <a class="btn btn-outline btn-sm" href="request-service.html"
+              >Request this service</a
+            >
           </div>
-          <div class="pill">
-            <i class="fa-solid fa-bed"></i>Rest-hour &amp; conflict validation
+          <div class="card">
+            <div class="ico cobalt">&#127914;</div>
+            <h3>Event Security</h3>
+            <p>Crowd management and event risk planning.</p>
+            <a class="btn btn-outline btn-sm" href="request-service.html"
+              >Request this service</a
+            >
           </div>
-          <div class="pill">
-            <i class="fa-solid fa-bell"></i>Automatic understaffing alerts
+          <div class="card">
+            <div class="ico cobalt">&#128665;</div>
+            <h3>Mobile Patrols</h3>
+            <p>
+              Scheduled and randomised patrol checkpoints with digital records.
+            </p>
+            <a class="btn btn-outline btn-sm" href="request-service.html"
+              >Request this service</a
+            >
+          </div>
+          <div class="card">
+            <div class="ico cobalt">&#129504;</div>
+            <h3>Security Consultancy</h3>
+            <p>Risk assessments, site surveys and security planning.</p>
+            <a class="btn btn-outline btn-sm" href="request-service.html"
+              >Request this service</a
+            >
           </div>
         </div>
       </div>
     </section>
 
-    <section class="cta-band" id="contact">
-      <div class="container cta-inner">
+    <section class="section alt">
+      <div class="container grid g2">
         <div>
-          <h2>Need a tailored security package?</h2>
-          <p>
-            Tell us about your site and staffing needs — we'll prepare a
-            structured quotation.
-          </p>
+          <span class="eyebrow">Client service approach</span>
+          <h2>Transparent by design</h2>
+          <ul class="list">
+            <li>
+              <span>Named account manager for every contract</span
+              ><span class="badge b-ok">Standard</span>
+            </li>
+            <li>
+              <span>Site-specific service requirements documented</span
+              ><span class="badge b-ok">Standard</span>
+            </li>
+            <li>
+              <span>Monthly performance reports</span
+              ><span class="badge b-ok">Standard</span>
+            </li>
+            <li>
+              <span>SLA tracking and review meetings</span
+              ><span class="badge b-ok">Standard</span>
+            </li>
+          </ul>
         </div>
-        <div class="cta-btns">
-          <a href="signup.html" class="btn btn-gold btn-lg"
-            ><i class="fa-solid fa-file-invoice"></i>Request a Quote</a
-          ><a href="faq.html" class="btn btn-light-outline btn-lg"
-            ><i class="fa-solid fa-circle-question"></i>Read FAQ</a
-          >
+        <div>
+          <span class="eyebrow">Getting started</span>
+          <h2>How onboarding works</h2>
+          <ul class="timeline">
+            <li>
+              <div class="t-dot"></div>
+              <div class="t-time">Step 1</div>
+              <div>Site survey and risk assessment</div>
+            </li>
+            <li>
+              <div class="t-dot"></div>
+              <div class="t-time">Step 2</div>
+              <div>Proposal with staffing plan and SLA</div>
+            </li>
+            <li>
+              <div class="t-dot"></div>
+              <div class="t-time">Step 3</div>
+              <div>Contract signing and post instructions</div>
+            </li>
+            <li>
+              <div class="t-dot ok"></div>
+              <div class="t-time">Step 4</div>
+              <div>Guard deployment and client portal access</div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
 
     <footer class="footer">
-      <div class="container footer-grid">
-        <div class="f-col f-brand">
-          <a class="brand" href="index.html"
-            ><span class="brand-mark"
-              ><i class="fa-solid fa-shield-halved"></i></span
-            ><span class="brand-text u-white"
-              >NOVA<span class="gold">GUARD</span></span
-            ></a
-          >
-          <p>Every Guard. Every Site. Every Operation. Under Control.</p>
-          <div class="social-row">
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a
-            ><a href="#"><i class="fa-brands fa-x-twitter"></i></a
-            ><a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      <div class="container">
+        <div class="cols">
+          <div>
+            <div class="brand" class="ft-brand">
+              <span class="mark" class="ft-mark">VIGI</span>LORA
+            </div>
+            <p class="ft-text">
+              Security operations, workforce management &amp; client services
+              platform for the Kenyan private security industry.
+            </p>
+          </div>
+          <div>
+            <h4>Company</h4><a href="pricing.html">Pricing</a>
+            <a href="about.html">About ABC LTD</a
+            ><a href="careers.html">Careers</a
+            ><a href="welfare.html">Employee Welfare</a
+            ><a href="privacy.html">Privacy Policy</a
+            ><a href="terms.html">Terms &amp; Conditions</a>
+          </div>
+          <div>
+            <h4>Services</h4>
+            <a href="services.html">Manned Guarding</a
+            ><a href="services.html">Alarm Response</a
+            ><a href="services.html">Event Security</a
+            ><a href="services.html">CCTV Monitoring</a
+            ><a href="services.html">Consultancy</a>
+          </div>
+          <div>
+            <h4>Contact</h4>
+            <a href="contact.html">Westlands, Nairobi, Kenya</a
+            ><a href="#">+254 700 000 000</a><a href="#">info@abcltd.co.ke</a>
           </div>
         </div>
-        <div class="f-col">
-          <h4>Services</h4>
-          <a href="services.html"
-            ><i class="fa-solid fa-angle-right"></i> Manned Guarding</a
-          ><a href="services.html"
-            ><i class="fa-solid fa-angle-right"></i> Corporate Security</a
-          ><a href="services.html"
-            ><i class="fa-solid fa-angle-right"></i> Residential Security</a
-          ><a href="services.html"
-            ><i class="fa-solid fa-angle-right"></i> Operations Monitoring</a
-          >
+        <div class="copy">
+          <span>&copy; 2026 ABC LTD — VIGILORA V5</span
+          ><span>PSRA-registered private security provider (demo)</span>
         </div>
-        <div class="f-col">
-          <h4>Company</h4>
-          <a href="about.html"
-            ><i class="fa-solid fa-angle-right"></i> About Us</a
-          ><a href="careers.html"
-            ><i class="fa-solid fa-angle-right"></i> Careers</a
-          ><a href="faq.html"
-            ><i class="fa-solid fa-angle-right"></i> FAQ</a
-          ><a href="signup.html"
-            ><i class="fa-solid fa-angle-right"></i> Request a Quote</a
-          >
-        </div>
-        <div class="f-col">
-        <h4>Billing</h4>
-        <a href="subscription.html"><i class="fa-solid fa-angle-right"></i> Pricing &amp; Plans</a>
-        <a href="payments.html"><i class="fa-solid fa-angle-right"></i> Make a Payment</a>
-      </div>
-      <div class="f-col">
-          <h4>Contact</h4>
-          <span><i class="fa-solid fa-phone"></i> +254 700 000 000</span
-          ><span><i class="fa-solid fa-envelope"></i> info@novaguard.co.ke</span
-          ><span
-            ><i class="fa-solid fa-location-dot"></i> Westlands, Nairobi</span
-          >
-        </div>
-      </div>
-      <div class="container footer-bottom">
-        <span>© 2026 NOVAGUARD — ABC LTD.</span
-        ><span><a href="#">Privacy Policy</a> · <a href="#">Terms</a></span>
       </div>
     </footer>
   </body>

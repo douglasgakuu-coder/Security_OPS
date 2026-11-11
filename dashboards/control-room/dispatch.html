@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Dispatch Coordination — VIGILORA</title>
+    <link rel="stylesheet" href="../../css/vigilora.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <a class="brand" href="control-room.html"
+          ><span class="mark">VIGI</span>LORA</a
+        >
+        <nav>
+          <div class="sb-group">Live Desk</div>
+          <a class="sb-item" href="control-room.html"
+            ><span class="ico-char">&#127909;</span
+            ><span class="txt">Control Room</span><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="alert-queue.html"
+            ><span class="ico-char">&#128276;</span
+            ><span class="txt">Alert Queue</span><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="active-incidents.html"
+            ><span class="ico-char">&#128680;</span
+            ><span class="txt">Active Incidents</span><span class="pip"></span
+          ></a>
+          <div class="sb-group">Monitoring</div>
+          <a class="sb-item" href="missed-checkins.html"
+            ><span class="ico-char">&#9200;</span
+            ><span class="txt">Missed Check-ins</span><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="assistance-requests.html"
+            ><span class="ico-char">&#128658;</span
+            ><span class="txt">Assistance Requests</span
+            ><span class="pip"></span
+          ></a>
+          <a class="sb-item on" href="dispatch.html"
+            ><span class="ico-char">&#128666;</span
+            ><span class="txt">Dispatch Coordination</span></a
+          >
+          <div class="sb-group">Desk</div>
+          <a class="sb-item" href="comms-log.html"
+            ><span class="ico-char">&#128172;</span
+            ><span class="txt">Communication Logs</span></a
+          >
+          <a class="sb-item" href="operator-handover.html"
+            ><span class="ico-char">&#128260;</span
+            ><span class="txt">Operator Handover</span></a
+          >
+        </nav>
+        <div class="sb-foot">
+          Control Room Operator<br />VIGILORA v5 — static prototype
+        </div>
+      </aside>
+      <div class="main">
+        <header class="topbar">
+          <div>
+            <div class="page-title">Dispatch Coordination</div>
+            <div class="crumbs">Monitoring / Dispatch Coordination</div>
+          </div>
+          <div class="spacer"></div>
+          <a class="avatar" href="#" title="Notifications"
+            >&#128276;<span class="dot"></span
+          ></a>
+          <a class="avatar" href="#" title="Control Room Operator">CR</a>
+        </header>
+        <div class="content">
+          <span class="demo-note"
+            >Demonstration data — not live operational information</span
+          >
+          <div class="page-head">
+            <div>
+              <h2>Dispatch Coordination</h2>
+              <p>Mobile units, relief guards and supervisor movements.</p>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-h"><h3>Active dispatches</h3></div>
+            <div class="tbl-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Unit</th>
+                    <th>Type</th>
+                    <th>Destination</th>
+                    <th>Dispatched</th>
+                    <th>ETA</th>
+                    <th>Purpose</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><b>UNIT-2</b></td>
+                    <td>Response vehicle</td>
+                    <td>CBD Tower</td>
+                    <td>09:04</td>
+                    <td><b>9 min</b></td>
+                    <td>Backup — AR-091</td>
+                  </tr>
+                  <tr>
+                    <td><b>SUP-A</b></td>
+                    <td>Supervisor</td>
+                    <td>CBD Tower</td>
+                    <td>08:50</td>
+                    <td>Arrived</td>
+                    <td>Incident INC-1042</td>
+                  </tr>
+                  <tr>
+                    <td><b>REL-7</b></td>
+                    <td>Relief guard</td>
+                    <td>Airport North</td>
+                    <td>07:30</td>
+                    <td>22 min</td>
+                    <td>Vacant night post</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

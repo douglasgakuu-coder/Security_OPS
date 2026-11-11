@@ -1,131 +1,307 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Executive Overview — NOVAGUARD</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<link rel="stylesheet" href="../assets/css/dashboard.css">
-<link rel="stylesheet" href="../assets/css/responsive.css">
-</head>
-<body>
-<div class="app">
-  <input type="checkbox" id="navtoggle" class="nav-checkbox">
-  <aside class="sidebar">
-    <div class="side-brand"><span class="brand-mark"><i class="fa-solid fa-shield-halved"></i></span>NOVAGUARD</div>
-    <nav class="side-nav">
-      <div class="side-group">Executive</div>
-      <a class="side-link active" href="director.html"><i class="fa-solid fa-table-columns"></i>Dashboard</a>
-      <a class="side-link" href="../modules/reports.html"><i class="fa-solid fa-chart-line"></i>Reports &amp; Analytics</a>
-      <a class="side-link" href="../modules/reports.html"><i class="fa-solid fa-clipboard-check"></i>Approvals</a>
-      <div class="side-group">Business</div>
-      <a class="side-link" href="../modules/contracts.html"><i class="fa-solid fa-building"></i>Branch Performance</a>
-      <a class="side-link" href="../modules/contracts.html"><i class="fa-solid fa-file-contract"></i>Contracts</a>
-      <a class="side-link" href="../modules/finance.html"><i class="fa-solid fa-sack-dollar"></i>Financial Summaries</a>
-      <div class="side-group">Oversight</div>
-      <a class="side-link" href="../modules/reports.html"><i class="fa-solid fa-triangle-exclamation"></i>Critical Alerts</a>
-      <a class="side-link" href="../modules/reports.html"><i class="fa-solid fa-address-book"></i>Directory</a>
-    </nav>
-    <div class="side-foot"><a href="../../webpages/login.html"><i class="fa-solid fa-right-from-bracket"></i> Sign out</a></div>
-  </aside>
-  <div class="main-area">
-    <header class="topbar">
-      <label for="navtoggle" class="icon-btn" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></label>
-      <div class="crumb">Director / <b>Dashboard</b></div>
-      <div class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Global search — guards, sites, records…"></div>
-      <div class="top-actions">
-        <div class="icon-btn"><i class="fa-solid fa-bell"></i><span class="dot">2</span></div>
-        <div class="avatar">DG</div>
-      </div>
-    </header>
-    <main class="content">
-      <div class="page-title-row">
-        <div>
-          <h1>Executive Overview</h1>
-          <div class="crumbs">Executive Overview</div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Business Overview — VIGILORA</title>
+    <link rel="stylesheet" href="../../css/vigilora.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <a class="brand" href="director.html"
+          ><span class="mark">VIGI</span>LORA</a
+        >
+        <nav>
+          <div class="sb-group">Executive</div>
+          <a class="sb-item on" href="director.html"
+            ><span class="ico-char">&#128200;</span
+            ><span class="txt">Business Overview</span></a
+          >
+          <a class="sb-item" href="approvals.html"
+            ><span class="ico-char">&#9986;</span
+            ><span class="txt">Management Approvals</span
+            ><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="branch-performance.html"
+            ><span class="ico-char">&#127961;</span
+            ><span class="txt">Branch Performance</span></a
+          >
+          <div class="sb-group">Business</div>
+          <a class="sb-item" href="financial-summary.html"
+            ><span class="ico-char">&#128176;</span
+            ><span class="txt">Financial Summary</span></a
+          >
+          <a class="sb-item" href="payroll-summary.html"
+            ><span class="ico-char">&#129517;</span
+            ><span class="txt">Payroll Summary</span><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="compliance-overview.html"
+            ><span class="ico-char">&#9989;</span
+            ><span class="txt">Compliance Overview</span></a
+          >
+          <a class="sb-item" href="reports.html"
+            ><span class="ico-char">&#128202;</span
+            ><span class="txt">Reports Centre</span></a
+          >
+          <a class="sb-item" href="product-blueprint.html"
+            ><span class="ico-char">&#128506;</span
+            ><span class="txt">V5 Product Blueprint</span></a
+          >
+          <a class="sb-item" href="success-metrics.html"
+            ><span class="ico-char">&#127919;</span
+            ><span class="txt">Success Metrics</span></a
+          >
+        </nav>
+        <div class="sb-foot">
+          Director / General Manager<br />VIGILORA v5 — static prototype
         </div>
-        <div class="page-actions">
-          <button class="btn-xs"><i class="fa-solid fa-download"></i>Export</button>
-          <button class="btn-xs primary"><i class="fa-solid fa-plus"></i>New Record</button>
-        </div>
-      </div>
-      <div class="kpi-grid">
-        <div class="kpi "><div class="kpi-label"><i class="fa-solid fa-users"></i>Total Employees</div><div class="kpi-value">1,450</div><div class="kpi-delta up">▲ 3% MoM</div></div>
-        <div class="kpi k-gold"><div class="kpi-label"><i class="fa-solid fa-handshake"></i>Active Clients</div><div class="kpi-value">47</div><div class="kpi-delta up">▲ 2 MoM</div></div>
-        <div class="kpi "><div class="kpi-label"><i class="fa-solid fa-file-contract"></i>Active Contracts</div><div class="kpi-value">52</div><div class="kpi-delta ">3 renewals due</div></div>
-        <div class="kpi k-green"><div class="kpi-label"><i class="fa-solid fa-sack-dollar"></i>Monthly Revenue</div><div class="kpi-value">KES 18.4M</div><div class="kpi-delta up">▲ 6.2% MoM</div></div>
-        <div class="kpi k-red"><div class="kpi-label"><i class="fa-solid fa-file-invoice"></i>Outstanding Invoices</div><div class="kpi-value">KES 3.8M</div><div class="kpi-delta down">Collection focus</div></div>
-        <div class="kpi k-orange"><div class="kpi-label"><i class="fa-solid fa-bullhorn"></i>Open Incidents</div><div class="kpi-value">14</div><div class="kpi-delta warn">4 critical</div></div>
-        <div class="kpi k-green"><div class="kpi-label"><i class="fa-solid fa-user-check"></i>Staffing Coverage</div><div class="kpi-value">96%</div><div class="kpi-delta up">▲ vs last month</div></div>
-        <div class="kpi "><div class="kpi-label"><i class="fa-solid fa-money-check-dollar"></i>Payroll (Nov)</div><div class="kpi-value">KES 14.2M</div><div class="kpi-delta ">Draft cycle</div></div>
-      </div>
-      <div class="panel-grid">
-        <div class="panel">
-          <div class="panel-head"><h3><i class="fa-solid fa-chart-column"></i>Revenue Trend (Last 6 Months)</h3><a class="panel-link" href="../modules/reports.html">View report <i class="fa-solid fa-arrow-right"></i></a></div>
-          <div class="panel-body">
-            <div class="bars">
-              <div class="bar bh-55"><em>15.1M</em><i></i><span>Jun</span></div>
-              <div class="bar bh-60"><em>15.9M</em><i></i><span>Jul</span></div>
-              <div class="bar bh-66"><em>16.8M</em><i></i><span>Aug</span></div>
-              <div class="bar bh-70"><em>17.0M</em><i></i><span>Sep</span></div>
-              <div class="bar bh-74"><em>17.4M</em><i></i><span>Oct</span></div>
-              <div class="bar gold-bar bh-88"><em>18.4M</em><i></i><span>Nov</span></div>
+      </aside>
 
+      <div class="main">
+        <header class="topbar">
+          <div>
+            <div class="page-title">Business Overview</div>
+            <div class="crumbs">Executive / Business Overview</div>
+          </div>
+          <div class="spacer"></div>
+          <a class="avatar" href="#" title="Notifications"
+            >&#128276;<span class="dot"></span
+          ></a>
+          <a class="avatar" href="#" title="Director / General Manager">DG</a>
+        </header>
+
+        <div class="content">
+          <span class="demo-note"
+            >Demonstration data — not live operational information</span
+          >
+
+          <div class="row r4 mb20">
+            <div class="kpi good">
+              <div class="label">Total workforce</div>
+              <div class="val">452</div>
+              <div class="sub">+18 this quarter</div>
+            </div>
+            <div class="kpi good">
+              <div class="label">Active clients</div>
+              <div class="val">26</div>
+              <div class="sub">3 new this year</div>
+            </div>
+            <div class="kpi">
+              <div class="label">Active deployments</div>
+              <div class="val">118 posts</div>
+              <div class="sub">96% coverage</div>
+            </div>
+            <div class="kpi good">
+              <div class="label">Monthly revenue</div>
+              <div class="val">KSh 14.2M</div>
+              <div class="sub">+6.4% vs last month</div>
+            </div>
+            <div class="kpi bad">
+              <div class="label">Outstanding invoices</div>
+              <div class="val">KSh 1.9M</div>
+              <div class="sub">4 overdue</div>
+            </div>
+            <div class="kpi bad">
+              <div class="label">Payroll (Nov)</div>
+              <div class="val">KSh 4.81M</div>
+              <div class="sub">Approval pending</div>
+            </div>
+            <div class="kpi bad">
+              <div class="label">Open incidents</div>
+              <div class="val">6</div>
+              <div class="sub">2 high priority</div>
+            </div>
+            <div class="kpi bad">
+              <div class="label">Compliance score</div>
+              <div class="val">91%</div>
+              <div class="sub">2 expiring licences</div>
+            </div>
+          </div>
+
+          <!-- VIGILORA Workforce Scorecard -->
+          <div class="panel mb20">
+            <div class="panel-h">
+              <h3>VIGILORA Workforce Scorecard</h3>
+              <div>Sample figures — demo only</div>
+            </div>
+            <div class="panel-b">
+              <div class="row r3 mb20">
+                <div class="kpi good">
+                  <div class="label">Training completion</div>
+                  <div class="val">94%</div>
+                  <div class="sub">Mandatory courses, rolling 90 days</div>
+                </div>
+                <div class="kpi good">
+                  <div class="label">Contract documentation completeness</div>
+                  <div class="val">89%</div>
+                  <div class="sub">
+                    Signed contracts on file vs active staff
+                  </div>
+                </div>
+                <div class="kpi good">
+                  <div class="label">Scheduled rest-day compliance</div>
+                  <div class="val">92%</div>
+                  <div class="sub">Rest days taken as scheduled</div>
+                </div>
+                <div class="kpi bad">
+                  <div class="label">Unresolved welfare actions</div>
+                  <div class="val">7</div>
+                  <div class="sub">Across all sites — restricted detail</div>
+                </div>
+                <div class="kpi bad">
+                  <div class="label">PSRA records verified</div>
+                  <div class="val">446 / 452</div>
+                  <div class="sub">6 renewals pending</div>
+                </div>
+                <div class="kpi good">
+                  <div class="label">Payslips issued on time (last run)</div>
+                  <div class="val">100%</div>
+                  <div class="sub">November 2026 run</div>
+                </div>
+              </div>
+              <p class="tiny-note">
+                The scorecard measures how well ABC LTD manages its workforce as
+                an organisation — it never ranks or scores individual guards.
+                Every measure must be formally defined and baselined before it
+                informs management decisions.
+              </p>
+            </div>
+          </div>
+
+          <div class="row r2 mb20">
+            <div class="panel">
+              <div class="panel-h"><h3>Approvals waiting on you</h3></div>
+              <div class="panel-b">
+                <ul class="list">
+                  <li>
+                    <span>Payroll PR-2026-11 approval</span
+                    ><span
+                      ><a class="linklike" href="approvals.html"
+                        >Review</a
+                      ></span
+                    >
+                  </li>
+                  <li>
+                    <span>Recruitment offer — Collins Barasa</span
+                    ><span
+                      ><a class="linklike" href="approvals.html"
+                        >Review</a
+                      ></span
+                    >
+                  </li>
+                  <li>
+                    <span>New client request — Lavington</span
+                    ><span
+                      ><a class="linklike" href="approvals.html"
+                        >Review</a
+                      ></span
+                    >
+                  </li>
+                  <li>
+                    <span>Overtime pre-approval — CBD Tower</span
+                    ><span
+                      ><a class="linklike" href="approvals.html"
+                        >Review</a
+                      ></span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="panel-h"><h3>Branch performance (demo)</h3></div>
+              <div class="panel-b">
+                <ul class="list">
+                  <li>
+                    <span>Nairobi HQ</span
+                    ><span
+                      ><b class="badge b-ok"
+                        >98% coverage &middot; profitable</b
+                      ></span
+                    >
+                  </li>
+                  <li>
+                    <span>Mombasa Road</span><span><b>92% coverage</b></span>
+                  </li>
+                  <li>
+                    <span>Nakuru Branch</span
+                    ><span
+                      ><b class="badge b-red"
+                        >86% coverage &middot; 2 vacant posts</b
+                      ></span
+                    >
+                  </li>
+                  <li>
+                    <span>Kisumu (planned)</span
+                    ><span class="badge b-info">Setup in progress</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-h"><h3>Workforce summary</h3></div>
+            <div class="tbl-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Guard</th>
+                    <th>Site</th>
+                    <th>Shift</th>
+                    <th>Status</th>
+                    <th>PSRA</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><b>James Otieno</b></td>
+                    <td>Nairobi CBD Tower</td>
+                    <td>Day</td>
+                    <td><span class="badge b-ok">On duty</span></td>
+                    <td>PSRA-44102</td>
+                    <td><a class="linklike" href="#">View</a></td>
+                  </tr>
+                  <tr>
+                    <td><b>Grace Wanjiru</b></td>
+                    <td>Westlands HQ</td>
+                    <td>Day</td>
+                    <td><span class="badge b-ok">On duty</span></td>
+                    <td>PSRA-44718</td>
+                    <td><a class="linklike" href="#">View</a></td>
+                  </tr>
+                  <tr>
+                    <td><b>Peter Kimani</b></td>
+                    <td>Industrial Area Depot</td>
+                    <td>Night</td>
+                    <td><span class="badge b-ok">On duty</span></td>
+                    <td>PSRA-45903</td>
+                    <td><a class="linklike" href="#">View</a></td>
+                  </tr>
+                  <tr>
+                    <td><b>Mary Achieng</b></td>
+                    <td>Ruaraka Mall</td>
+                    <td>Night</td>
+                    <td><span class="badge b-warn">Rest day</span></td>
+                    <td>PSRA-45577</td>
+                    <td><a class="linklike" href="#">View</a></td>
+                  </tr>
+                  <tr>
+                    <td><b>Brian Kiprop</b></td>
+                    <td>Nakuru Branch Office</td>
+                    <td>Night</td>
+                    <td><span class="badge b-warn">Late arrival</span></td>
+                    <td>PSRA-47332</td>
+                    <td><a class="linklike" href="#">View</a></td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
-        <div class="panel">
-          <div class="panel-head"><h3><i class="fa-solid fa-chart-pie"></i>Breakdown</h3></div>
-          <div class="panel-body donut-wrap">
-            <div class="donut"></div>
-            <div class="legend">
-<div><i class="sw lg-green"></i>Collected — 88%</div>
-              <div><i class="sw lg-blue"></i>Pending — 12%</div>
-              <div><i class="sw lg-orange"></i>Partial — 4%</div>
-              <div><i class="sw lg-red"></i>Disputed — 1%</div>
-            </div>
-          </div>
-        </div>
       </div>
-      <div class="panel-grid">
-        <div class="panel">
-          <div class="panel-head"><h3><i class="fa-solid fa-chart-simple"></i>Operational Performance</h3></div>
-          <div class="panel-body">
-            <div class="prog-row"><div class="prog-meta"><b>Guards deployed on sites</b><span>1,268</span></div><div class="prog-track"><div class="prog-fill pf-green w-88"></div></div></div>
-            <div class="prog-row"><div class="prog-meta"><b>Available / standby</b><span>142</span></div><div class="prog-track"><div class="prog-fill pf-gold w-12"></div></div></div>
-            <div class="prog-row"><div class="prog-meta"><b>Attendance performance</b><span>94.6%</span></div><div class="prog-track"><div class="prog-fill pf-blue w-95"></div></div></div>
-            <div class="prog-row"><div class="prog-meta"><b>Patrol compliance</b><span>97.1%</span></div><div class="prog-track"><div class="prog-fill pf-green w-97"></div></div></div>
-            <div class="prog-row"><div class="prog-meta"><b>Contract SLA performance</b><span>92%</span></div><div class="prog-track"><div class="prog-fill pf-gold w-92"></div></div></div>
-
-          </div>
-        </div>
-      </div>
-      <div class="panel mb-24">
-        <div class="panel-head"><h3><i class="fa-solid fa-building"></i>Branch Performance</h3><a class="panel-link" href="../modules/reports.html"><i class="fa-solid fa-download"></i> Export</a></div>
-        <div class="table-wrap"><table class="tbl">
-          <thead><tr><th>Branch</th><th>Guards</th><th>Sites</th><th>Coverage</th><th>Incidents</th><th>Status</th></tr></thead>
-          <tbody>
-            <tr><td>Nairobi HQ</td><td>620</td><td>38</td><td>97%</td><td>5</td><td><span class="badge bg-green">Healthy</span></td></tr>
-            <tr><td>Mombasa</td><td>310</td><td>19</td><td>95%</td><td>4</td><td><span class="badge bg-green">Healthy</span></td></tr>
-            <tr><td>Kisumu</td><td>240</td><td>14</td><td>93%</td><td>3</td><td><span class="badge bg-orange">Watch</span></td></tr>
-            <tr><td>Nakuru</td><td>280</td><td>14</td><td>91%</td><td>2</td><td><span class="badge bg-orange">Watch</span></td></tr>
-          </tbody>
-        </table></div>
-      </div>
-      <div class="panel">
-        <div class="panel-head"><h3><i class="fa-solid fa-clock-rotate-left"></i>Recent Activity</h3><a class="panel-link" href="../modules/reports.html">View all <i class="fa-solid fa-arrow-right"></i></a></div>
-        <div class="panel-body">
-          <ul class="feed">
-            <li><span class="fdot fd-red"></span><div>Site Beta unmanned — relief dispatch pending Director approval.<time>Today, 14:15</time></div></li>
-            <li><span class="fdot fd-orange"></span><div>November payroll run awaiting sign-off.<time>Today, 11:20</time></div></li>
-            <li><span class="fdot fd-orange"></span><div>Contract renewal — Valley School (21 days).<time>Yesterday</time></div></li>
-            <li><span class="fdot fd-green"></span><div>Compliance audit for Nairobi HQ passed.<time>Yesterday</time></div></li>
-          </ul>
-        </div>
-      </div>
-    </main>
-  </div>
-</div>
-</body>
+    </div>
+  </body>
 </html>

@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Equipment Returns — VIGILORA</title>
+    <link rel="stylesheet" href="../../css/vigilora.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <a class="brand" href="assets.html"
+          ><span class="mark">VIGI</span>LORA</a
+        >
+        <nav>
+          <div class="sb-group">Inventory</div>
+          <a class="sb-item" href="assets.html"
+            ><span class="ico-char">&#128737;</span
+            ><span class="txt">Asset Dashboard</span></a
+          >
+          <a class="sb-item" href="asset-register.html"
+            ><span class="ico-char">&#128202;</span
+            ><span class="txt">Asset Register</span></a
+          >
+          <a class="sb-item" href="uniforms.html"
+            ><span class="ico-char">&#128085;</span
+            ><span class="txt">Uniform Inventory</span></a
+          >
+          <a class="sb-item" href="stock-levels.html"
+            ><span class="ico-char">&#128230;</span
+            ><span class="txt">Stock Levels</span><span class="pip"></span
+          ></a>
+          <div class="sb-group">Movement</div>
+          <a class="sb-item" href="equipment-issue.html"
+            ><span class="ico-char">&#128099;</span
+            ><span class="txt">Equipment Issue</span></a
+          >
+          <a class="sb-item on" href="equipment-returns.html"
+            ><span class="ico-char">&#128260;</span
+            ><span class="txt">Equipment Returns</span></a
+          >
+          <a class="sb-item" href="damaged-missing.html"
+            ><span class="ico-char">&#9888;</span
+            ><span class="txt">Damaged / Missing</span><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="maintenance.html"
+            ><span class="ico-char">&#128295;</span
+            ><span class="txt">Maintenance</span></a
+          >
+          <div class="sb-group">Procurement</div>
+          <a class="sb-item" href="purchase-requests.html"
+            ><span class="ico-char">&#128717;</span
+            ><span class="txt">Purchase Requests</span></a
+          >
+          <a class="sb-item" href="assignment-history.html"
+            ><span class="ico-char">&#128218;</span
+            ><span class="txt">Assignment History</span></a
+          >
+        </nav>
+        <div class="sb-foot">
+          Asset &amp; Inventory Officer<br />VIGILORA v5 — static prototype
+        </div>
+      </aside>
+      <div class="main">
+        <header class="topbar">
+          <div>
+            <div class="page-title">Equipment Returns</div>
+            <div class="crumbs">Movement / Equipment Returns</div>
+          </div>
+          <div class="spacer"></div>
+          <a class="avatar" href="#" title="Notifications"
+            >&#128276;<span class="dot"></span
+          ></a>
+          <a class="avatar" href="#" title="Asset &amp; Inventory Officer"
+            >AO</a
+          >
+        </header>
+        <div class="content">
+          <span class="demo-note"
+            >Demonstration data — not live operational information</span
+          >
+          <div class="page-head">
+            <div>
+              <h2>Equipment Returns</h2>
+              <p>
+                Returns on separation, transfer and end-of-shift where
+                applicable.
+              </p>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-h"><h3>Recent returns</h3></div>
+            <div class="tbl-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Asset</th>
+                    <th>Returned by</th>
+                    <th>Reason</th>
+                    <th>Condition on return</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>08 Nov</td>
+                    <td>WT-0117</td>
+                    <td>E. Mwikali</td>
+                    <td>Replacement issued</td>
+                    <td><span class="badge b-ok">Good</span></td>
+                  </tr>
+                  <tr>
+                    <td>05 Nov</td>
+                    <td>UN-M-276</td>
+                    <td>Separation — D. Kariuki</td>
+                    <td>Exit clearance</td>
+                    <td><span class="badge b-warn">Stains noted</span></td>
+                  </tr>
+                  <tr>
+                    <td>02 Nov</td>
+                    <td>TOR-0225</td>
+                    <td>B. Kiprop</td>
+                    <td>Fault reported</td>
+                    <td>
+                      <span class="badge b-red">Sent to maintenance</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

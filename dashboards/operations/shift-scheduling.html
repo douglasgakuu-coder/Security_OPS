@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Shift Scheduling — VIGILORA</title>
+    <link rel="stylesheet" href="../../css/vigilora.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <a class="brand" href="operations.html"
+          ><span class="mark">VIGI</span>LORA</a
+        >
+        <nav>
+          <div class="sb-group">Operations</div>
+          <a class="sb-item" href="operations.html"
+            ><span class="ico-char">&#128462;</span
+            ><span class="txt">Deployment Overview</span></a
+          >
+          <a class="sb-item" href="site-coverage.html"
+            ><span class="ico-char">&#128506;</span
+            ><span class="txt">Site Coverage</span></a
+          >
+          <a class="sb-item" href="vacant-posts.html"
+            ><span class="ico-char">&#9873;</span
+            ><span class="txt">Vacant Posts</span><span class="pip"></span
+          ></a>
+          <div class="sb-group">Scheduling</div>
+          <a class="sb-item on" href="shift-scheduling.html"
+            ><span class="ico-char">&#128197;</span
+            ><span class="txt">Shift Scheduling</span></a
+          >
+          <a class="sb-item" href="attendance-exceptions.html"
+            ><span class="ico-char">&#9200;</span
+            ><span class="txt">Attendance Exceptions</span
+            ><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="deployment-conflicts.html"
+            ><span class="ico-char">&#9878;</span
+            ><span class="txt">Deployment Conflicts</span></a
+          >
+          <a class="sb-item" href="relief-requests.html"
+            ><span class="ico-char">&#128260;</span
+            ><span class="txt">Relief Guard Requests</span></a
+          >
+          <div class="sb-group">Field</div>
+          <a class="sb-item" href="incidents.html"
+            ><span class="ico-char">&#128680;</span
+            ><span class="txt">Active Incidents</span><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="handovers.html"
+            ><span class="ico-char">&#128260;</span
+            ><span class="txt">Operational Handovers</span></a
+          >
+          <a class="sb-item" href="supervisor-assignments.html"
+            ><span class="ico-char">&#129492;</span
+            ><span class="txt">Supervisor Assignments</span></a
+          >
+        </nav>
+        <div class="sb-foot">
+          Operations Manager<br />VIGILORA v5 — static prototype
+        </div>
+      </aside>
+      <div class="main">
+        <header class="topbar">
+          <div>
+            <div class="page-title">Shift Scheduling</div>
+            <div class="crumbs">Scheduling / Shift Scheduling</div>
+          </div>
+          <div class="spacer"></div>
+          <a class="avatar" href="#" title="Notifications"
+            >&#128276;<span class="dot"></span
+          ></a>
+          <a class="avatar" href="#" title="Operations Manager">OM</a>
+        </header>
+        <div class="content">
+          <span class="demo-note"
+            >Demonstration data — not live operational information</span
+          >
+          <div class="page-head">
+            <div>
+              <h2>Shift Scheduling</h2>
+              <p>
+                Assignment validates site requirements, employee eligibility,
+                existing assignments and rest days before approval.
+              </p>
+            </div>
+            <div>
+              <button class="btn btn-primary btn-sm" type="button">
+                &plus; New shift
+              </button>
+            </div>
+          </div>
+          <div class="notice warn">
+            <span
+              ><b>Fatigue warning:</b> P. Kimani is scheduled 6 consecutive
+              nights — rest day recommended before Saturday.</span
+            >
+          </div>
+          <div class="panel mb20">
+            <div class="panel-h"><h3>This week&rsquo;s schedule</h3></div>
+            <div class="tbl-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Guard</th>
+                    <th>Site</th>
+                    <th>Shift</th>
+                    <th>Days</th>
+                    <th>Hours</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><b>James Otieno</b></td>
+                    <td>CBD Tower</td>
+                    <td>Day 06:00–18:00</td>
+                    <td>Mon–Fri</td>
+                    <td>60</td>
+                    <td><span class="badge b-ok">Confirmed</span></td>
+                  </tr>
+                  <tr>
+                    <td><b>Grace Wanjiru</b></td>
+                    <td>Westlands HQ</td>
+                    <td>Day 07:00–19:00</td>
+                    <td>Mon–Sat</td>
+                    <td>66</td>
+                    <td>
+                      <span class="badge b-warn"
+                        >Overtime pre-approval needed</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><b>Peter Kimani</b></td>
+                    <td>Industrial Depot</td>
+                    <td>Night 18:00–06:00</td>
+                    <td>Mon–Sat</td>
+                    <td>72</td>
+                    <td><span class="badge b-red">Fatigue warning</span></td>
+                  </tr>
+                  <tr>
+                    <td><b>Mary Achieng</b></td>
+                    <td>Ruaraka Mall</td>
+                    <td>Night 18:00–06:00</td>
+                    <td>Tue–Sat</td>
+                    <td>60</td>
+                    <td><span class="badge b-ok">Confirmed</span></td>
+                  </tr>
+                  <tr>
+                    <td><b>Faith Njeri</b></td>
+                    <td>Karen Residence</td>
+                    <td>Day 08:00–20:00</td>
+                    <td>Wed–Sun</td>
+                    <td>60</td>
+                    <td><span class="badge b-ok">Confirmed</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-h"><h3>Weekly-hours summary</h3></div>
+            <div class="panel-b">
+              <ul class="list">
+                <li>
+                  <span>Guards within normal weekly limit (52h)</span
+                  ><span><b>4 of 5</b></span>
+                </li>
+                <li>
+                  <span>Overlapping shifts detected</span
+                  ><span class="badge b-ok">0</span>
+                </li>
+                <li>
+                  <span>Schedule changes this week</span
+                  ><span><b>6 — all recorded in history</b></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

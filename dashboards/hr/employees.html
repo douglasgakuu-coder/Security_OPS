@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Employee Directory — VIGILORA</title>
+    <link rel="stylesheet" href="../../css/vigilora.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <a class="brand" href="hr.html"><span class="mark">VIGI</span>LORA</a>
+        <nav>
+          <div class="sb-group">People</div>
+          <a class="sb-item" href="hr.html"
+            ><span class="ico-char">&#128101;</span
+            ><span class="txt">HR Overview</span></a
+          >
+          <a class="sb-item on" href="employees.html"
+            ><span class="ico-char">&#128100;</span
+            ><span class="txt">Employee Directory</span></a
+          >
+          <a class="sb-item" href="applicants.html"
+            ><span class="ico-char">&#128221;</span
+            ><span class="txt">Recruitment &amp; Applicants</span
+            ><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="onboarding.html"
+            ><span class="ico-char">&#127881;</span
+            ><span class="txt">Onboarding</span></a
+          >
+          <div class="sb-group">Employment</div>
+          <a class="sb-item" href="contracts.html"
+            ><span class="ico-char">&#128196;</span
+            ><span class="txt">Contracts &amp; Records</span
+            ><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="leave.html"
+            ><span class="ico-char">&#127774;</span
+            ><span class="txt">Leave Management</span></a
+          >
+          <a class="sb-item" href="training.html"
+            ><span class="ico-char">&#127891;</span
+            ><span class="txt">Training Records</span><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="disciplinary.html"
+            ><span class="ico-char">&#9878;</span
+            ><span class="txt">Disciplinary Cases</span></a
+          >
+          <div class="sb-group">Care</div>
+          <a class="sb-item" href="welfare-centre.html"
+            ><span class="ico-char">&#128153;</span
+            ><span class="txt">Welfare Centre</span><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="staff-performance.html"
+            ><span class="ico-char">&#127942;</span
+            ><span class="txt">Staff Performance</span></a
+          >
+        </nav>
+        <div class="sb-foot">
+          HR Officer<br />VIGILORA v5 — static prototype
+        </div>
+      </aside>
+      <div class="main">
+        <header class="topbar">
+          <div>
+            <div class="page-title">Employee Directory</div>
+            <div class="crumbs">People / Employee Directory</div>
+          </div>
+          <div class="spacer"></div>
+          <a class="avatar" href="#" title="Notifications"
+            >&#128276;<span class="dot"></span
+          ></a>
+          <a class="avatar" href="#" title="HR Officer">HR</a>
+        </header>
+        <div class="content">
+          <span class="demo-note"
+            >Demonstration data — not live operational information</span
+          >
+          <div class="page-head">
+            <div>
+              <h2>Employee Directory</h2>
+              <p>
+                Every employee has a digital profile: contract, deployment
+                history, payslips, training and verified documents.
+              </p>
+            </div>
+            <div>
+              <button class="btn btn-primary btn-sm" type="button">
+                &plus; New employee
+              </button>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-h">
+              <h3>Directory</h3>
+              <div>
+                <select class="btn btn-ghost btn-sm">
+                  <option>All statuses</option>
+                  <option>On duty</option>
+                  <option>On leave</option>
+                  <option>Rest day</option>
+                </select>
+              </div>
+            </div>
+            <div class="tbl-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Employee</th>
+                    <th>Site</th>
+                    <th>Shift</th>
+                    <th>Status</th>
+                    <th>PSRA</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><b>James Otieno</b></td>
+                    <td>Nairobi CBD Tower</td>
+                    <td>Day</td>
+                    <td><span class="badge b-ok">On duty</span></td>
+                    <td>PSRA-44102</td>
+                    <td><a class="linklike" href="#">Profile</a></td>
+                  </tr>
+                  <tr>
+                    <td><b>Grace Wanjiru</b></td>
+                    <td>Westlands HQ</td>
+                    <td>Day</td>
+                    <td><span class="badge b-ok">On duty</span></td>
+                    <td>PSRA-44718</td>
+                    <td><a class="linklike" href="#">Profile</a></td>
+                  </tr>
+                  <tr>
+                    <td><b>Peter Kimani</b></td>
+                    <td>Industrial Area Depot</td>
+                    <td>Night</td>
+                    <td><span class="badge b-ok">On duty</span></td>
+                    <td>PSRA-45903</td>
+                    <td><a class="linklike" href="#">Profile</a></td>
+                  </tr>
+                  <tr>
+                    <td><b>Mary Achieng</b></td>
+                    <td>Ruaraka Mall</td>
+                    <td>Night</td>
+                    <td><span class="badge b-warn">Rest day</span></td>
+                    <td>PSRA-45577</td>
+                    <td><a class="linklike" href="#">Profile</a></td>
+                  </tr>
+                  <tr>
+                    <td><b>Samuel Mutua</b></td>
+                    <td>Airport North Warehouse</td>
+                    <td>Day</td>
+                    <td><span class="badge b-warn">On leave</span></td>
+                    <td>PSRA-46210</td>
+                    <td><a class="linklike" href="#">Profile</a></td>
+                  </tr>
+                  <tr>
+                    <td><b>Faith Njeri</b></td>
+                    <td>Karen Residence Estate</td>
+                    <td>Day</td>
+                    <td><span class="badge b-ok">On duty</span></td>
+                    <td>PSRA-47001</td>
+                    <td><a class="linklike" href="#">Profile</a></td>
+                  </tr>
+                  <tr>
+                    <td><b>Brian Kiprop</b></td>
+                    <td>Nakuru Branch Office</td>
+                    <td>Night</td>
+                    <td><span class="badge b-warn">Late arrival</span></td>
+                    <td>PSRA-47332</td>
+                    <td><a class="linklike" href="#">Profile</a></td>
+                  </tr>
+                  <tr>
+                    <td><b>Esther Mwikali</b></td>
+                    <td>Mombasa Road Depot</td>
+                    <td>Day</td>
+                    <td><span class="badge b-ok">On duty</span></td>
+                    <td>PSRA-47988</td>
+                    <td><a class="linklike" href="#">Profile</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="tiny-note" class="pad-x">
+              Profile tabs: Overview &middot; Personal details &middot;
+              Employment &middot; Deployment &middot; Attendance &middot;
+              Payroll &middot; Training &middot; Welfare (restricted) &middot;
+              Documents &middot; Activity.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

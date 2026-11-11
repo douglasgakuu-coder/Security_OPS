@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Incident Reporting — VIGILORA</title>
+    <link rel="stylesheet" href="../../css/vigilora.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <a class="brand" href="supervisor.html"
+          ><span class="mark">VIGI</span>LORA</a
+        >
+        <nav>
+          <div class="sb-group">Field Work</div>
+          <a class="sb-item" href="supervisor.html"
+            ><span class="ico-char">&#129492;</span
+            ><span class="txt">Supervisor Dashboard</span></a
+          >
+          <a class="sb-item" href="assigned-sites.html"
+            ><span class="ico-char">&#128506;</span
+            ><span class="txt">Assigned Sites</span></a
+          >
+          <a class="sb-item" href="inspection-visits.html"
+            ><span class="ico-char">&#128269;</span
+            ><span class="txt">Inspection Visits</span></a
+          >
+          <div class="sb-group">Records</div>
+          <a class="sb-item" href="guard-attendance.html"
+            ><span class="ico-char">&#9200;</span
+            ><span class="txt">Guard Attendance</span></a
+          >
+          <a class="sb-item" href="handover-verification.html"
+            ><span class="ico-char">&#128260;</span
+            ><span class="txt">Handover Verification</span></a
+          >
+          <a class="sb-item" href="welfare-inspections.html"
+            ><span class="ico-char">&#128153;</span
+            ><span class="txt">Welfare Inspections</span
+            ><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="site-issues.html"
+            ><span class="ico-char">&#9888;</span
+            ><span class="txt">Site Issues</span></a
+          >
+          <a class="sb-item" href="corrective-actions.html"
+            ><span class="ico-char">&#9989;</span
+            ><span class="txt">Corrective Actions</span></a
+          >
+          <div class="sb-group">Reporting</div>
+          <a class="sb-item on" href="incident-reporting.html"
+            ><span class="ico-char">&#128680;</span
+            ><span class="txt">Incident Reporting</span></a
+          >
+          <a class="sb-item" href="staff-shortages.html"
+            ><span class="ico-char">&#9888;</span
+            ><span class="txt">Staff Shortages</span><span class="pip"></span
+          ></a>
+          <a class="sb-item" href="activity-reports.html"
+            ><span class="ico-char">&#128220;</span
+            ><span class="txt">Activity Reports</span></a
+          >
+        </nav>
+        <div class="sb-foot">
+          Field Supervisor<br />VIGILORA v5 — static prototype
+        </div>
+      </aside>
+      <div class="main">
+        <header class="topbar">
+          <div>
+            <div class="page-title">Incident Reporting</div>
+            <div class="crumbs">Reporting / Incident Reporting</div>
+          </div>
+          <div class="spacer"></div>
+          <a class="avatar" href="#" title="Notifications"
+            >&#128276;<span class="dot"></span
+          ></a>
+          <a class="avatar" href="#" title="Field Supervisor">FS</a>
+        </header>
+        <div class="content">
+          <span class="demo-note"
+            >Demonstration data — not live operational information</span
+          >
+          <div class="page-head">
+            <div>
+              <h2>Incident Reporting</h2>
+              <p>Submit structured incident reports for your sites.</p>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-h"><h3>Report an incident</h3></div>
+            <div class="panel-b">
+              <form method="get" action="#">
+                <div class="form-grid">
+                  <div class="field">
+                    <label class="req">Site</label
+                    ><select name="site" required>
+                      <option value="">Select&hellip;</option>
+                      <option>CBD Tower</option>
+                      <option>Westlands HQ</option>
+                      <option>Karen Residence</option>
+                      <option>Ruaraka Mall</option>
+                      <option>Industrial Depot</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label class="req">Category</label
+                    ><select name="cat" required>
+                      <option value="">Select&hellip;</option>
+                      <option>Security breach</option>
+                      <option>Safety hazard</option>
+                      <option>Medical</option>
+                      <option>Property damage</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label class="req">Priority</label
+                    ><select name="pri" required>
+                      <option value="">Select&hellip;</option>
+                      <option>High</option>
+                      <option>Medium</option>
+                      <option>Low</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label class="req">Date and time</label
+                    ><input type="datetime-local" name="when" required />
+                  </div>
+                </div>
+                <div class="field" class="mt14">
+                  <label class="req">What happened</label
+                  ><textarea name="what" rows="4" required></textarea>
+                </div>
+                <div class="field" class="mt14">
+                  <label>Action already taken</label
+                  ><textarea name="action" rows="3"></textarea>
+                </div>
+                <div class="mt14">
+                  <button class="btn btn-primary" type="submit">
+                    Submit report
+                  </button>
+                </div>
+                <p class="tiny-note">
+                  A unique reference is generated on submission; the control
+                  room classifies and assigns an officer. Demonstration form —
+                  nothing is submitted to a server.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
